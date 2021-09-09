@@ -17,7 +17,6 @@
     "gridsome-plugin-gtm": "^0.1.1",
     "gridsome-plugin-pug": "^0.0.3",
     "gridsome-plugin-pwa": "^0.0.17",
-    "pug": "^3.0.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2"
   }

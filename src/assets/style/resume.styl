@@ -34,7 +34,6 @@
   flex-wrap: wrap
   padding: 20px 40px
   border-bottom: 1px solid $slategray
-
   +mobile()
     padding: 20px
 
@@ -50,10 +49,8 @@
   width: 50%
   color: $dark
   text-decoration: none
-
   +mobile()
     width: 100%
-
   .icon
     margin-right: 10px
     color: $dark
@@ -63,7 +60,6 @@
 
 .resume-section
   margin: 20px 40px
-
   +mobile()
     margin: 20px
 
@@ -74,25 +70,26 @@
   border-bottom: 1px solid $slategray
   font-size: 20px
 
+.resume-sub-experience
+  border-inline-start: 5px solid $gray
+  margin-inline-start: 5px
+
 .resume-section-content
   padding: 5px 5px 5px 10px
   text-align: justify
   font-size: 14px
-
   ul
     margin: 0
     padding-left: 15px
-
   h5
     margin: 0
     font-weight: light
-
   p
     margin: 0
 
 .resume-experience
   padding: 5px 0
-
+  page-break-inside: avoid
   &:not(:last-child)
     border-bottom: 1px solid $gray
 
@@ -103,11 +100,9 @@
   color: $dark
   text-decoration: none
   font-weight: bold
-
   h4
     display: inline-block
     margin: 0
-
   small
     font-weight: normal
 
@@ -119,7 +114,6 @@
 
 .resume-experience-subtitle
   float: right
-
   +mobile()
     float: none
 
@@ -128,7 +122,6 @@
 
 .resume-project
   padding-bottom: 5px
-
   &:not(:last-child)
     margin-bottom: 5px
     border-bottom: 1px solid $gray
@@ -150,7 +143,6 @@
   text-decoration: none
   font-weight: bold
   font-size: 16px
-
   h4
     display: inline-block
     margin: 0
@@ -158,8 +150,10 @@
 @media print
   .main
     margin: 0
-
+    box-shadow: none
   .resume
     margin: 0
     max-width: 100vw
     width: 100vw
+    border: none
+    box-shadow: none

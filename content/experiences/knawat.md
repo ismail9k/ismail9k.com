@@ -2,11 +2,12 @@
 sort: 3
 name: Knawat
 url: https://knawat.com
-title: Full-Stack Developer
+title: Full Stack Engineer
 location: Istanbul, Turkey
 start: Feb 2019
-end: Present
+end: Feb 2021
 knowledge: Vue, React, Meteorjs, Cordova, MongoDB, Elasticsearch, GraphQL, Node.js, Express, Moleculerjs Microservices, Kubernetes, Docker, Redis, Jest, Tailwind, git-flow, Google Tag Manager, and JIRA.
+sub: 
 ---
 
 - Working mainly on a microservices dropshipping platform, which handles millions of requests, from thousands of e-commerce stores.

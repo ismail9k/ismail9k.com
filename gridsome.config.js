@@ -34,6 +34,14 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        baseDir: './content/sub-experiences',
+        path: '**/*.md',
+        typeName: 'SubExperience',
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         baseDir: './content/projects',
         path: '*.md',
         typeName: 'Project',
