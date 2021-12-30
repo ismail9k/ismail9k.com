@@ -1,6 +1,7 @@
 ---
 sort: 1
 name: NEU
+subtitle: Through VNGRS
 url: https://www.whatsneu.com/
 knowledge: Firebase, Firestore, Firebase Functions (Cloud Functions), Cloud Storage, Cloud Tasks, Firebase Hosting, Firebase emulators, LitElement, Mocha, Sinonjs, GCP, Serverless, webhooks, cron job, pubsub, web components.
 ---

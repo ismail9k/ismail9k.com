@@ -1,7 +1,8 @@
 <template lang="pug">
 .sub-experience
   a.sub-experience-title(:href='exp.url', target='_blank', rel='noopener')
-    h5 {{ exp.name }}
+    h5
+      span {{ exp.name }}
 
   .sub-section-content
     .sub-experience-content(v-html='exp.content')
@@ -78,6 +79,11 @@ query {
   text-decoration: none
   font-weight: bold
   font-size: 20px
+
+  small
+    font-size: 12px
+    color: lighten($dark, 20%)
+    margin: 0 20px
 
 .sub-experience-date,
 .sub-experience-subtitle

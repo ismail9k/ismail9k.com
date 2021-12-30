@@ -6,21 +6,27 @@ CleanLayout
       a.resume-header-info(:href='info.portfolio', target='_blank')
         AppIcon(name='home')
         | {{ info.portfolio }}
-      a.resume-header-info(:href='info.github', target='_blank')
-        AppIcon(name='github')
-        | {{ info.github }}
       a.resume-header-info(
         :href='`mailto:${info.email}?Subject=Hello`',
         target='_blank'
       )
         AppIcon(name='mail')
         | {{ info.email }}
-      a.resume-header-info(:href='`tel:${info.portfolio}`', target='_blank')
-        AppIcon(name='phone')
-        | {{ info.mobile }}
+      a.resume-header-info(:href='info.github', target='_blank')
+        AppIcon(name='github')
+        | {{ info.github }}
       a.resume-header-info
         AppIcon(name='landMark')
         | {{ info.address }}
+      a.resume-header-info(
+        :href='`${info.linkedin}`',
+        target='_blank'
+      )
+        AppIcon(name='linkedin')
+        | {{ info.linkedin }}
+      a.resume-header-info(:href='`tel:${info.portfolio}`', target='_blank')
+        AppIcon(name='phone')
+        | {{ info.mobile }}
 
     .resume-section
       h3.resume-title Summary

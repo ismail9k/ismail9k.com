@@ -6,7 +6,7 @@ title: Full Stack Engineer
 location: Istanbul, Turkey
 start: Feb 2019
 end: Feb 2021
-knowledge: Vue, React, Meteorjs, Cordova, MongoDB, Elasticsearch, GraphQL, Node.js, Express, Moleculerjs Microservices, Kubernetes, Docker, Redis, Jest, Tailwind, git-flow, Google Tag Manager, and JIRA.
+knowledge: Vue, React, Redux, Meteorjs, Cordova, MongoDB, Elasticsearch, GraphQL, Node.js, Express, Moleculerjs Microservices, Kubernetes, Docker, Redis, Jest, Tailwind, git-flow, Google Tag Manager, and JIRA.
 sub: 
 ---
 
