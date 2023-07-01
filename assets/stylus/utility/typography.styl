@@ -1,7 +1,6 @@
-
 .title
   color: $primary
-  font-size: $font-massive
+  font-size: $font-size[5]
   +tablet()
     font-size: $font-large
   +dark()
@@ -9,6 +8,15 @@
 
 .subtitle
   font-weight: normal
-  font-size: $font-medium
   +dark()
     color: $white
+
+.text
+  font-size: $font-size[4]
+  font-weight: normal
+  +dark()
+    color: $white
+
+for size, i in $font-size
+  .font-{i}
+    font-size: size

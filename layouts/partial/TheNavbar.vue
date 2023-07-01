@@ -1,3 +1,27 @@
+<script setup>
+const themeSwitcher = ref(null);
+const links = [{ title: 'Blog', link: '/blog' }];
+const isDark = ref(false);
+const initThemeSwitcher = () => {
+  const mql = window.matchMedia('(prefers-color-scheme: dark)');
+  isDark.value = mql.matches;
+  mql.addListener((e) => updateTheme(e.matches));
+};
+
+const updateTheme = () => {
+  const body = document.querySelector('body');
+  const newTheme = isDark.value ? 'dark' : 'light';
+
+  body.classList.remove('theme-dark', 'theme-light');
+  body.classList.add(`theme-${newTheme}`);
+};
+
+onMounted(() => {
+  initThemeSwitcher();
+  updateTheme();
+});
+</script>
+
 <template>
   <header>
     <nav class="navbar">
@@ -7,18 +31,20 @@
       </a>
       <div class="navbar-end">
         <ul class="navbar-menu">
-          <li><a class="navbar-item" href="#working">working</a></li>
-          <li><a class="navbar-item" href="#projects">projects</a></li>
-          <li><a class="navbar-item" href="#writings">writings</a></li>
-          <li><a class="navbar-item" href="#contact">contact</a></li>
+          <li v-for="item in links" :key="item.title">
+            <a class="navbar-item" :href="item.link">{{ item.title }}</a>
+          </li>
           <li>
             <div class="navbar-item">
               <label class="theme-switcher" for="themeSwitcher"
                 ><span class="sr-only">Theme mode switcher</span
                 ><input
+                  ref="themeSwitcher"
+                  v-model="isDark"
                   id="themeSwitcher"
                   type="checkbox"
                   aria-labelledby=""
+                  @change="updateTheme"
                 /><span class="theme-🌝">🌝</span
                 ><span class="theme-🌚">🌚</span></label
               >
@@ -30,34 +56,6 @@
   </header>
 </template>
 
-<script>
-export default {
-  name: 'TheNavbar',
-  mounted() {
-    this.initThemeSwitcher();
-  },
-  methods: {
-    initThemeSwitcher() {
-      const mql = window.matchMedia('(prefers-color-scheme: dark)');
-      const themeSwitcher = document.querySelector('#themeSwitcher');
-
-      themeSwitcher.checked = mql.matches;
-      themeSwitcher.addEventListener('change', this.themeChangeHandler);
-      mql.addListener(this.themeChangeHandler);
-    },
-
-    themeChangeHandler(e) {
-      const body = document.querySelector('body');
-      const themeSwitcher = document.querySelector('#themeSwitcher');
-      const isDark = (e.target && e.target.checked) || e.matches;
-
-      themeSwitcher.checked = isDark;
-      body.classList.remove('theme-dark', 'theme-light');
-      body.classList.add(`theme-${isDark ? 'dark' : 'light'}`);
-    },
-  },
-};
-</script>
 
 <style lang="stylus">
 .theme-switcher {
