@@ -11,7 +11,7 @@ __generateSpacingSizes() {
   for size in spacings {
     px = unit(size, 'px');
     rem = toRem(px);
-    push(remSizes, size);
+    push(remSizes, rem);
   }
 
   return remSizes;
@@ -24,7 +24,7 @@ __generateTextSizes() {
   for size in spacings {
     px = unit(size, 'px');
     rem = toRem(px);
-    push(remSizes, size);
+    push(remSizes, rem);
   }
 
   return remSizes;
@@ -39,7 +39,7 @@ __generateTextSizes() {
 
 $p = ();
 $m = ();
-$text = __generateSpacingSizes();
+$text = __generateTextSizes();
 
 for size, i in __generateSpacingSizes() {
   $p[i] = 'var(--padding-%s)' % i;

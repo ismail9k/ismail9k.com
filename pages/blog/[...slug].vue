@@ -1,31 +1,4 @@
-<script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
-
-const currentlyActiveToc = ref('');
-let observer;
-
-onMounted(() => {
-  const observerRoot = document.querySelector('.blog-content');
-
-  observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        currentlyActiveToc.value = entry.target.getAttribute('id');
-      });
-    },
-    { root: observerRoot, threshold: 0 }
-  );
-
-  return;
-  document
-    .querySelectorAll('.blog-content :is(h2[id], h3[id])')
-    .forEach((section) => observer.observe(section));
-});
-
-onBeforeUnmount(() => {
-  observer.disconnect();
-});
+<script>
 </script>
 
 
@@ -35,32 +8,11 @@ onBeforeUnmount(() => {
       <h1 class="blog-title">{{ doc.title }}</h1>
 
       <div class="blog">
+        <TOC :links="doc.body?.toc?.links" />
+
         <div class="blog-content">
           <ContentRenderer :value="doc"> </ContentRenderer>
         </div>
-        <aside class="blog-toc">
-          <div class="blog-toc-sticky">
-            <h2>Table Of Content</h2>
-            <ul class="blog-toc-list">
-              <li
-                v-for="link of doc.body?.toc?.links"
-                :key="link.id"
-                :class="[
-                  'blog-toc-item',
-                  { toc2: link.depth === 2, toc3: link.depth === 3 },
-                ]"
-              >
-                <NuxtLink
-                  :to="`#${link.id}`"
-                  :class="{
-                    'blog-toc-item--active': currentlyActiveToc === link.id,
-                  }"
-                  >{{ link.text }}</NuxtLink
-                >
-              </li>
-            </ul>
-          </div>
-        </aside>
       </div>
     </template>
 
@@ -80,54 +32,18 @@ onBeforeUnmount(() => {
 <style lang="stylus">
 @import '../assets/stylus/config/_index.styl';
 
-.blog-toc-item--active {
-  color: $accent;
-}
-
-.blog-toc {
-  width: 30%;
-  margin-inline-start: 5%;
-
-  +tablet() {
-    display: none;
-  }
-}
-
-.blog-toc-sticky {
-  position: sticky;
-  top: 10px;
-}
-
-.blog-toc-list {
-  padding-inline-start: 0;
-}
-
-.blog-toc-item {
-  display: flex;
-  list-style-type: none;
-  font-size: $font-size[1];
-
-  &::before {
-    content: '└';
-    padding: 0 5px;
-    color: $accent;
-    line-height: 2em;
-  }
-}
-
 .blog-content {
-  width: 70%;
-
-  +tablet() {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .blog {
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+  word-break: break-word;
   width: 100%;
-  font-size: $font-size[4];
-  line-height: 1.5;
-  display: flex;
+  max-width: 748px;
+  font-size: $text[4];
+  line-height: 1.6em;
 
   img {
     max-width: 100%;
@@ -142,15 +58,16 @@ onBeforeUnmount(() => {
 
 .blog-title {
   margin-top: 0;
-  margin-bottom: $margin[10];
-  font-size: $font-size[13];
+  margin-bottom: $m[20];
+  font-size: $text[10];
   line-height: 1.5;
   max-width: 20ch;
-  border-left: $padding[2] solid $accent;
-  padding-left: $padding[5];
+  border-left: 0.2em solid $accent;
+  padding-left: 0.5em;
 
   +tablet() {
-    font-size: $font-size[7];
+    margin-bottom: $m[15];
+    font-size: $text[8];
   }
 }
 
@@ -165,8 +82,9 @@ pre {
   overflow-x: auto;
   padding: $padding[4] ($padding[6]);
   border-radius: 8px;
-  background: $gray;
-  border: 1px solid $white;
+  background: $dark;
+  border: 1px solid $dark;
+  font-size: $text[3];
 
   +darkMode() {
     background: $black;
