@@ -6,7 +6,9 @@ toRem(value) {
   } else {
     return unit(value, u);
   }
-} /**
+}
+
+/**
  * Generate font sizes, based on equation
  *
  * F(n) = f(n - 1) + { floor((n - 2) / 4) + 1 } * 2
@@ -30,7 +32,6 @@ toRem(value) {
  * |   14  | 76 | 4.75  |
  *
  */
-
 generateFontSizes() {
   current = 12;
   sizes = ();
