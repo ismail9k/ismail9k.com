@@ -20,7 +20,7 @@ Layout
           | {{ summary.summary }}
         h3.card-title Skills
         p.card-description
-          | {{ skills.expert.join(", ") }}
+          | {{ skills.expert.join(', ') }}
         a.resume-button.link(href='/resume', target='_blank', rel='noopener').
           Complete Résumé
 
@@ -68,96 +68,7 @@ Layout
         Feel free to send me a massage on twitter!
 </template>
 
-<script>
-import Figure from '~/components/Figure.vue';
-import summary from '~/assets/data/resources/summary.json';
-import skills from '~/assets/data/resources/skills.json';
 
-export default {
-  components: { Figure },
-  data: () => ({
-    summary,
-    skills,
-  }),
-  computed: {
-    posts() {
-      return this.$static.allBlogPost.edges.map(({ node }) => node) || [];
-    },
-    projects() {
-      return this.$static.allProject.edges.map(({ node }) => node) || [];
-    },
-  },
-  mounted() {
-    this.$nextTick(() => {
-      this.initObserver();
-      this.initPlaygroundPortal();
-    });
-  },
-  methods: {
-    initObserver() {
-      this.observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              this.startAnimating(entry.target);
-            }
-          });
-        },
-        { threshold: 0.2 }
-      );
-
-      Array.from(document.querySelectorAll('.animation')).forEach((el) => {
-        this.observer.observe(el);
-      });
-      Array.from(document.querySelectorAll('.fx')).forEach((el) => {
-        this.observer.observe(el);
-      });
-    },
-    startAnimating(el) {
-      if (el.classList.contains('fx')) {
-        el.classList.add('is-active');
-        return;
-      }
-      const name = el.dataset.animation;
-      el.classList.add(name);
-
-      const onEnd = () => {
-        this.observer.unobserve(el);
-        el.classList.remove(name, 'animation');
-        el.removeAttribute('data-animation');
-        el.removeEventListener('animationend', onEnd);
-      };
-
-      el.addEventListener('animationend', onEnd);
-    },
-    initPlaygroundPortal() {
-      const figure = document.querySelector('#figure');
-      const touchDuration = 1000; //length of time we want the user to touch before we do something
-      let timer;
-
-      const goToPlayground = (e) => {
-        e.preventDefault();
-        window.open('/playground');
-      };
-      const touchstart = (e) => {
-        timer = setTimeout(() => goToPlayground(e), touchDuration);
-      };
-      const touchend = () => {
-        if (timer) {
-          clearTimeout(timer);
-        }
-      };
-
-      figure.addEventListener('touchstart', touchstart);
-      figure.addEventListener('touchend', touchend);
-      figure.addEventListener('contextmenu', goToPlayground);
-    },
-  },
-  metaInfo: {
-    title: 'Hello, world!',
-  },
-};
-</script>
 
 <static-query>
 query {
