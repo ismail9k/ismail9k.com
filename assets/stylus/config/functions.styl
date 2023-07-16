@@ -1,18 +1,14 @@
-/**
- * convert values to rem
- */
 toRem(value) {
-    u = unit(value);
-    if (u is 'px') {
-        return unit(value/16, 'rem');
-    } else {
-        return unit(value, u);
-    }
-}
+  u = unit(value);
 
-/**
+  if (u == 'px') {
+    return unit((value / 16), 'rem');
+  } else {
+    return unit(value, u);
+  }
+} /**
  * Generate font sizes, based on equation
- * 
+ *
  * F(n) = f(n - 1) + { floor((n - 2) / 4) + 1 } * 2
  *
  * | index | px |  rem  |
@@ -32,19 +28,55 @@ toRem(value) {
  * |   12  | 60 | 3.75  |
  * |   13  | 68 | 4.25  |
  * |   14  | 76 | 4.75  |
- * 
+ *
  */
 
 generateFontSizes() {
   current = 12;
   sizes = ();
   max = 16;
-  for $n in (1...max) {
-    increas = (floor(($n - 2) / 4) + 1) * 2
-    current = current + increas;
+
+  for $n in 1...max {
+    increase = (floor((($n - 2) / 4)) + 1) * 2;
+    current = current + increase;
     px = unit(current, 'px');
     rem = toRem(px);
     push(sizes, rem);
   }
+
   return sizes;
 }
+
+generatePaddingSizes() {
+  sizes = ();
+  max = 10;
+  increase = 0.5;
+
+  for $n in 0...max {
+    current = current + increase;
+    px = unit(current, 'px');
+    rem = toRem(px);
+    push(sizes, rem);
+  }
+
+  return sizes;
+}
+
+generateMarginSizes() {
+  sizes = ();
+  max = 10;
+  increase = 0.5;
+
+  for $n in 0...max {
+    current = current + increase;
+    px = unit(current, 'px');
+    rem = toRem(px);
+    push(sizes, rem);
+  }
+
+  return sizes;
+}
+
+/**
+ * convert values to rem
+ */

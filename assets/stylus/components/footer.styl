@@ -1,21 +1,30 @@
-.footer
-  display: flex
-  justify-content: center
-  margin-bottom: 30px
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 
-.footer-list
-  display: flex
-  margin: 0
-  padding: 0
-  list-style: none
+.footer-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-.footer-item
-  padding: 10px
-  color: $secondary
-  font-size: $font-large
-  &:hover
-    color: $primary
-  +dark()
-    color: $white
-    &:hover
-      color: $primary
+.footer-item {
+  padding: 10px;
+  color: $secondary;
+  font-size: $font-large;
+
+  &:hover {
+    color: $primary;
+  }
+
+  +dark() {
+    color: $white;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
