@@ -25,7 +25,7 @@ onMounted(() => {
 <template>
   <header>
     <nav class="navbar">
-      <a class="navbar-brand" href="https://ismail9k.com">
+      <a class="navbar-brand" href="/">
         <h1 class="brand-letter">Ismail9k</h1>
         <span class="brand-dash">_</span>
       </a>
@@ -58,6 +58,122 @@ onMounted(() => {
 
 
 <style lang="stylus">
+@import '../../assets/stylus/config/_index.styl';
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 50px;
+  font-size: $font-small;
+
+  +mobile() {
+    padding: 20px 10px;
+  }
+}
+
+.navbar-end {
+  margin-left: auto;
+
+  +mobile() {
+    flex-shrink: 0;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+.navbar-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  +mobile() {
+    justify-content: space-around;
+    justify-content: space-evenly;
+  }
+}
+
+.navbar-item {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  color: $dark;
+  font-weight: bold;
+  transition: 130ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-underline-position: under;
+
+  &:hover {
+    text-decoration-color: $primary;
+  }
+
+  &:focus {
+    outline: 2px dashed;
+  }
+
+  +dark() {
+    color: $white;
+  }
+
+  +mobile() {
+    padding: 10px 5px;
+    font-size: 14px;
+  }
+}
+
+.navbar-brand {
+  text-decoration: none;
+
+  +mobile() {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.navbar-toggle {
+  padding: 10px 0;
+  border: 0;
+  background: none;
+}
+
+.brand-letter {
+  color: $dark;
+  font-weight: bold;
+  font-size: $font-size[7];
+  display: inline;
+
+  +dark() {
+    color: $white;
+  }
+}
+
+.brand-dash {
+  color: $primary;
+  font-weight: bold;
+  font-size: $font-size[7];
+  animation: cursor 4s infinite;
+
+  +dark() {
+    color: $primary;
+  }
+}
+
+@keyframes cursor {
+  90% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .theme-switcher {
   display: flex;
   margin: 0 10px;

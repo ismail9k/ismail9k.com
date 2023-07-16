@@ -33,7 +33,9 @@ const styleClasses = [props.size, props.color].map((val) => val && `is-${val}`);
   width: 1.2em;
   height: 1.2em;
   fill: currentColor;
+  color: inherit;
 }
+
 /* sizes */
 .icon.is-large {
   width: 2em;

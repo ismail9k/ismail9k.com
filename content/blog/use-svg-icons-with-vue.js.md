@@ -7,6 +7,8 @@ Many developers prefer to use the font-icons over the SVG ones because it has a 
 
 In this article, I will try to demonstrate the technics I follow to make it easily to  SVG icons.
 
+<!--more-->
+
 ## TL;DR
 
 You can find the final component here: [AppIcon.vue](https://github.com/Abdelrahman3D/use-svg/blob/master/src/AppIcon.vue).

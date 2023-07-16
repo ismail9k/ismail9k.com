@@ -1,21 +1,32 @@
-.👽
-  display: inline-block
-  width: 30px
-  height: 30px
-  fill: $dark
-  &.😃,
-  &.😡,
-  &.😍,
-  &.😴
-    fill: $dark
-  &.🤐
-    .👐
-      fill: $yellow
-    .⬛️
-      fill: $dark
-    .⬜️.⬛️
-      fill: darken($white, 10%)
-  &.💬
-    margin-top: 2px
-    .⬛️
-      fill: darken($white, 50%)
+.👽 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  fill: $dark;
+
+  &.😃, &.😡, &.😍, &.😴 {
+    fill: $dark;
+  }
+
+  &.🤐 {
+    .👐 {
+      fill: $yellow;
+    }
+
+    .⬛️ {
+      fill: $dark;
+    }
+
+    .⬜️.⬛️ {
+      fill: darken($white, 10%);
+    }
+  }
+
+  &.💬 {
+    margin-top: 2px;
+
+    .⬛️ {
+      fill: darken($white, 50%);
+    }
+  }
+}

@@ -47,12 +47,13 @@ generateFontSizes() {
   return sizes;
 }
 
-generatePaddingSizes() {
-  sizes = ();
+generateSpacingSizes() {
+  current = 12;
+  sizes = 0;
   max = 10;
-  increase = 0.5;
 
   for $n in 0...max {
+    increase = (floor((($n - 2) / 4)) + 1) * 2;
     current = current + increase;
     px = unit(current, 'px');
     rem = toRem(px);
@@ -61,22 +62,3 @@ generatePaddingSizes() {
 
   return sizes;
 }
-
-generateMarginSizes() {
-  sizes = ();
-  max = 10;
-  increase = 0.5;
-
-  for $n in 0...max {
-    current = current + increase;
-    px = unit(current, 'px');
-    rem = toRem(px);
-    push(sizes, rem);
-  }
-
-  return sizes;
-}
-
-/**
- * convert values to rem
- */

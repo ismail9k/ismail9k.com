@@ -6,6 +6,8 @@ slug: neomorphism-designs-ui-components-library
 
 Every while a new design trend arise and became the dominator of the shape of the period. Recently, the neomorphic design style becoming very [trending](https://dribbble.com/tags/neomorphism) and is gaining more and more popularity.
 
+<!--more-->
+
 ## The Neomorphism Design
 
 You can form this effect, by adding two shadows to your flat-designed elements, one is a light shadow from the top left of the element, and the other is a dark shadow towards the bottom right. the combination of both creates the effect of the elements pushing themselves through your display.
@@ -30,7 +32,6 @@ I reviewed the most famous frameworks and components libraries structure and con
 
 After TWO days of hard work 🤓🤓, and lots of potions coffee. I want to introduce [Neomorphism, UI components library](https://ismail9k.com/neomorphism). (creative name, right? 🤷‍♂️🤷‍♂️)
 
-{% github ismail9k/neomorphism no-readme %}
 
 ## Final words
 

@@ -1,14 +1,5 @@
 <script setup>
-const socials = [
-  { name: 'github', link: 'https://github.com/ismail9k' },
-  { name: 'linkedin', link: 'https://linkedin.com/in/ismail9k' },
-  { name: 'twitter', link: 'https://twitter.com/ismail_9k' },
-  { name: 'instagram', link: 'https://instagram.com/ismail9k' },
-  { name: 'dev', link: 'https://dev.to/ismail9k' },
-  // { name: 'mail', link: 'mailto:hello@ismail9k.com?Subject=Hello' },
-  { name: 'tiktok', link: 'https://tiktok.com/@ismail.9k' },
-  { name: 'youtube', link: 'https://youtube.com/@ismail9k' },
-];
+import socials from '/content/socials.json';
 </script>
 
 
@@ -21,8 +12,9 @@ const socials = [
           :href="social.link"
           target="_blank"
           rel="noopener"
+          :style="`color: ${social.color}`"
         >
-          <AppIcon :name="social.name"></AppIcon>
+          <AppIcon :name="social.icon"></AppIcon>
         </a>
       </li>
     </ul>
@@ -35,7 +27,8 @@ const socials = [
 .footer {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  padding: $padding[10];
+  margin-bottom: $margin[5];
 }
 
 .footer-list {
@@ -47,18 +40,14 @@ const socials = [
 
 .footer-item {
   padding: 10px;
-  color: $secondary;
-  font-size: $font-large;
+  color: $dark;
+  font-size: $font-size[5];
 
-  &:hover {
-    color: $primary;
-  }
+  &:not(:hover) {
+    color: $dark !important;
 
-  +dark() {
-    color: $white;
-
-    &:hover {
-      color: $primary;
+    +dark() {
+      color: $white !important;
     }
   }
 }

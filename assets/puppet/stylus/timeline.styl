@@ -1,87 +1,123 @@
-$timelineHeight = 20px
+$timelineHeight = 20px;
 
-.timeline
-  +has(icon)
-    display: inline-block
-    width: 30px
-    height: 30px
-  +has(buttons)
-    display-flex(center, center)
-    margin: 20px 0 -30px
-  +has(button)
-    display-flex(center, center)
-    flex: 1
-    padding: 10px
-    background-color: $dark
-    cursor: pointer
-    &:hover
-      fill: $blue
-  +has(record)
-    fill: $red
-  +has(keyframe)
-    fill: $green
-  +has(play)
-    fill: $green
-    &.play
-      #play
-        opacity: 1
-        transform: rotate(0)
-    &.pause
-      #pause
-        opacity: 1
-        transform: scale(1)
-  +has(frame)
-    transition-all(0.4s)
-    display-flex(center, center)
-    z-index: 2
-    margin: 0 0 0 25px
-    width: $timelineHeight
-    height: $timelineHeight
-    border-radius: $timelineHeight
-    background-color: lighten($dark, 80%)
-    cursor: pointer
-    &:first-child
-      margin: 0
-    &.active:after
-      display: block
-      width: ($timelineHeight / 2)
-      height: ($timelineHeight / 2)
-      border-radius: ($timelineHeight / 2)
-      background-color: alpha($red, 70%)
-      content: ''
-  +has(container)
-    display-flex(center, center)
-    position: fixed
-    right: 0
-    bottom: 0
-    left: 0
-    +responsive()
-      top: 0
-      bottom: initial
-  +has(track)
-    position: relative
-    z-index: 1
-    display: flex
-    justify-content: space-between
-    margin: 10px auto
-    max-width: 80%
-    height: $timelineHeight
-    &:before
-      position: absolute
-      top: ($timelineHeight / 2) - 2px
-      right: 0
-      left: 0
-      display: block
-      height: 4px
-      background-color: lighten($dark, 70%)
-      content: ''
+.timeline {
+  +has(icon) {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
 
-#play
-  transition-all(0.3s)
-  opacity: 0
-  transform: rotate(90deg)
+  +has(buttons) {
+    display-flex(center, center);
+    margin: 20px 0 -30px;
+  }
 
-#pause
-  transition-all(0.3s)
-  opacity: 0
-  transform: scale(0)
+  +has(button) {
+    display-flex(center, center);
+    flex: 1;
+    padding: 10px;
+    background-color: $dark;
+    cursor: pointer;
+
+    &:hover {
+      fill: $blue;
+    }
+  }
+
+  +has(record) {
+    fill: $red;
+  }
+
+  +has(keyframe) {
+    fill: $green;
+  }
+
+  +has(play) {
+    fill: $green;
+
+    &.play {
+      #play {
+        opacity: 1;
+        transform: rotate(0);
+      }
+    }
+
+    &.pause {
+      #pause {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+
+  +has(frame) {
+    transition-all(0.4s);
+    display-flex(center, center);
+    z-index: 2;
+    margin: 0 0 0 25px;
+    width: $timelineHeight;
+    height: $timelineHeight;
+    border-radius: $timelineHeight;
+    background-color: lighten($dark, 80%);
+    cursor: pointer;
+
+    &:first-child {
+      margin: 0;
+    }
+
+    &.active:after {
+      display: block;
+      width: ($timelineHeight / 2);
+      height: ($timelineHeight / 2);
+      border-radius: ($timelineHeight / 2);
+      background-color: alpha($red, 70%);
+      content: '';
+    }
+  }
+
+  +has(container) {
+    display-flex(center, center);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    +responsive() {
+      top: 0;
+      bottom: initial;
+    }
+  }
+
+  +has(track) {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    max-width: 80%;
+    height: $timelineHeight;
+
+    &:before {
+      position: absolute;
+      top: ($timelineHeight / 2) - 2px;
+      right: 0;
+      left: 0;
+      display: block;
+      height: 4px;
+      background-color: lighten($dark, 70%);
+      content: '';
+    }
+  }
+}
+
+#play {
+  transition-all(0.3s);
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+#pause {
+  transition-all(0.3s);
+  opacity: 0;
+  transform: scale(0);
+}

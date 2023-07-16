@@ -6,6 +6,8 @@ slug: use-javascript-optional-chaining-today
 
 Optional Chaining is a new JavaScript API that will make developers' lives easier :D. Optional Chaining is currently at [Stage 3](https://github.com/tc39/proposal-optional-chaining), and soon enough will be part of the language itself, but we can use it, today.
 
+<!--more-->
+
 In this article, I brief what is `Optional Chaining`, and why it's a game-changer. I will also try to guide you on how to configure it and use it. Let's get started.
 
 ## Optional Chaining
