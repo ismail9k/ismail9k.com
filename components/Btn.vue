@@ -27,7 +27,7 @@
 .btn:not(:hover) {
   color: $secondary !important;
 
-  +dark() {
+  +darkMode() {
     color: $white !important;
   }
 }

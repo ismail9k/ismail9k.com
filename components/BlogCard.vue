@@ -76,7 +76,7 @@ const props = defineProps(['data']);
     margin-inline-start: 0.5px;
   }
 
-  +dark() {
+  +darkMode() {
     &::before {
       border-color: alpha($white, 20%);
     }
@@ -99,7 +99,7 @@ const props = defineProps(['data']);
     background-color: alpha($dark, 10%);
   }
 
-  +dark() {
+  +darkMode() {
     color: $white;
 
     &:hover {
@@ -111,7 +111,7 @@ const props = defineProps(['data']);
 .blog-card-description {
   color: light($dark, 20%);
 
-  +dark() {
+  +darkMode() {
     color: darken($white, 20%);
   }
 }

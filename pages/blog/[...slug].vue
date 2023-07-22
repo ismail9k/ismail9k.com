@@ -40,7 +40,7 @@
     color: inherit;
   }
 
-  +dark() {
+  +darkMode() {
     color: $white;
   }
 }
@@ -60,5 +60,47 @@
   flex-direction: column;
   place-items: center;
   width: 100%;
+}
+
+pre {
+  overflow: auto;
+  padding: $padding[4] ($padding[6]);
+  border-radius: 8px;
+  background: $dark;
+
+  +darkMode() {
+    background: $light;
+    box-shadow: inset 0 0 5px alpha($dark, 50%);
+  }
+}
+
+blockquote {
+  background: $gray;
+  border-left: 10px solid $dark;
+  margin: $margin[3] ($margin[0]);
+  padding: $padding[4] ($padding[4]);
+  quotes: '\201C' '\201D' '\2018' '\2019';
+
+  &:before {
+    color: $dark;
+    content: open-quote;
+    font-size: $font-size[10];
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  p {
+    display: inline;
+  }
+
+  +darkMode() {
+    color: $dark;
+    border-color: $light;
+
+    &:before {
+      color: $black;
+    }
+  }
 }
 </style>

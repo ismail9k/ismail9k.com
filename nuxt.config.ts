@@ -1,7 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   ssr: true,
-  modules: ['@nuxt/content', 'nuxt-purgecss'],
+  modules: ['@nuxt/content', '@nuxtjs/color-mode', 'nuxt-purgecss'],
   css: ['normalize.css/normalize.css', '~/assets/stylus/app.styl'],
   postcss: {
     plugins: {
@@ -11,6 +11,19 @@ export default defineNuxtConfig({
 
   experimental: {
     viewTransition: true,
+  },
+
+  content: {
+    highlight: {
+      theme: {
+        default: 'github-dark',
+        dark: 'github-light',
+      },
+    },
+  },
+
+  colorMode: {
+    classSuffix: '',
   },
 
   app: {

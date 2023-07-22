@@ -1,17 +1,9 @@
-
-body, .theme-light {
-  background-color: $slategray;
+html, .light {
+  background-color: $light;
   color: $dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  body:not(.theme-light) {
-    background-color: $black;
-    color: $white;
-  }
-}
-
-body.theme-dark {
-  background-color: $black;
+html.dark {
+  background-color: $dark;
   color: $white;
 }

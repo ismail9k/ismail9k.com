@@ -43,7 +43,7 @@ export default {
     margin: 5px;
   }
 
-  +dark() {
+  +darkMode() {
     color: $white;
   }
 }

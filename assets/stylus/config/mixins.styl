@@ -1,19 +1,21 @@
 columns($n = 0) {
-  return round($n * 100%, 2)
+  return round($n * 100%, 2);
 }
 
-mobile()
-  @media screen and (max-width: 768px)
-    {block}
+mobile() {
+  @media screen and (max-width: 768px) {
+    {block};
+  }
+}
 
-tablet()
-  @media screen and (max-width: 991px)
-    {block}
+tablet() {
+  @media screen and (max-width: 991px) {
+    {block};
+  }
+}
 
-dark()
-  @media (prefers-color-scheme: dark)
-    body:not(.theme-light) &
-      {block}
-
-  body.theme-dark &
-    {block}
+darkMode() {
+  html.dark & {
+    {block};
+  }
+}

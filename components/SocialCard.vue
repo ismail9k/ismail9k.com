@@ -32,7 +32,7 @@ const props = defineProps(['data']);
   text-decoration: none;
   background-color: transparent;
 
-  +dark() {
+  +darkMode() {
     background-color: alpha($white, 20%);
   }
 }
@@ -40,7 +40,7 @@ const props = defineProps(['data']);
 .social-card:not(:hover) {
   color: $dark !important;
 
-  +dark() {
+  +darkMode() {
     color: $white !important;
   }
 }

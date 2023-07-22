@@ -1,25 +1,11 @@
 <script setup>
-const themeSwitcher = ref(null);
+const colorMode = useColorMode();
 const links = [{ title: 'Blog', link: '/blog' }];
-const isDark = ref(false);
-const initThemeSwitcher = () => {
-  const mql = window.matchMedia('(prefers-color-scheme: dark)');
-  isDark.value = mql.matches;
-  mql.addListener((e) => updateTheme(e.matches));
-};
+const modeSwitcherValue = ref(colorMode.value === 'dark');
 
 const updateTheme = () => {
-  const body = document.querySelector('body');
-  const newTheme = isDark.value ? 'dark' : 'light';
-
-  body.classList.remove('theme-dark', 'theme-light');
-  body.classList.add(`theme-${newTheme}`);
+  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
 };
-
-onMounted(() => {
-  initThemeSwitcher();
-  updateTheme();
-});
 </script>
 
 <template>
@@ -40,7 +26,7 @@ onMounted(() => {
                 ><span class="sr-only">Theme mode switcher</span
                 ><input
                   ref="themeSwitcher"
-                  v-model="isDark"
+                  v-model="modeSwitcherValue"
                   id="themeSwitcher"
                   type="checkbox"
                   aria-labelledby=""
@@ -112,7 +98,7 @@ onMounted(() => {
     outline: 2px dashed;
   }
 
-  +dark() {
+  +darkMode() {
     color: $white;
   }
 
@@ -144,7 +130,7 @@ onMounted(() => {
   font-size: $font-size[7];
   display: inline;
 
-  +dark() {
+  +darkMode() {
     color: $white;
   }
 }
@@ -155,7 +141,7 @@ onMounted(() => {
   font-size: $font-size[7];
   animation: cursor 4s infinite;
 
-  +dark() {
+  +darkMode() {
     color: $primary;
   }
 }

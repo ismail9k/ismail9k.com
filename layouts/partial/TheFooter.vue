@@ -46,7 +46,7 @@ import socials from '/content/socials.json';
   &:not(:hover) {
     color: $dark !important;
 
-    +dark() {
+    +darkMode() {
       color: $white !important;
     }
   }
