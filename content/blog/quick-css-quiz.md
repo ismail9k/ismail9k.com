@@ -34,6 +34,7 @@ what is the distance between those two div?
 First of all, because the div is a block-level element it will take the full width of the container, so the distance between the two divs is the vertical distance.
 Due to "margin collapsing", the top and bottom margins are collapsed into a single margin whose size is the largest of the individual margins, which is 50px.
 
+<hr/>
 
 ## Problem #2:
 
@@ -66,6 +67,7 @@ transform
 It will be relative to the element itself, either its width or its height.
 So here we are working with padding top and left properties, and both are relative to the #container's width and be calculated based on its value.
 
+<hr/>
 
 ## Problem #3:
 
@@ -110,7 +112,9 @@ For more info:
 line-height MDN
 3 things (almost) no one knows css
 
-## Problem #3
+<hr/>
+
+## Problem #4
 
 ```html
 <div class="wrapper">
@@ -158,6 +162,8 @@ b- `span.is-blue` (0-1-1)
 c- `.is-green` (0-0-1) 
 
 And the rule-set selector's specificity is (1-1-0), which is greater than a and b selectors and equal to c, but it comes last in the stylesheet; so its declaration will apply over the all three selectors, and all elements will have a black color.
+
+<hr/>
 
 ## Problem #5
 

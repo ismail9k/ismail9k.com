@@ -64,14 +64,15 @@
 }
 
 pre {
-  overflow: auto;
+  overflow-x: auto;
   padding: $padding[4] ($padding[6]);
   border-radius: 8px;
-  background: $dark;
+  background: $gray;
+  border: 1px solid $white;
 
   +darkMode() {
-    background: $light;
-    box-shadow: inset 0 0 5px alpha($dark, 50%);
+    background: $black;
+    border-color: $dark-gray;
   }
 }
 
@@ -103,6 +104,18 @@ blockquote {
     &:before {
       color: $black;
     }
+  }
+}
+
+hr {
+  margin: ($margin[10] * 2) 0;
+  border: 0;
+  text-align: center;
+
+  &:after {
+    content: '...';
+    font-size: $font-size[6];
+    letter-spacing: 10px;
   }
 }
 </style>
