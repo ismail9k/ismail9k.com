@@ -38,10 +38,6 @@ const props = defineProps(['data']);
 }
 
 .social-card:not(:hover) {
-  color: $dark !important;
-
-  +darkMode() {
-    color: $white !important;
-  }
+  color: $theme-text-color !important;
 }
 </style>

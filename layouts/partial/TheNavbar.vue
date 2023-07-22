@@ -15,6 +15,8 @@ const updateTheme = () => {
         <h1 class="brand-letter">Ismail9k</h1>
         <span class="brand-dash">_</span>
       </a>
+
+      <div class="spacer"></div>
       <div class="navbar-end">
         <ul class="navbar-menu">
           <li v-for="item in links" :key="item.title">
@@ -48,24 +50,20 @@ const updateTheme = () => {
 
 .navbar {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  padding: 50px 50px;
-  font-size: $font-small;
+  justify-content: space-between;
+  padding: $padding[4] ($padding[8]);
 
   +mobile() {
     padding: 20px 10px;
   }
 }
 
-.navbar-end {
-  margin-left: auto;
+.spacer {
+  flex-grow: 1;
+}
 
-  +mobile() {
-    flex-shrink: 0;
-    margin: auto;
-    width: 100%;
-  }
+.navbar-end {
 }
 
 .navbar-menu {
@@ -74,32 +72,23 @@ const updateTheme = () => {
   margin: 0;
   padding: 0;
   list-style: none;
-
-  +mobile() {
-    justify-content: space-around;
-    justify-content: space-evenly;
-  }
 }
 
 .navbar-item {
   display: block;
   margin: 0;
   padding: 10px;
-  color: $dark;
+  color: $theme-text-color;
   font-weight: bold;
   transition: 130ms cubic-bezier(0.4, 0, 0.2, 1);
   text-underline-position: under;
 
   &:hover {
-    text-decoration-color: $primary;
+    text-decoration-color: $accent;
   }
 
   &:focus {
     outline: 2px dashed;
-  }
-
-  +darkMode() {
-    color: $white;
   }
 
   +mobile() {
@@ -110,11 +99,10 @@ const updateTheme = () => {
 
 .navbar-brand {
   text-decoration: none;
+  flex: 1;
 
   +mobile() {
     display: block;
-    margin: auto;
-    margin-bottom: 20px;
   }
 }
 
@@ -125,25 +113,17 @@ const updateTheme = () => {
 }
 
 .brand-letter {
-  color: $dark;
+  color: $theme-text-color;
   font-weight: bold;
   font-size: $font-size[7];
   display: inline;
-
-  +darkMode() {
-    color: $white;
-  }
 }
 
 .brand-dash {
-  color: $primary;
+  color: $accent;
   font-weight: bold;
   font-size: $font-size[7];
   animation: cursor 4s infinite;
-
-  +darkMode() {
-    color: $primary;
-  }
 }
 
 @keyframes cursor {

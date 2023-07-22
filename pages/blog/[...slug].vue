@@ -47,11 +47,12 @@
 
 .blog-title {
   margin-top: 0;
-  margin-bottom: $margin[7];
-  font-size: $font-size[7];
+  margin-bottom: $margin[9];
+  font-size: $font-size[12];
+  line-height: 1.2;
 
   +tablet() {
-    font-size: $font-size[5];
+    font-size: $font-size[7];
   }
 }
 
@@ -80,6 +81,7 @@ blockquote {
   margin: $margin[3] ($margin[0]);
   padding: $padding[4] ($padding[4]);
   quotes: '\201C' '\201D' '\2018' '\2019';
+  color: $theme-text-color;
 
   &:before {
     color: $dark;

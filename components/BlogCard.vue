@@ -21,8 +21,13 @@ const props = defineProps(['data']);
 @import '../assets/stylus/config/_index.styl';
 
 .blog-card-wrapper {
+  position: relative;
   display: flex;
   gap: 20px;
+
+  +tablet() {
+    gap: 10px;
+  }
 }
 
 .blog-card-title {
@@ -42,6 +47,20 @@ const props = defineProps(['data']);
   margin-top: $margin[6];
   margin-right: $margin[7];
   font-weight: bold;
+
+  +tablet() {
+    top: 30px;
+    left: 0;
+    background-color: $theme-bg-color;
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: left;
+    padding: 0 $padding[1];
+    margin: $margin[0];
+    z-index: 1;
+    width: auto;
+    color: $accent;
+  }
 }
 
 .blog-card-timeline {
@@ -93,23 +112,26 @@ const props = defineProps(['data']);
   text-decoration: none;
   border-radius: 15px;
   cursor: pointer;
-  color: $dark;
+  color: $theme-text-color;
 
   &:hover {
     background-color: alpha($dark, 10%);
   }
 
   +darkMode() {
-    color: $white;
-
     &:hover {
       background-color: alpha($white, 20%);
     }
   }
+
+  +tablet() {
+    padding: $padding[3] ($padding[4]);
+  }
 }
 
 .blog-card-description {
-  color: light($dark, 20%);
+  color: lighten($dark, 20%);
+  text-align: justify;
 
   +darkMode() {
     color: darken($white, 20%);

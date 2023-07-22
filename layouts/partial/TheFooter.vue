@@ -44,11 +44,7 @@ import socials from '/content/socials.json';
   font-size: $font-size[5];
 
   &:not(:hover) {
-    color: $dark !important;
-
-    +darkMode() {
-      color: $white !important;
-    }
+    color: $theme-text-color !important;
   }
 }
 </style>

@@ -25,10 +25,6 @@
 }
 
 .btn:not(:hover) {
-  color: $secondary !important;
-
-  +darkMode() {
-    color: $white !important;
-  }
+  color: $theme-text-color !important;
 }
 </style>

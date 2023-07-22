@@ -37,20 +37,17 @@ export default {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px;
+  padding: $padding[5];
 
   +tablet() {
-    margin: 5px;
-  }
-
-  +darkMode() {
-    color: $white;
+    max-width: clac(100% - ($padding[2] * 2));
+    padding: $padding[2];
   }
 }
 
 .section {
   display: flex;
   flex-direction: column;
-  margin-bottom: $margin[10];
+  margin: $margin[7] 0;
 }
 </style>
