@@ -202,7 +202,7 @@ And the rule-set selector's specificity is (1-1-0), which is greater than a and 
 
 The previous code snippets, for four squares positioned on top of each other, every square slightly moves to the left from the previous square's position so you can easily spot which one is on top of which.
 
-![aligned squares](https://thepracticaldev.s3.amazonaws.com/i/hk1gagb60wgmpn4jq1pb.png)
+![aligned squares](/img/quick-css-quiz/squares-positioned-on-top-of-each-other.png)
 
 <center><small>squares positioned on top of each other</small></center>
 
@@ -244,4 +244,4 @@ CSS has layers which is slightly looks like the Photoshop layers (surprise), z-i
 
 And this is how it will looks in [Chrome DevTool Layers Panel](https://www.youtube.com/watch?time_continue=60&v=6je49J67TQks)
 
-![Squares](https://thepracticaldev.s3.amazonaws.com/i/dowbf1jmmsy48tw8n0nz.png)
+![Squares](/img/quick-css-quiz/chrome-dev-tools.png)

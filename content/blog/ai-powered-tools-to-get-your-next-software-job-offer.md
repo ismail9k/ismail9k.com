@@ -27,7 +27,7 @@ If you already have a LinkedIn portfolio (which you should have Mr. 🤓), you c
 
 If you’d like to have a more vivid resume with more design details, Canva will perfectly suit your needs. With a variety of pre-made resume designs that you can pick from.
 
-[![Canav resume templats](https://dev-to-uploads.s3.amazonaws.com/i/3l45y0omjspmfgu51ret.png)](http://bit.ly/canva-resume-templates)
+[![Canav resume templats](/img/ai-powered-tools-to-get-your-next-software-job-offer/canva-resume-templates.png)](http://bit.ly/canva-resume-templates)
 <center><small>Canva Resume Templates</small></center>
 
 ### [Zety](https://www.zety.com)
@@ -62,14 +62,14 @@ I gave it a try myself; I thought that my resume should get high results, but ou
 
 It tested my resume data in four domains: __impact__, __brevity__, __style__, and __skills__ and it gave specific details on points of strength and weakness, and how you can improve it.
 
-[![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/ja1c475kykss13pyang3.png)](https://bit.ly/ResumeWorded)
+[![Alt Text](/img/ai-powered-tools-to-get-your-next-software-job-offer/resume-worded-analysis.png)](https://bit.ly/ResumeWorded)
 <center><small>Resume Worded analysis</small></center>
 
 ## Automate Your Job Search
 
 Searching for the perfectly-fit software engineering job over dozens of working websites is time consuming stressful work. LoopCV thought they could save your time and efforts, and automate this whole process because modern problems require modern solutions.
 
-![Modern problems require modern solutions](https://dev-to-uploads.s3.amazonaws.com/i/m7gik82t2swxz0ngj3el.jpg)
+![Modern problems require modern solutions](/img/ai-powered-tools-to-get-your-next-software-job-offer/modern-problems-require-modern-solutions.jpg)
 <center><small>Modern problems require modern solutions</small></center>
 
 ### [LoopCV](https://loopcv.pro/)
@@ -82,7 +82,7 @@ In the dashboard, you can see the emails you sent, the open rates, and more. You
 
 What drives me crazy, is the fact that the system is smart enough that it could fill the job forms from your resume data. 🤯
 
-[![LoopCV dashboard](https://dev-to-uploads.s3.amazonaws.com/i/v9yn6ngt79tfsas2odq6.png)](https://loopcv.pro/)
+[![LoopCV dashboard](/img/ai-powered-tools-to-get-your-next-software-job-offer/loopcv-dashboard.png)](https://loopcv.pro/)
 <center><small>LoopCV dashboard</small></center>
 
 You can create a free loop now, hunting a specific job title, with no hidden fees.

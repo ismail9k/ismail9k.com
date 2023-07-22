@@ -22,7 +22,7 @@ const street = user.address.street;
 
 This code above will work fine if the user object exists and has the address property. But as you know the real-world scenarios are not that ideal. What if the user did not add his address yet. The JavaScript compiler will throw an error `cannot read property street of undefined`
 
-<img src="https://thepracticaldev.s3.amazonaws.com/i/hu7ned8trypiz1am91v8.png" alt="cannot read property street of undefined error" width="400px" />
+<img src="/img/use-javascript-optional-chaining-today/undefined.png" alt="cannot read property street of undefined error" width="400px" />
 
 To handle this issue and prevent compiler for throwing errors, I used to do something like this:
 
@@ -96,7 +96,7 @@ Add the plugin to `.babelrc` config file
 
 After you install the babel, you can use `?.` optional chaining operator and Babel will compile it to the current working js. However, if you are using ESLint, it will not recognize the new syntax. We have to [`babel-eslint`](https://github.com/babel/babel-eslint) plugin in order to remove the eslint error.
 
-<img src="https://thepracticaldev.s3.amazonaws.com/i/judixtp47s6w7k51wwiy.png" width="350px" alt="eslint error" />
+<img src="/img/use-javascript-optional-chaining-today/eslint-error.png" width="350px" alt="eslint error" />
 
 ```bash
 yarn add babel-eslint --dev
@@ -127,7 +127,7 @@ eslint src/js/**
 
 The last part of this setup is to config VS Code editor, although *ESLint* is now aware of the *optional chaining operator*, you will notice that the VS Code is still displaying an annoying warning message. 
 
-<img src="https://thepracticaldev.s3.amazonaws.com/i/f1m4t00x0bhw5gq8xxpy.png" width="450px" alt="vs code error" />
+<img src="/img/use-javascript-optional-chaining-today/vs-cdoe.png" width="450px" alt="vs code error" />
 
 This is still an issue in VS Code validator, the workaround for this, we will have to disable the VS Code validator and work with ESLint extension.
 

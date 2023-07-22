@@ -263,7 +263,7 @@ The downside of using functional components is it requires you to explicitly add
   </svg>
 </template>
 ```
-[![Compare after refactor component](https://thepracticaldev.s3.amazonaws.com/i/vh0tk54vrcffidvh80dc.png)](https://github.com/Abdelrahman3D/use-svg/commit/3d0ccc32d2aed029e483d281f5733c3fca986f0f?diff=split)
+[![Compare after refactor component](/img/use-svg-icons-with-vue/compare-after-refactor-component.png)](https://github.com/Abdelrahman3D/use-svg/commit/3d0ccc32d2aed029e483d281f5733c3fca986f0f?diff=split)
 <center>Compare after refactor component</center>
 
 
@@ -311,7 +311,7 @@ export default {
 </script>
 ```
 
-[![AppIcon component after accessibility support](https://thepracticaldev.s3.amazonaws.com/i/8q0f3sydn17zfndtaq0x.png)](https://github.com/Abdelrahman3D/use-svg/commit/b7f3f60ec7c937605f7ebd4d504296e39a4d9dc7#diff-9ac8dbe1d96c123503c05d8a5da5bcd0)
+[![AppIcon component after accessibility support](/img/use-svg-icons-with-vue/appIcon-component-after-accessibility-support.png)](https://github.com/Abdelrahman3D/use-svg/commit/b7f3f60ec7c937605f7ebd4d504296e39a4d9dc7#diff-9ac8dbe1d96c123503c05d8a5da5bcd0)
 <center>AppIcon component after accessibility support</center>
 
 

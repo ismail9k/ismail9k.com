@@ -14,8 +14,7 @@ You can form this effect, by adding two shadows to your flat-designed elements, 
 
 You can read more about how to apply this technic in-depth here: [Design trends: Neomorphic design](https://medium.com/@s.jagoori/design-trends-neumorphism-59a9ba9d9284).
 
-
-![Neomorphism design components](https://thepracticaldev.s3.amazonaws.com/i/nbe6xriuh9t2qlc7kkhd.png)
+![Neomorphism design components](/img/neomorphism-designs-ui-components-library/forms.png)
 
 The first time I saw this design concept, I immediately loved it. I started to apply it to some basic web components; buttons, inputs, etc..
 
