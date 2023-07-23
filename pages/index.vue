@@ -1,0 +1,52 @@
+<script setup>
+import socials from '/content/socials.json';
+
+const filteredSocial = socials.filter(({ name }) =>
+  ['github', 'youtube', 'twitter'].includes(name.toLowerCase())
+);
+
+const query = { path: '/blog', limit: 5, sort: [{ date: -1 }] };
+</script>
+
+<template>
+  <section class="section">
+    <p class="font-3 mb-7">Hi, I'm</p>
+    <h2 class="main-title">Abdelrahman Ismail</h2>
+    <p class="main-description">
+      You might know me as Ismail9k. I'm a seasoned Tech Lead with a passion for
+      creating and writing about innovative solutions. As a content creator, I
+      strive to share my technological insights, sparking dialogue and learning.
+      But above all else, I'm a proud father, treasuring the moments I spend
+      nurturing my children. Welcome to my world. Let's explore and grow
+      together in this digital space.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 class="title">Fine me online:</h2>
+    <div class="social-row">
+      <SocialCard
+        v-for="social in filteredSocial"
+        :key="social.name"
+        :data="social"
+      />
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="title">Recent Blog:</h2>
+
+    <ContentList :query="query" v-slot="{ list }">
+      <BlogCard v-for="blog in list" :key="blog._path" :data="blog" />
+    </ContentList>
+  </section>
+</template>
+
+<style lang="stylus" >
+@import '../assets/stylus/config/_index.styl';
+
+.social-row {
+  display: flex;
+  gap: 10px;
+}
+</style>

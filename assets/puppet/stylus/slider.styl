@@ -1,0 +1,133 @@
+$trackWidth = 2px;
+$thumbDimater = 16px;
+
+.range-slider {
+  display-flex(center, center);
+  position: relative;
+  margin: 5px 0;
+  padding: 10px 20px;
+
+  &:hover, &:focus {
+    .range-slider__value {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  input[type='range'] {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+
+    &::-webkit-slider-runnable-track {
+      height: $trackWidth;
+      background-color: $slategray;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover::-webkit-slider-runnable-track {
+      background-color: $blue;
+    }
+
+    &::-moz-range-track {
+      height: $trackWidth;
+      background-color: $dark;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &::-webkit-slider-thumb {
+      margin-top: -($thumbDimater / 2);
+      width: $thumbDimater;
+      height: $thumbDimater;
+      border-radius: $thumbDimater;
+      background-color: $green;
+      box-shadow: 0 5px 5px -0.5px alpha($dark, 70%), inset 0 -1px alpha($dark, 40%);
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      appearance: none;
+
+      &:hover, &:focus, &:active {
+        background-color: $blue;
+        box-shadow: 0 7px 7px -0.5px alpha($dark, 70%), inset 0 -1px alpha($dark, 40%);
+        transform: scale(1.1);
+      }
+
+      +responsive() {
+        margin-top: -(($thumbDimater + 5px) / 2);
+        width: $thumbDimater + 5px;
+        height: $thumbDimater + 5px;
+        border-radius: $thumbDimater + 5px;
+        appearance: none;
+      }
+    }
+
+    &::-moz-range-thumb {
+      width: $thumbDimater;
+      height: $thumbDimater;
+      border: 0;
+      border-radius: $thumbDimater;
+      background-color: $green;
+      box-shadow: 0 5px 5px -0.5px alpha($dark, 70%), inset 0 -1px alpha($dark, 40%);
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover, &:focus, &:active {
+        background-color: $blue;
+        box-shadow: 0 7px 7px -0.5px alpha($dark, 70%), inset 0 -1px alpha($dark, 40%);
+        transform: scale(1.1);
+      }
+
+      +responsive() {
+        width: $thumbDimater + 5px;
+        height: $thumbDimater + 5px;
+        border-radius: $thumbDimater + 5px;
+      }
+    }
+
+    &::-moz-range-progress {
+      height: 2px;
+      background-color: $blue;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+.range-slider__value {
+  display-flex(center, center);
+  transition-all(0.2s);
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px 0 0 30px;
+  background-color: $green;
+  color: $dark;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  transform: scale(0);
+
+  &:before {
+    position: absolute;
+    right: -10px;
+    z-index: -1;
+    display: block;
+    width: 21px;
+    height: 21px;
+    border-radius: 0;
+    background-color: $green;
+    content: '';
+    transform: rotate(45deg);
+  }
+}

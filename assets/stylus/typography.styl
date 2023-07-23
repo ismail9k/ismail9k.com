@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  line-height: 1.5em;
+  font-size: $font-size[2];
+}
+
+.title {
+  margin-top: 0;
+  font-size: $font-size[5];
+
+  +tablet() {
+    font-size: $font-size[4];
+  }
+}
+
+.main-title {
+  margin-top: 0;
+  margin-bottom: $margin[7];
+  font-size: $font-size[9];
+  font-weight: bold;
+
+  +tablet() {
+    font-size: $font-size[5];
+  }
+}
+
+.main-description {
+  margin-top: 0;
+  font-size: $font-size[3];
+  text-align: justify;
+
+  +tablet() {
+    font-size: $font-size[4];
+  }
+}
+
+for size, i in $font-size {
+  .font-{i} {
+    font-size: size;
+  }
+}

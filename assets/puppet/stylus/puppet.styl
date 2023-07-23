@@ -1,0 +1,247 @@
+.puppet {
+  svg {
+    display: block;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    transition: 0;
+  }
+
+  g, path, polygon, circle, rect {
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.👖 {
+  fill: $jeans;
+
+  &.⬛️ {
+    fill: darken($jeans, 15%);
+  }
+}
+
+.👔 {
+  fill: $jacket;
+
+  &.⬛️ {
+    fill: darken($jacket, 20%);
+  }
+}
+
+.👐 {
+  fill: $skin;
+
+  &.⬛️ {
+    fill: darken($skin, 15%);
+  }
+}
+
+.👕 {
+  fill: $shirt;
+
+  &.⚫️ {
+    fill: $button;
+  }
+}
+
+.💇 {
+  fill: $hair;
+}
+
+.👀 {
+  fill: $eye;
+}
+
+.⬜️ {
+  fill: $white;
+}
+
+.🕳 {
+  opacity: 0.2;
+  fill: $black;
+}
+
+.💚 {
+  transform-origin: center center;
+  fill: $red;
+}
+
+.😶 {
+  display: none;
+  fill: $white;
+}
+
+.👄 {
+  transition-all(0s);
+}
+
+#eye-heart-r, #eye-sleep-r {
+  display: none;
+  transform-origin: 466.5px 324px;
+}
+
+#eye-heart-l, #eye-sleep-l {
+  display: none;
+  transform-origin: 558.5px 324px;
+}
+
+#zzz {
+  display: none;
+
+  &>path {
+    transform: scale(0);
+    transform-origin: 512px 431px;
+  }
+}
+
+#eye-r {
+  transform-origin: 466.5px 324px;
+  animation: eye-blinking 5s infinite;
+}
+
+#eye-l {
+  transform-origin: 558.5px 324px;
+  animation: eye-blinking 5s infinite;
+}
+
+#body {
+  cursor: grab;
+  transform: translateY(0);
+  transform-origin: 512px 850px;
+}
+
+#bag-body {
+  transform-origin: 568px 701px;
+}
+
+#shadow {
+  transition-all(0.15s);
+  position: relative;
+  transform-origin: 512px 912px;
+}
+
+#drag-area {
+  transition-all(0.15s);
+}
+
+#puppet {
+  width: 100vw;
+  height: 100vh;
+  transform: translate(0, 0);
+
+  &.😃 {
+    .😶.😃 {
+      display: block;
+    }
+  }
+
+  &.😡 {
+    #body {
+      animation: body-angry 8s infinite;
+    }
+
+    #face {
+      fill: url('#skin-angry');
+    }
+
+    .😶.😡 {
+      display: block;
+    }
+  }
+
+  &.😭 {
+    #body {
+      animation: body-falling 1.5s 1.5s forwards ease-out;
+    }
+
+    #head {
+      animation: head-falling 1.5s forwards ease-in-out;
+    }
+
+    .😶.😭 {
+      display: block;
+    }
+  }
+
+  &.😍 {
+    #eye-r, #eye-l {
+      display: none;
+    }
+
+    #eye-heart-r, #eye-heart-l {
+      display: block;
+      animation: eye-lover 1s infinite;
+    }
+
+    #hearts {
+      .heart {
+        display: block;
+        animation: hearts-lover 2s infinite;
+      }
+    }
+
+    .😶.😍 {
+      display: block;
+    }
+  }
+
+  &.😴 {
+    #eye-r, #eye-l {
+      display: none;
+    }
+
+    #eye-sleep-r, #eye-sleep-l {
+      display: block;
+    }
+
+    #zzz {
+      display: block;
+
+      >path:nth-child(1) {
+        animation: zzz-sleep 3s infinite ease;
+      }
+
+      >path:nth-child(2) {
+        animation: zzz-sleep 3s 1s infinite ease;
+      }
+
+      >path:nth-child(3) {
+        animation: zzz-sleep 3s 2s infinite ease;
+      }
+    }
+
+    .😶.😴 {
+      display: block;
+      transform-origin: 512px 443px;
+      animation: mouth-sleep 3s infinite ease-in-out;
+    }
+  }
+
+  &.🙄 {
+    #drag-area {
+      transition-all(0s);
+      cursor: grabbing;
+    }
+
+    #shadow {
+      transition-all(0s);
+    }
+
+    #body {
+      cursor: grabbing;
+      animation: body-drag 0.7s infinite;
+    }
+
+    #arm-r, #hand-r, #leg-r {
+      animation: right-drag 0.55s infinite;
+    }
+
+    #arm-l, #hand-l, #leg-l, #bag-body {
+      animation: left-drag 0.6s infinite;
+    }
+
+    .😶.🙄 {
+      display: block;
+    }
+  }
+}

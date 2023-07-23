@@ -2,23 +2,24 @@
   "name": "ismail9k",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "start": "nuxt start"
   },
   "dependencies": {
-    "gridsome": "^0.7.23",
-    "intersection-observer": "^0.12.0"
+    "dayjs": "^1.11.9",
+    "normalize.css": "^8.0.1",
+    "nuxt": "^3.6.1",
+    "stylus": "^0.59.0"
   },
   "devDependencies": {
-    "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.6.0",
-    "file-loader": "^6.1.0",
-    "gridsome-plugin-gtm": "^0.1.1",
-    "gridsome-plugin-pug": "^0.0.3",
-    "gridsome-plugin-pwa": "^0.0.21",
-    "pug": "^2.0.4",
-    "stylus": "^0.55.0",
-    "stylus-loader": "^3.0.2"
+    "@nuxt/content": "^2.7.0",
+    "@nuxtjs/color-mode": "^3.3.0",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "autoprefixer": "^10.4.14",
+    "nuxt-purgecss": "^2.0.0",
+    "stylus-loader": "^7.1.3"
   }
 }

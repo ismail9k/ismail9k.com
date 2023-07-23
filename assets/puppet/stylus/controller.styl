@@ -1,0 +1,115 @@
+.controller__modes {
+  display-flex(center, space-around);
+  margin-bottom: 10px;
+
+  .mode__button {
+    display-flex(center, center);
+    transition-all(0.4s);
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: $green;
+    box-shadow: 0 5px 5px -0.5px alpha($dark, 70%), inset 0 -1px alpha($dark, 40%);
+    color: $dark;
+    opacity: 0.2;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      box-shadow: 0 7px 7px -0.5px alpha($dark, 70%), inset 0 -1px alpha($dark, 40%);
+      opacity: 1;
+      transform: scale(1.1);
+    }
+
+    &.active {
+      background-color: $green;
+      opacity: 1;
+    }
+  }
+}
+
+.controller {
+  transition-all(0.4s);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  padding: 30px 0;
+  width: 220px;
+  background: $dark;
+
+  +responsive() {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    padding: 70px 0 10px;
+    width: auto;
+
+    &.close {
+      top: 100vh;
+      overflow-y: initial;
+    }
+  }
+
+  +has(modes) {
+    +responsive() {
+      .controller.close & {
+        position: fixed;
+        right: 0;
+        bottom: 60px;
+        left: 0;
+      }
+    }
+  }
+
+  +has(random) {
+    transition-all(0.4s);
+    position: static;
+    bottom: auto;
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+    background-color: $green;
+    box-shadow: 0 5px 5px -0.5px alpha($dark, 70%), inset 0 -1px alpha($dark, 40%);
+    color: $dark;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(1.05);
+
+    &:hover {
+      background-color: $blue;
+      box-shadow: 0 7px 7px -0.5px alpha($dark, 70%), inset 0 -1px alpha($dark, 40%);
+    }
+
+    +responsive() {
+      transform: scale(1);
+
+      .controller.close & {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        box-shadow: inset 0 10px 10px -5px alpha($dark, 40%);
+      }
+    }
+  }
+
+  +has(toggle) {
+    display: none;
+
+    +responsive() {
+      display-flex(center, center);
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 15;
+      width: 60px;
+      height: 60px;
+      border-radius: 0 0 0 40px;
+      background-color: $dark;
+    }
+  }
+}
