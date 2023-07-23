@@ -28,20 +28,18 @@
 
 .blog {
   width: 100%;
-  color: $dark;
 
   img {
     max-width: 100%;
     margin: auto;
     display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
   }
 
   a {
     color: inherit;
-  }
-
-  +darkMode() {
-    color: $white;
   }
 }
 
