@@ -1,5 +1,5 @@
 <script setup>
-import socials from '/content/socials.json';
+import socials from '/assets/data/socials.json';
 
 const filteredSocial = socials.filter(({ name }) =>
   ['github', 'youtube', 'twitter'].includes(name.toLowerCase())
@@ -16,9 +16,12 @@ const query = { path: '/blog', limit: 5, sort: [{ date: -1 }] };
       You might know me as Ismail9k. I'm a seasoned Tech Lead with a passion for
       creating and writing about innovative solutions. As a content creator, I
       strive to share my technological insights, sparking dialogue and learning.
+      <br />
       But above all else, I'm a proud father, treasuring the moments I spend
-      nurturing my children. Welcome to my world. Let's explore and grow
-      together in this digital space.
+      nurturing my children.
+      <br />
+      Welcome to my world. Let's explore and grow together in this digital
+      space.
     </p>
   </section>
 

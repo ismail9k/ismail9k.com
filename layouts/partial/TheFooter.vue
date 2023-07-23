@@ -1,5 +1,5 @@
 <script setup>
-import socials from '/content/socials.json';
+import socials from '/assets/data/socials.json';
 </script>
 
 
