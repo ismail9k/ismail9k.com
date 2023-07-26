@@ -1,5 +1,6 @@
 <template>
   <main class="main">
+    <VitePwaManifest />
     <slot></slot>
   </main>
 </template>

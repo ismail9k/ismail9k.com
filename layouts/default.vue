@@ -1,5 +1,7 @@
 <template>
   <div class="layout">
+    <VitePwaManifest />
+
     <the-navbar />
 
     <main class="main">
