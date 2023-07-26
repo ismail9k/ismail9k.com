@@ -1,6 +1,19 @@
 <script setup>
 import socials from '/assets/data/socials.json';
 
+const title = 'Ismail9k';
+const description =
+  "A personal blog, blend of my life's work, experiences, challenges, and thoughts, captured as they come. Join me on this introspective journey.";
+useHead({
+  title,
+  meta: [
+    {
+      name: 'description',
+      content: description,
+    },
+  ],
+});
+
 const filteredSocial = socials.filter(({ name }) =>
   ['github', 'youtube', 'twitter'].includes(name.toLowerCase())
 );
