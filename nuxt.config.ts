@@ -1,7 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   ssr: true,
-  modules: ['@nuxt/content', '@nuxtjs/color-mode'],
+  modules: ['@nuxt/content', '@nuxtjs/color-mode', '@vite-pwa/nuxt'],
   css: ['normalize.css/normalize.css', '~/assets/stylus/app.styl'],
   postcss: {
     plugins: {
