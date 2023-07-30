@@ -1,7 +1,7 @@
 ---
-title: "Tailwind CSS: An Unpopular Opinion on Why It's Not My Cup of Tea"
+title: "Tailwind CSS: Why It's Not My Cup of Tea"
 date: 2023-07-30T00:00:00.000Z
-slug: tailwind-css-an-unpopular-opinion-on-why-it-s-not-my-cup-of-tea
+slug: tailwind-css-why-it-s-not-my-cup-of-tea
 ---
 
 Like everything, there are people who support and oppose certain things. For example, sushi may be someone's favorite food, while others can't stand its smell.
@@ -28,7 +28,7 @@ Reading a series of classes sequentially can be a tedious task, especially when 
 
 It would be helpful to have a tool that enforces class order, such as the [**stylelint-order**](https://github.com/hudochenkov/stylelint-order) plugin for CSS.
 
-![snippet-of-newly-created-nextjs-project](/img/tailwind-css-an-unpopular-opinion-on-why-it-s-not-my-cup-of-tea/snippet-of-newly-created-nextjs.png)
+![snippet-of-newly-created-nextjs-project](/img/tailwind-css-why-it-s-not-my-cup-of-tea/snippet-of-newly-created-nextjs.png)
 
 <center><small>A screenshot from a newly created Nextjs project</small></center>
 

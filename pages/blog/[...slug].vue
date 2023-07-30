@@ -48,6 +48,7 @@
   margin-bottom: $margin[9];
   font-size: $font-size[12];
   line-height: 1.2;
+  max-width: 20ch;
 
   +tablet() {
     font-size: $font-size[7];
