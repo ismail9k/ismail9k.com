@@ -28,6 +28,8 @@
 
 .blog {
   width: 100%;
+  font-size: $font-size[4];
+  line-height: 1.5;
 
   img {
     max-width: 100%;
