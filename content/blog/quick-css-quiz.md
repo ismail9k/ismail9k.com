@@ -5,6 +5,7 @@ slug: quick-css-quiz
 ---
 
 CSS might be a total mystery to you or a topic that’s near and dear to your heart. Whether you think of CSS as a "necessary evil" or think of it as the power to control the world of technology, CSS is a must-have for anyone working on web applications. A deep knowledge of CSS can be the difference between a beautiful, polished web application and one that just feels like "meh".
+
 <!--more-->
 
 In this series, I try to focus on CSS weird parts, throw quiz and its answer, hoping to give a better understanding of how CSS works in depth.

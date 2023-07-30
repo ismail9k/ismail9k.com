@@ -1,8 +1,7 @@
 ---
-title: CSS percentage unit, the evil parts
+title: "CSS percentage unit, the evil parts"
 date: 2018-04-27T21:00:00.000Z
 slug: css-percentage-unit-the-evil-parts
-tags: CSS, Transform, Evil Parts, centering
 ---
 
 CSS has dozens of [length](https://developer.mozilla.org/en-US/docs/Web/CSS/length) units, but the **percentage** unit is one of my favorites. However, it can be very evil and troublesome sometimes.
