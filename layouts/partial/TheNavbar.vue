@@ -11,16 +11,18 @@ const updateTheme = () => {
 <template>
   <header>
     <nav class="navbar">
-      <a class="navbar-brand" href="/">
+      <NuxtLink class="navbar-brand" to="/">
         <h1 class="brand-letter">Ismail9k</h1>
         <span class="brand-dash">_</span>
-      </a>
+      </NuxtLink>
 
       <div class="spacer"></div>
       <div class="navbar-end">
         <ul class="navbar-menu">
           <li v-for="item in links" :key="item.title">
-            <a class="navbar-item" :href="item.link">{{ item.title }}</a>
+            <NuxtLink class="navbar-item" :to="item.link">{{
+              item.title
+            }}</NuxtLink>
           </li>
           <li>
             <div class="navbar-item">

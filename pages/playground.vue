@@ -64,12 +64,12 @@ onMounted(initPuppeteer);
     </symbol>
   </svg>
 
-  <a class="controller__toggle">
+  <button class="controller__toggle">
     <div class="menu-icon">
       <span class="menu-icon__dot"></span><span class="menu-icon__dot"></span
       ><span class="menu-icon__dot"></span>
     </div>
-  </a>
+  </button>
   <div class="controller close">
     <div class="controller__modes"></div>
     <div class="controller__sliders"></div>
