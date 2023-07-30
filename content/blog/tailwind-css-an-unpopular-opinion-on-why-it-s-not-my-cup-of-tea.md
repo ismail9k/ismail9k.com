@@ -1,6 +1,6 @@
 ---
 title: "Tailwind CSS: An Unpopular Opinion on Why It's Not My Cup of Tea"
-date: 2023-08-01T00:00:00.000Z
+date: 2023-07-30T00:00:00.000Z
 slug: tailwind-css-an-unpopular-opinion-on-why-it-s-not-my-cup-of-tea
 ---
 
@@ -16,7 +16,7 @@ Despite Tailwind CSS's popularity, it has issues like complex maintainability, r
 
 ## Maintainability
 
-First and foremost, my concerns about Tailwind CSS are related to maintainability. Tailwind encourages the use of utility classes directly in your markup, which can lead to an incredibly cluttered HTML structure. Although utility classes can be very powerful, they can create a spaghetti-like effect when used extensively. This can create significant readability and maintainability issues, especially with more extensive projects.
+First, my concerns about Tailwind CSS are related to maintainability. Tailwind encourages the use of utility classes directly in your markup, which can lead to an incredibly cluttered HTML structure. Although utility classes can be very powerful, they can create a spaghetti-like effect when used extensively. This can create significant readability and maintainability issues, especially with more extensive projects.
 
 Essentially, this approach makes your markup include the presentation layer again, resulting in a messy and unstructured codebase. This means you have redundant CSS that you never want to change, and you have to endlessly tweak the markup to get things looking right. You may be building a library of components, but it will just result in endlessly repeated markup.
 
@@ -26,15 +26,15 @@ Furthermore, Tailwind's approach can significantly increase the size of the code
 
 Reading a series of classes sequentially can be a tedious task, especially when there are multiple media queries containing different values. It can be difficult to determine which value applies to which screen. This is especially true when multiple developers are contributing to the codebase and do not follow a consistent order when sorting the classes.
 
-It would be helpful to have a tool that enforces class order, such as the **stylelint-order** plugin for CSS.
+It would be helpful to have a tool that enforces class order, such as the [**stylelint-order**](https://github.com/hudochenkov/stylelint-order) plugin for CSS.
 
-![snippet-of-newly-created-nextjs](/img/tailwind-css-an-unpopular-opinion-on-why-it-s-not-my-cup-of-tea/snippet-of-newly-created-nextjs.png)
+![snippet-of-newly-created-nextjs-project](/img/tailwind-css-an-unpopular-opinion-on-why-it-s-not-my-cup-of-tea/snippet-of-newly-created-nextjs.png)
 
-<center><small>A screenshot from a newly created Nextjs</small></center>
+<center><small>A screenshot from a newly created Nextjs project</small></center>
 
 Additionally, if you use a well-structured markup and follow one of the CSS naming conventions like [SUIT](https://suitcss.github.io/), [BEM](https://getbem.com/), or others, you can easily understand the HTML markup you are reading. Considering the given example below, there is a list with several items, and the `.card__title` is a child of the `.card` component.
 
-Now, imagine a list with styling classes that do not have any semantic meaning. Good luck decrypting the meaning of this puzzle!
+While of used a bunch of styling classes that do not have any semantic meaning. It would be hard decrypting the meaning of this puzzle!
 
 ```html
 <div class="list">
@@ -60,13 +60,13 @@ To be clear, there's nothing wrong with bending or breaking principles if it ser
 
 ## Utility Classes
 
-Utility classes are useful for web design, but Tailwind overuses them. Utility classes should be helper classes used in specific and limited situations where they are needed, not the default dominant approach. For me I would consider using Tailwind if it were presented as a set of utility classes that can be added on top of a perfectly working app. Similar to the underscore js library, which provides functions that can be used to make things easier and faster.
+Utility classes are useful for web design, but Tailwind overuses them. Utility classes should be helper classes used in specific and limited situations where they are needed, not the default dominant approach. For me I would consider using Tailwind if it were presented as a set of utility classes that can be added on top of a perfectly working app. Similar to the [Underscore.js](https://underscorejs.org/) library, which provides functions that can be used to make things easier and faster.
 
 ## Cascading and Modifiers
 
 Tailwind make it difficult to take advantage of one of the main benefits of Cascading Style Sheets (CSS), which is its ability to cascade.
 
-For example, imagine you have a navbar that changes its style when scrolling. With CSS, you can simply add the class `.navbar-scrolling`, which will change the style of the navbar and its children.
+For example, imagine you have a navbar that changes its style when scrolling. With CSS, you can simply add the class `.navbar--scrolling`, which will change the style of the navbar and its children.
 
 However, achieving the same effect using Tailwind requires conditionally adding/removing classes for both the navbar and each of its children.
 
