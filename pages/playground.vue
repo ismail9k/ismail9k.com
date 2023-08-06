@@ -73,53 +73,7 @@ onMounted(initPuppeteer);
   <div class="controller close">
     <div class="controller__modes"></div>
     <div class="controller__sliders"></div>
-    <a class="controller__random" onclick="randomPosition();">Random</a
-    ><label class="switch"
-      ><input id="ballonSwitch" type="checkbox" />
-      <div class="slider round">
-        <div class="slider-icon">
-          <div class="❎">
-            <svg class="👽 🤐" viewBox="0 0 50 50">
-              <circle class="👐" cx="25" cy="25" r="23.7"></circle>
-              <ellipse
-                class="⬛️"
-                cx="32.2"
-                cy="18.2"
-                rx="3.1"
-                ry="4"
-              ></ellipse>
-              <ellipse
-                class="⬛️"
-                cx="17.8"
-                cy="18.4"
-                rx="3.1"
-                ry="4"
-              ></ellipse>
-              <path
-                class="⬜️ ⬛️"
-                d="M37.4,32.8L15,43c-0.8,0.4-1.8,0-2.1-0.8l-1.1-2.4c-0.4-0.8,0-1.8,0.8-2.1L35,27.5c0.8-0.4,1.8,0,2.1,0.8              l1.1,2.4C38.6,31.5,38.2,32.4,37.4,32.8z"
-              ></path>
-              <path
-                class="⬜️"
-                d="M35.5,42.3l-23-8.6c-0.8-0.3-1.2-1.2-0.9-2.1l0.9-2.4c0.3-0.8,1.2-1.2,2.1-0.9l23,8.6c0.8,0.3,1.2,1.2,0.9,2.1              l-0.9,2.4C37.3,42.2,36.3,42.6,35.5,42.3z"
-              ></path>
-            </svg>
-          </div>
-          <div class="✅">
-            <svg class="👽 💬" viewBox="0 0 50 50">
-              <path
-                class="⬜️"
-                d="M31.7,4.6h-12c-9,0-16.4,7.4-16.4,16.4V24c0,4.6,1.9,8.8,5.1,11.8c0.8,3.7-1.5,7.1-5.5,10.4 c4.5-1.9,7.7-4.4,10.1-7.3c2.1,1,4.4,1.5,6.8,1.5h12c9,0,16.4-7.4,16.4-16.4v-2.9C48.1,12,40.7,4.6,31.7,4.6z"
-              ></path>
-              <circle class="⬛️" cx="18.3" cy="22.5" r="1.3"></circle>
-              <circle class="⬛️" cx="25.7" cy="22.5" r="1.3"></circle>
-              <circle class="⬛️" cx="33" cy="22.5" r="1.3"></circle>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </label>
-    <div class="timeline"></div>
+    <a class="controller__random" onclick="randomPosition();">Random</a>
   </div>
 
   <div class="puppet">
@@ -129,17 +83,6 @@ onMounted(initPuppeteer);
           <stop offset="0%" stop-color="#EA4F51"></stop>
           <stop offset="60%" stop-color="#dba897"></stop>
         </linearGradient>
-        <filter id="dropShadow">
-          <fegaussianblur in="SourceAlpha" stdDeviation="3"></fegaussianblur>
-          <feoffset dx="0" dy="3"></feoffset>
-          <fecomponenttransfer>
-            <fefunca type="linear" slope="0.05"></fefunca>
-          </fecomponenttransfer>
-          <femerge>
-            <femergenode></femergenode>
-            <femergenode in="SourceGraphic"></femergenode>
-          </femerge>
-        </filter>
       </defs>
       <ellipse
         class="🕳"
@@ -406,15 +349,6 @@ onMounted(initPuppeteer);
             ></rect>
           </g>
         </g>
-      </g>
-      <g class="💬 ❌" id="ballon">
-        <path
-          class="➰"
-          d="M316.9,294c20.7-25.7,33.1-58.4,33.1-94c0-82.8-67.2-150-150-150S50,117.2,50,200 s67.2,150,150,150c35.6,0,68.3-12.4,94-33.1l56,33.1L316.9,294z"
-        ></path>
-        <foreignobject x="100" y="100">
-          <textarea class="📄" id="ballonText">Hello world</textarea>
-        </foreignobject>
       </g>
     </svg>
   </div>
