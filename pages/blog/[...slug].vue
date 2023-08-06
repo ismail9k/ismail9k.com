@@ -37,20 +37,19 @@
     display: block;
     border-radius: 8px;
     overflow: hidden;
-    margin-top: 20px;
-  }
-
-  a {
-    color: inherit;
+    margin-top: $margin[10];
+    margin-bottom: $margin[10];
   }
 }
 
 .blog-title {
   margin-top: 0;
-  margin-bottom: $margin[9];
-  font-size: $font-size[12];
-  line-height: 1.2;
+  margin-bottom: $margin[10];
+  font-size: $font-size[13];
+  line-height: 1.5;
   max-width: 20ch;
+  border-left: $padding[2] solid $accent;
+  padding-left: $padding[5];
 
   +tablet() {
     font-size: $font-size[7];
@@ -79,14 +78,14 @@ pre {
 
 blockquote {
   background: $gray;
-  border-left: 10px solid $dark;
+  border-left: 10px solid $accent;
   margin: $margin[3] ($margin[0]);
   padding: $padding[4] ($padding[4]);
   quotes: '\201C' '\201D' '\2018' '\2019';
-  color: $theme-text-color;
+  color: inherit;
 
   &:before {
-    color: $dark;
+    color: $accent;
     content: open-quote;
     font-size: $font-size[10];
     line-height: 0.1em;
@@ -100,11 +99,6 @@ blockquote {
 
   +darkMode() {
     color: $dark;
-    border-color: $light;
-
-    &:before {
-      color: $black;
-    }
   }
 }
 
@@ -112,6 +106,7 @@ hr {
   margin: ($margin[10] * 2) 0;
   border: 0;
   text-align: center;
+  line-height: 1;
 
   &:after {
     content: '...';

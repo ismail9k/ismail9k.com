@@ -7,6 +7,23 @@
   box-sizing: border-box;
 }
 
+a {
+  color: $theme-text-color;
+  font-weight: bold;
+  transition: $transition;
+  color: inherit;
+  text-underline-position: under;
+  text-decoration-thickness: 0.1em;
+
+  &:hover {
+    text-decoration-color: $accent;
+  }
+
+  &:focus {
+    outline: 2px dashed;
+  }
+}
+
 .sr-only {
   position: absolute;
   overflow: hidden;

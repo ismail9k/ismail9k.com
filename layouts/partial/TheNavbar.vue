@@ -81,17 +81,6 @@ const updateTheme = () => {
   margin: 0;
   padding: 10px;
   color: $theme-text-color;
-  font-weight: bold;
-  transition: 130ms cubic-bezier(0.4, 0, 0.2, 1);
-  text-underline-position: under;
-
-  &:hover {
-    text-decoration-color: $accent;
-  }
-
-  &:focus {
-    outline: 2px dashed;
-  }
 
   +mobile() {
     padding: 10px 5px;

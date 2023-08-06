@@ -24,6 +24,7 @@ const props = defineProps(['data']);
   position: relative;
   display: flex;
   gap: 20px;
+  transition: $transition;
 
   +tablet() {
     gap: 10px;
@@ -31,11 +32,9 @@ const props = defineProps(['data']);
 }
 
 .blog-card-title {
+  color: $theme-text-color;
   margin-top: 0;
-}
-
-.blog-card-description {
-  margin: 0;
+  transition: $transition;
 }
 
 .blog-card-time {
@@ -116,6 +115,10 @@ const props = defineProps(['data']);
 
   &:hover {
     background-color: alpha($dark, 10%);
+
+    .blog-card-title {
+      color: $accent;
+    }
   }
 
   +darkMode() {
@@ -130,11 +133,13 @@ const props = defineProps(['data']);
 }
 
 .blog-card-description {
+  margin: 0;
   color: lighten($dark, 20%);
   text-align: justify;
+  font-weight: normal;
 
   +darkMode() {
-    color: darken($white, 20%);
+    color: darken($white, 30%);
   }
 }
 </style>
