@@ -36,7 +36,7 @@ export default {
   flex-wrap: wrap;
   width: 100%;
   border-radius: 20px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: $padding[5];
