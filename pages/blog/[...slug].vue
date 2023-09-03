@@ -17,6 +17,7 @@ onMounted(() => {
     { root: observerRoot, threshold: 0 }
   );
 
+  return;
   document
     .querySelectorAll('.blog-content :is(h2[id], h3[id])')
     .forEach((section) => observer.observe(section));
