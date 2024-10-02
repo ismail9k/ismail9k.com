@@ -1,8 +1,14 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   ssr: true,
-  modules: ['@nuxt/content', '@nuxtjs/color-mode', '@vite-pwa/nuxt'],
+  modules: [
+    '@nuxt/content',
+    '@nuxtjs/color-mode',
+    '@vite-pwa/nuxt',
+    '@nuxt/image',
+  ],
   css: ['normalize.css/normalize.css', '~/assets/stylus/app.styl'],
+
   postcss: {
     plugins: {
       autoprefixer: {},
@@ -105,4 +111,6 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
+
+  compatibilityDate: '2024-10-02',
 });
