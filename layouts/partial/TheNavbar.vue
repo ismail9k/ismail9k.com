@@ -90,7 +90,7 @@ const updateTheme = () => {
 
 .navbar-brand {
   text-decoration: none;
-  flex: 1;
+  padding: $padding[1];
 
   +mobile() {
     display: block;
