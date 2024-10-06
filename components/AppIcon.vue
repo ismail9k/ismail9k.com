@@ -1,4 +1,4 @@
-<script setup>
+<script setup functional>
 import icons from '../assets/data/icons.json';
 const props = defineProps({
   name: String,
@@ -8,13 +8,15 @@ const props = defineProps({
   desc: String,
 });
 
-const path = computed(() => icons[props.name]);
+const icon = icons[props.name];
+const viewBox = typeof icon === 'string' ? '0 0 24 24' : icon.viewBox;
+const path = typeof icon === 'string' ? icon : icon.path;
 const styleClasses = [props.size, props.color].map((val) => val && `is-${val}`);
 </script>
 
 <template>
   <svg
-    viewBox="0 0 24 24"
+    :viewBox="viewBox"
     class="icon"
     :class="styleClasses"
     v-bind="$attrs"

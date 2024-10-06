@@ -39,9 +39,11 @@ import socials from '/assets/data/socials.json';
 }
 
 .footer-item {
-  padding: 10px;
+  display: block;
+  padding: $padding[1];
   color: $dark;
   font-size: $font-size[5];
+  cursor: pointer;
 
   &:not(:hover) {
     color: $theme-text-color !important;
