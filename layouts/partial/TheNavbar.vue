@@ -1,6 +1,9 @@
 <script setup>
 const colorMode = useColorMode();
-const links = [{ title: 'Blog', link: '/blog' }];
+const links = [
+  { title: 'Blog', link: '/blog' },
+  { title: 'QR Scanner', link: '/tools/qr-scanner' },
+];
 const modeSwitcherValue = ref(colorMode.value === 'dark');
 
 const updateTheme = () => {
