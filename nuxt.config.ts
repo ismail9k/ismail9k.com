@@ -1,4 +1,5 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+import { defineNuxtConfig } from 'nuxt/config';
+
 export default defineNuxtConfig({
   ssr: true,
   modules: [
@@ -109,6 +110,14 @@ export default defineNuxtConfig({
       ],
 
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    },
+  },
+
+  runtimeConfig: {
+    public: {
+      // TODO: move it to private keys
+      googleSafeBrowsingApiKey:
+        process.env.NUXT_GOOGLE_SAFE_BROWSING_API_KEY || '',
     },
   },
 
