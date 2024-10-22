@@ -2,7 +2,7 @@
 const colorMode = useColorMode();
 const links = [
   { title: 'Blog', link: '/blog' },
-  { title: 'QR Scanner', link: '/tools/qr-scanner' },
+  // { title: 'QR Scanner', link: '/tools/qr-scanner' },
 ];
 const modeSwitcherValue = ref(colorMode.value === 'dark');
 

@@ -68,17 +68,16 @@ export default {
         const data = await response.json();
 
         if (!response.ok) {
-          throw data;
+          throw data?.error ?? data;
         }
 
         if (data.matches) {
-          this.safetyStatus = 'Unsafe URL detected';
-        } else {
-          this.safetyStatus = 'Safe URL';
+          throw new Error('Unsafe URL detected');
         }
+        this.safetyStatus = 'Safe URL';
+        window.location.href = url;
       } catch (error) {
-        console.error(error);
-        this.safetyStatus = 'Error validating URL';
+        this.safetyStatus = error.message || 'Error validating URL';
       }
     },
   },
