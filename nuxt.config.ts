@@ -114,11 +114,8 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
-    public: {
-      // TODO: move it to private keys
-      googleSafeBrowsingApiKey:
-        process.env.NUXT_GOOGLE_SAFE_BROWSING_API_KEY || '',
-    },
+    googleSafeBrowsingApiKey:
+      process.env.NUXT_GOOGLE_SAFE_BROWSING_API_KEY || '',
   },
 
   compatibilityDate: '2024-10-02',
