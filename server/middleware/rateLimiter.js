@@ -22,7 +22,6 @@ async function connectToMongo() {
 export default defineEventHandler(async (event) => {
   const { req, res } = event.node;
 
-  return;
   if (!req.url.includes('/api/validate-url')) {
     return;
   }
