@@ -16,7 +16,8 @@
     "html5-qrcode": "^2.3.8",
     "mongodb": "^6.10.0",
     "normalize.css": "^8.0.1",
-    "nuxt": "^3.13.2"
+    "nuxt": "^3.13.2",
+    "nuxt-gtag": "^3.0.1"
   },
   "devDependencies": {
     "@nuxt/content": "^2.13.2",
