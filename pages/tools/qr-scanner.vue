@@ -23,10 +23,12 @@ const validateUrlSafety = async (url) => {
     if (!response.ok) {
       throw new Error(data?.error || data);
     }
+
     safetyStatus.value = data.message;
-    if (data.status === 'Safe') {
+    if (data.status === 'SAFE') {
       window.location.href = url; // Redirect to the safe URL
     }
+    console.log(data);
   } catch (error) {
     console.error(error);
     safetyStatus.value = error.message || 'Error validating URL';

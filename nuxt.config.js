@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     '@nuxt/image',
+    'nuxt-gtag',
   ],
   css: ['normalize.css/normalize.css', '~/assets/stylus/app.styl'],
 
@@ -14,6 +15,10 @@ export default defineNuxtConfig({
     plugins: {
       autoprefixer: {},
     },
+  },
+
+  gtag: {
+    id: process.env.GOOGLE_ANALYTICS_ID,
   },
 
   pwa: {
@@ -113,11 +118,5 @@ export default defineNuxtConfig({
     },
   },
 
-  runtimeConfig: {
-    googleSafeBrowsingApiKey:
-      process.env.NUXT_GOOGLE_SAFE_BROWSING_API_KEY || '',
-  },
-
   compatibilityDate: '2024-10-02',
 });
-
