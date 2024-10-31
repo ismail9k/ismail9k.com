@@ -1,7 +1,7 @@
 import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig({
-  ssr: true,
+  // ssr: true,
   modules: [
     '@nuxt/content',
     '@nuxtjs/color-mode',
@@ -73,7 +73,7 @@ export default defineNuxtConfig({
   content: {
     highlight: {
       theme: {
-        default: 'github-light',
+        default: 'github-dark',
         dark: 'github-dark',
       },
     },

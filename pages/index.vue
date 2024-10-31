@@ -64,5 +64,10 @@ const query = { path: '/blog', limit: 5, sort: [{ date: -1 }] };
 .social-row {
   display: flex;
   gap: 10px;
+  width: 100%;
+}
+
+.section {
+  flex: 1;
 }
 </style>

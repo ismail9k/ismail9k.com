@@ -31,15 +31,13 @@ export default {
 }
 
 .main {
-  flex: 1;
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  border-radius: 20px;
+  flex-direction: column;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: $padding[5];
+  justify-content: center;
 
   +tablet() {
     max-width: clac(100% - ($padding[2] * 2));
