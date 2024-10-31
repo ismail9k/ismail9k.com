@@ -8,12 +8,7 @@ toRem(value) {
   }
 }
 
-  if (u == 'px') {
-    return unit((value / 16), 'rem');
-  } else {
-    return unit(value, u);
-  }
-} /**
+/**
  * Generate font sizes, based on equation
  *
  * F(n) = f(n - 1) + { floor((n - 2) / 4) + 1 } * 2

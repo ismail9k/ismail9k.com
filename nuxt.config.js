@@ -21,50 +21,50 @@ export default defineNuxtConfig({
     id: process.env.GOOGLE_ANALYTICS_ID,
   },
 
-  // pwa: {
-  //   registerType: 'autoUpdate',
-  //   manifest: {
-  //     name: 'Ismail9k.com',
-  //     short_name: 'Ismail9k',
-  //     description:
-  //       "A personal blog, blend of my life's work, experiences, challenges, and thoughts, captured as they come. Join me on this introspective journey.",
-  //     start_url: '/',
-  //     display: 'standalone',
-  //     background_color: '#ffffff',
-  //     theme_color: '#3fa66f',
-  //     lang: 'en-US',
-  //     status_bar_style: 'default',
-  //     icons: [
-  //       {
-  //         src: '/icons/icon-16x16.png',
-  //         sizes: '16x16',
-  //         type: 'image/png',
-  //       },
-  //       {
-  //         src: '/icons/icon-32x32.png',
-  //         sizes: '32x32',
-  //         type: 'image/png',
-  //       },
-  //       {
-  //         src: '/icons/icon-192x192.png',
-  //         sizes: '192x192',
-  //         type: 'image/png',
-  //       },
-  //       {
-  //         src: '/icons/icon-512x512.png',
-  //         sizes: '512x512',
-  //         type: 'image/png',
-  //       },
-  //     ],
-  //   },
-  //   workbox: {
-  //     navigateFallback: '/',
-  //   },
-  //   devOptions: {
-  //     enabled: true,
-  //     type: 'module',
-  //   },
-  // },
+  pwa: {
+    registerType: 'autoUpdate',
+    manifest: {
+      name: 'Ismail9k.com',
+      short_name: 'Ismail9k',
+      description:
+        "A personal blog, blend of my life's work, experiences, challenges, and thoughts, captured as they come. Join me on this introspective journey.",
+      start_url: '/',
+      display: 'standalone',
+      background_color: '#ffffff',
+      theme_color: '#3fa66f',
+      lang: 'en-US',
+      status_bar_style: 'default',
+      icons: [
+        {
+          src: '/icons/icon-16x16.png',
+          sizes: '16x16',
+          type: 'image/png',
+        },
+        {
+          src: '/icons/icon-32x32.png',
+          sizes: '32x32',
+          type: 'image/png',
+        },
+        {
+          src: '/icons/icon-192x192.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          src: '/icons/icon-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+        },
+      ],
+    },
+    workbox: {
+      navigateFallback: '/',
+    },
+    devOptions: {
+      enabled: true,
+      type: 'module',
+    },
+  },
 
   experimental: {
     viewTransition: true,
