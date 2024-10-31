@@ -42,29 +42,29 @@ onBeforeUnmount(() => observer.disconnect());
 
 <template>
   <aside class="toc">
-    <div class="toc-guide">
-      <div v-for="link of props.links" :key="link.id">
-        <nuxt-link
-          :to="`#${link.id}`"
-          :class="['toc-bar', { 'is-active': currentlyActiveToc === link.id }]"
-        >
-          <span class="sr-only">{{ link.text }}</span>
+    <template v-for="link of props.links" :key="link.id">
+      <div
+        :class="['toc-item', { 'is-active': currentlyActiveToc === link.id }]"
+      >
+        <nuxt-link class="toc-item-text" :to="`#${link.id}`">
+          {{ link.text }}
         </nuxt-link>
-
-        <div
-          :class="[
-            'toc-sub-bar',
-            { 'is-active': currentlyActiveToc === child.id },
-          ]"
-          v-for="child of link.children"
-          :key="child.id"
-        >
-          <nuxt-link :to="`#${child.id}`">
-            <span class="sr-only">{{ child.text }}</span>
-          </nuxt-link>
-        </div>
       </div>
-    </div>
+
+      <div
+        :class="[
+          'toc-item',
+          'is-sub-item',
+          { 'is-active': currentlyActiveToc === child.id },
+        ]"
+        v-for="child of link.children"
+        :key="child.id"
+      >
+        <nuxt-link :to="`#${child.id}`" class="toc-item-text">
+          {{ child.text }}
+        </nuxt-link>
+      </div>
+    </template>
   </aside>
 </template>
 
@@ -75,7 +75,7 @@ onBeforeUnmount(() => observer.disconnect());
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
+  left: 5px;
   padding: $p[5];
 
   +tablet() {
@@ -83,20 +83,13 @@ onBeforeUnmount(() => observer.disconnect());
   }
 }
 
-.toc-item > a {
-  font-size: $text[3];
-  text-decoration: none;
-  display: block;
-  line-height: 2;
-}
-
-.toc-bar, .toc-sub-bar {
+.toc-item {
+  transition: margin 300ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
   display: block;
   width: 14px;
   height: 1.5px;
   background: $gray;
   margin: $m[5] 0;
-  transition: $transition;
   transform-origin: -2px 0;
 
   &.is-active {
@@ -104,9 +97,38 @@ onBeforeUnmount(() => observer.disconnect());
     transform: scaleX(1.3);
     margin: $m[7] 0;
   }
+
+  &.is-sub-item {
+    width: 8px;
+  }
 }
 
-.toc-sub-bar {
-  width: 8px;
+.toc-item-text {
+  display: none;
+  font-size: $text[2];
+  color: $dark-gray;
+
+  .is-active & {
+    color: $accent;
+  }
+
+  .is-sub-item & {
+    margin-inline-start: $m[4];
+    font-size: $text[1];
+  }
+}
+
+.toc:hover {
+  .toc-item {
+    width: auto;
+    height: auto;
+    margin: $m[1] ($m[0]);
+    transform: scaleX(1);
+    background: transparent;
+  }
+
+  .toc-item-text {
+    display: block;
+  }
 }
 </style>
