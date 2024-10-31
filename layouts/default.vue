@@ -40,7 +40,7 @@ export default {
   justify-content: center;
 
   +tablet() {
-    max-width: clac(100% - ($padding[2] * 2));
+    max-width: 100%;
     padding: $padding[2];
   }
 }
