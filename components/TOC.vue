@@ -1,21 +1,20 @@
 <script setup>
-const props = defineProps(['links']);
-
+const { links } = defineProps(['links']);
 const currentlyActiveToc = ref('');
 const visibleSections = ref(new Map()); // Use Map to track visible entries
 
-let observer;
+let observer = null;
 
 onMounted(() => {
   const options = {
     root: null,
     rootMargin: '0px',
-    threshold: 0,
+    threshold: 0.1,
   };
 
   observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
+      if (entry.intersectionRatio > 0) {
         visibleSections.value.set(entry.target, entry);
       } else {
         visibleSections.value.delete(entry.target);
@@ -42,7 +41,7 @@ onBeforeUnmount(() => observer.disconnect());
 
 <template>
   <aside class="toc">
-    <template v-for="link of props.links" :key="link.id">
+    <template v-for="link of links" :key="link.id">
       <div
         :class="['toc-item', { 'is-active': currentlyActiveToc === link.id }]"
       >
@@ -95,6 +94,7 @@ onBeforeUnmount(() => observer.disconnect());
   &.is-active {
     background: $accent;
     transform: scaleX(1.3);
+    height: 1.75px;
     margin: $m[7] 0;
   }
 
@@ -107,14 +107,24 @@ onBeforeUnmount(() => observer.disconnect());
   display: none;
   font-size: $text[2];
   color: $dark-gray;
+  font-weight: normal;
 
   .is-active & {
     color: $accent;
+    font-weight: bold;
+
+    +darkMode() {
+      color: $accent;
+    }
   }
 
   .is-sub-item & {
     margin-inline-start: $m[4];
     font-size: $text[1];
+  }
+
+  +darkMode() {
+    color: $white;
   }
 }
 
