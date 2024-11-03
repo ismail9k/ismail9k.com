@@ -1,4 +1,5 @@
-<script>
+<script setup>
+const blogParent = ref(null);
 </script>
 
 
@@ -7,9 +8,9 @@
     <template #default="{ doc }">
       <h1 class="blog-title">{{ doc.title }}</h1>
 
-      <div class="blog">
-        <TOC :links="doc.body?.toc?.links" />
+      <TOC :parent="blogParent" />
 
+      <div class="blog" ref="blogParent">
         <div class="blog-content">
           <ContentRenderer :value="doc"> </ContentRenderer>
         </div>

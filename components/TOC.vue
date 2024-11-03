@@ -1,66 +1,109 @@
 <script setup>
-const { links } = defineProps(['links']);
-const currentlyActiveToc = ref('');
-const visibleSections = ref(new Map()); // Use Map to track visible entries
+const { parent } = defineProps(['parent']);
 
-let observer = null;
+const headers = ref([]);
+const activeHeader = ref('');
+
+const THRESHOLD = 20;
+let scrollAnimationFrame;
 
 onMounted(() => {
-  const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1,
-  };
-
-  observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.intersectionRatio > 0) {
-        visibleSections.value.set(entry.target, entry);
-      } else {
-        visibleSections.value.delete(entry.target);
-      }
-    });
-    const visibleEntries = [...visibleSections.value.values()].sort(
-      (a, b) => a.boundingClientRect.top - b.boundingClientRect.top
-    );
-
-    if (visibleEntries.length > 0) {
-      currentlyActiveToc.value = visibleEntries[0].target.getAttribute('id');
-    }
-  }, options);
-
-  document
-    .querySelectorAll('.blog-content :is(h2[id], h3[id])')
-    .forEach((subtitle) => {
-      observer.observe(subtitle);
-    });
+  headers.value = getHeaders();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  handleScroll();
 });
 
-onBeforeUnmount(() => observer.disconnect());
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', onScroll, { passive: true });
+  cancelAnimationFrame(scrollAnimationFrame);
+});
+
+const onScroll = () => {
+  if (scrollAnimationFrame) cancelAnimationFrame(scrollAnimationFrame);
+  scrollAnimationFrame = requestAnimationFrame(handleScroll);
+};
+
+const handleScroll = () => {
+  const scrollY = window.scrollY;
+  const innerHeight = window.innerHeight;
+  const scrollHeight = document.documentElement.scrollHeight;
+  const isBottom = scrollHeight - (scrollY + innerHeight) < THRESHOLD;
+
+  if (!headers.value.length || scrollY < 1) {
+    setActiveHeader(null);
+    return;
+  }
+
+  if (isBottom) {
+    setActiveHeader(headers.value[headers.value.length - 1]);
+    return;
+  }
+
+  let activeHeader = null;
+  for (const header of headers.value) {
+    if (header.top > scrollY + THRESHOLD) {
+      break;
+    }
+    activeHeader = header;
+  }
+  setActiveHeader(activeHeader);
+};
+
+function getHeaders() {
+  const headersEl = Array.from(
+    (parent ?? document).querySelectorAll('.blog-content :is(h2[id], h3[id])')
+  );
+  return headersEl
+    .map((element) => ({
+      element,
+      id: element.getAttribute('id'),
+      tagName: element.tagName,
+      text: element.innerText,
+      top: getAbsoluteTop(element),
+    }))
+    .filter(({ top }) => !Number.isNaN(top))
+    .sort((a, b) => a.top - b.top);
+}
+
+function setActiveHeader(header) {
+  const newHash = header?.id;
+
+  if (activeHeader.value === newHash) {
+    return;
+  }
+  activeHeader.value = newHash;
+
+  if (newHash) {
+    history.replaceState(null, '', `#${newHash}`);
+  } else {
+    history.replaceState(null, '', ' ');
+  }
+}
+
+function getAbsoluteTop(element) {
+  let top = 0;
+  while (element) {
+    top += element.offsetTop || 0;
+    element = element.offsetParent;
+  }
+  return top;
+}
 </script>
 
 <template>
   <aside class="toc">
-    <template v-for="link of links" :key="link.id">
-      <div
-        :class="['toc-item', { 'is-active': currentlyActiveToc === link.id }]"
-      >
-        <nuxt-link class="toc-item-text" :to="`#${link.id}`">
-          {{ link.text }}
-        </nuxt-link>
-      </div>
-
+    <template v-for="link of headers" :key="link.id">
       <div
         :class="[
           'toc-item',
-          'is-sub-item',
-          { 'is-active': currentlyActiveToc === child.id },
+          {
+            'is-sub-item': link.tagName === 'H3',
+            'is-active': activeHeader === link.id,
+          },
         ]"
-        v-for="child of link.children"
-        :key="child.id"
       >
-        <nuxt-link :to="`#${child.id}`" class="toc-item-text">
-          {{ child.text }}
+        <nuxt-link class="toc-item-text" :to="`#${link.id}`">
+          {{ link.text }}
         </nuxt-link>
       </div>
     </template>
@@ -74,8 +117,9 @@ onBeforeUnmount(() => observer.disconnect());
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  left: 5px;
-  padding: $p[5];
+  left: 0px;
+  padding: $p[6];
+  max-width: calc(((100vw - 748px) / 2));
 
   +tablet() {
     display: none;
