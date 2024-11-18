@@ -1,6 +1,6 @@
 ---
 title: Use JavaScript Optional Chaining, Today!
-date: 2019-10-30T21:00:00.000Z
+date: 2019-10-30
 slug: use-javascript-optional-chaining-today
 ---
 

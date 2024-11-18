@@ -1,6 +1,6 @@
 ---
 title: Use SVG Icons with Vue.js
-date: 2019-11-23T21:00:00.000Z
+date: 2019-11-23
 slug: use-svg-icons-with-vue.js
 ---
 Many developers prefer to use the font-icons over the SVG ones because it has a simpler syntax, and it integrates seamlessly with almost any front-end component library.

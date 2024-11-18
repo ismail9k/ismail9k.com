@@ -1,6 +1,6 @@
 ---
 title: Neomorphism designs, UI components library
-date: 2020-01-25T21:00:00.000Z
+date: 2020-01-25
 slug: neomorphism-designs-ui-components-library
 ---
 

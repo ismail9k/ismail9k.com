@@ -1,6 +1,6 @@
 ---
 title: Quick CSS Quiz
-date: 2018-10-20T21:00:00.000Z
+date: 2018-10-20
 slug: quick-css-quiz
 ---
 
