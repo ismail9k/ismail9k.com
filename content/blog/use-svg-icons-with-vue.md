@@ -320,6 +320,7 @@ export default {
 We have reviewed how we can easily integrate SVG icons with our Vue apps.
 You can find the final component in this repo.
 
-{% github Abdelrahman3d/use-svg no-readme %}
+
+<GithubEmbed repo="ismail9k/use-svg" />
 
 Thanks for reading 😄😄

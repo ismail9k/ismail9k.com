@@ -8,6 +8,6 @@ dist
 .env.*
 .nuxt
 .output
-
+.data
 # Local Netlify folder
 .netlify
