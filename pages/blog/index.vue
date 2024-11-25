@@ -1,5 +1,11 @@
 <script setup>
-const query = { path: '/blog', limit: 10, sort: [{ date: -1 }] };
+const { data: posts } = await useAsyncData('blog', () =>
+  queryCollection('blog')
+    .order('date', 'DESC')
+    .limit(10)
+    .select('date', 'title', 'description', 'path')
+    .all()
+);
 </script>
 
 <template>
@@ -13,9 +19,7 @@ const query = { path: '/blog', limit: 10, sort: [{ date: -1 }] };
       </div>
     </section>
     <section class="section">
-      <ContentList :query="query" v-slot="{ list }">
-        <BlogCard v-for="blog in list" :key="blog._path" :data="blog" />
-      </ContentList>
+      <BlogCard v-for="blog in posts" :key="blog.path" v-bind="blog" />
     </section>
   </Layout>
 </template>

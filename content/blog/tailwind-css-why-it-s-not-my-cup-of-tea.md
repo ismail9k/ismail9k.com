@@ -1,6 +1,6 @@
 ---
 title: "Tailwind CSS: Why It's Not My Cup of Tea"
-date: 2023-07-30T00:00:00.000Z
+date: 2023-07-30
 slug: tailwind-css-why-it-s-not-my-cup-of-tea
 ---
 

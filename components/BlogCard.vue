@@ -1,18 +1,18 @@
 <script setup>
 import dayjs from 'dayjs';
-const props = defineProps(['data']);
+const props = defineProps(['path', 'date', 'title', 'description']);
 </script>
 
 
 <template>
   <div class="blog-card-wrapper">
     <p class="blog-card-time">
-      {{ dayjs(props.data.date).format('MMMM DD, YYYY') }}
+      {{ dayjs(props.date).format('MMMM DD, YYYY') }}
     </p>
     <div class="blog-card-timeline"></div>
-    <NuxtLink :key="props.data._path" :to="props.data._path" class="blog-card">
-      <h3 class="blog-card-title">{{ props.data.title }}</h3>
-      <p class="blog-card-description">{{ props.data.description }}</p>
+    <NuxtLink :key="props.path" :to="`/blog${props.path}`" class="blog-card">
+      <h3 class="blog-card-title">{{ props.title }}</h3>
+      <p class="blog-card-description">{{ props.description }}</p>
     </NuxtLink>
   </div>
 </template>

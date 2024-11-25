@@ -1,33 +1,30 @@
-<script setup>
+<script  setup>
+const route = useRoute();
 const blogParent = ref(null);
+const path = route.path.replace('/blog/', '/');
+const { data: page } = await useAsyncData(path, () =>
+  queryCollection('blog').path(path).first()
+);
 </script>
 
 
 <template>
-  <ContentDoc>
-    <template #default="{ doc }">
-      <h1 class="blog-title">{{ doc.title }}</h1>
+  <template v-if="!page">
+    <div class="not-fount-wrapper">
+      <p>Blog not found</p>
+      <Btn href="/"> Back home </Btn>
+    </div>
+  </template>
 
-      <TOC :parent="blogParent" />
-
-      <div class="blog" ref="blogParent">
-        <div class="blog-content">
-          <ContentRenderer :value="doc"> </ContentRenderer>
-        </div>
+  <template v-else>
+    <h1 class="blog-title">{{ page.title }}</h1>
+    <TOC :parent="blogParent" />
+    <div class="blog" ref="blogParent">
+      <div class="blog-content">
+        <ContentRenderer :value="page" />
       </div>
-    </template>
-
-    <template #empty>
-      <p>No content found.</p>
-    </template>
-
-    <template #not-found>
-      <div class="not-fount-wrapper">
-        <p>Blog not found</p>
-        <Btn href="/"> Back home </Btn>
-      </div>
-    </template>
-  </ContentDoc>
+    </div>
+  </template>
 </template>
 
 <style lang="stylus">

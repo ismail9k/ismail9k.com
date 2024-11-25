@@ -1,0 +1,14 @@
+import { defineCollection, z } from '@nuxt/content';
+
+export const collections = {
+  blog: defineCollection({
+    source: 'blog/*.md',
+    type: 'page',
+
+    schema: z.object({
+      title: z.string(),
+      slug: z.string(),
+      date: z.date(),
+    }),
+  }),
+};

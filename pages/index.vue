@@ -18,7 +18,13 @@ const filteredSocial = socials.filter(({ name }) =>
   ['github', 'youtube', 'twitter'].includes(name.toLowerCase())
 );
 
-const query = { path: '/blog', limit: 5, sort: [{ date: -1 }] };
+const { data: posts } = await useAsyncData('blog', () =>
+  queryCollection('blog')
+    .order('date', 'DESC')
+    .limit(5)
+    .select('date', 'title', 'description', 'path')
+    .all()
+);
 </script>
 
 <template>
@@ -51,10 +57,7 @@ const query = { path: '/blog', limit: 5, sort: [{ date: -1 }] };
 
   <section class="section">
     <h2 class="title">Recent Blog:</h2>
-
-    <ContentList :query="query" v-slot="{ list }">
-      <BlogCard v-for="blog in list" :key="blog._path" :data="blog" />
-    </ContentList>
+    <BlogCard v-for="blog in posts" :key="blog.path" v-bind="blog" />
   </section>
 </template>
 

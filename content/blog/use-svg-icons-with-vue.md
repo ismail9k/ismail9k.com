@@ -1,6 +1,6 @@
 ---
 title: Use SVG Icons with Vue.js
-date: 2019-11-23T21:00:00.000Z
+date: 2019-11-23
 slug: use-svg-icons-with-vue.js
 ---
 Many developers prefer to use the font-icons over the SVG ones because it has a simpler syntax, and it integrates seamlessly with almost any front-end component library.
@@ -320,6 +320,7 @@ export default {
 We have reviewed how we can easily integrate SVG icons with our Vue apps.
 You can find the final component in this repo.
 
-{% github Abdelrahman3d/use-svg no-readme %}
+
+<GithubEmbed repo="ismail9k/use-svg" />
 
 Thanks for reading 😄😄

@@ -1,6 +1,6 @@
 ---
 title: "CSS percentage unit, the evil parts"
-date: 2018-04-27T21:00:00.000Z
+date: 2018-04-27
 slug: css-percentage-unit-the-evil-parts
 ---
 

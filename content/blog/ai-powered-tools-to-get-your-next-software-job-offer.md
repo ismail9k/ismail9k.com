@@ -1,6 +1,6 @@
 ---
 title: AI-Powered Tools to Get Your Next Software Job Offer
-date: 2020-10-13T21:00:00.000Z
+date: 2020-10-13
 slug: ai-powered-tools-to-get-your-next-software-job-offer
 ---
 
