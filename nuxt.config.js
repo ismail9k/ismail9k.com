@@ -1,6 +1,8 @@
 import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig({
+  target: 'static',
+
   // ssr: true,
   modules: [
     '@nuxt/content',
