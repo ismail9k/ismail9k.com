@@ -10,7 +10,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
       {{ dayjs(props.date).format('MMMM DD, YYYY') }}
     </p>
     <div class="blog-card-timeline"></div>
-    <NuxtLink :key="props.path" :to="`/blog${props.path}`" class="blog-card">
+    <NuxtLink :key="props.path" :to="props.path" class="blog-card">
       <h3 class="blog-card-title">{{ props.title }}</h3>
       <p class="blog-card-description">{{ props.description }}</p>
     </NuxtLink>

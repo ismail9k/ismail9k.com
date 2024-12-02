@@ -1,12 +1,11 @@
-<script  setup>
+<script setup>
 const route = useRoute();
 const blogParent = ref(null);
-const path = route.path.replace('/blog/', '/');
+const path = route.path;
 const { data: page } = await useAsyncData(path, () =>
   queryCollection('blog').path(path).first()
 );
 </script>
-
 
 <template>
   <template v-if="!page">
