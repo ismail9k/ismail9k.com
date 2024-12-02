@@ -80,8 +80,8 @@ pre {
   overflow-x: auto;
   padding: $padding[4] ($padding[6]);
   border-radius: 8px;
-  background: $dark;
-  border: 1px solid $dark;
+  background: $white;
+  border: 1px solid $gray;
   font-size: $text[3];
 
   +darkMode() {
