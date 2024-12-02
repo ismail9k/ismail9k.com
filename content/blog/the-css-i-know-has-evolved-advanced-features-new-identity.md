@@ -24,7 +24,7 @@ There are plenty of memes mocking CSS for lacking an easy way to center a div el
 
 ![centring div meme](/img/the-css-i-know-has-evolved-advanced-features-new-identity/center-div-meme.jpg)
 
-<center><small>An online meme about centering div</small></center>
+<center><small>An online meme about centering a div</small></center>
 
 ### Centering Vertically and Horizontally
 
