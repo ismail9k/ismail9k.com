@@ -23,7 +23,7 @@
     "nuxt-gtag": "^3.0.1"
   },
   "devDependencies": {
-    "@nuxt/content": "^3.0.0-alpha.6",
+    "@nuxt/content": "^3.0.0-alpha.7",
     "@vite-pwa/nuxt": "^0.10.5",
     "autoprefixer": "^10.4.20",
     "nuxt-purgecss": "^2.0.0",

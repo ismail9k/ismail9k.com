@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxtjs/color-mode',
-    '@vite-pwa/nuxt',
+    // '@vite-pwa/nuxt',
     '@nuxt/image',
     'nuxt-gtag',
   ],
