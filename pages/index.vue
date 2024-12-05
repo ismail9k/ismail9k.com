@@ -31,17 +31,26 @@ const { data: posts } = await useAsyncData('blog', () =>
   <section class="section">
     <p class="font-3 mb-7">Hi, I'm</p>
     <h2 class="main-title">Abdelrahman Ismail</h2>
-    <p class="main-description">
-      You might know me as Ismail9k. I'm a seasoned Tech Lead with a passion for
-      creating and writing about innovative solutions. As a content creator, I
-      strive to share my technological insights, sparking dialogue and learning.
-      <br />
-      But above all else, I'm a proud father, treasuring the moments I spend
-      nurturing my children.
-      <br />
-      Welcome to my world. Let's explore and grow together in this digital
-      space.
-    </p>
+    <div class="main-description">
+      <p>
+        A software engineer and technical team lead based in Istanbul. With over
+        a decade of experience in tech, I've built and guided teams to deliver
+        high-impact solutions. I work with diverse technologies including
+        TypeScript, Node.js, Vue.js, React, and GoLang, and have contributed to
+        projects across e-commerce, gaming, and dropshipping industries.
+      </p>
+      <p>
+        I'm also active in the open-source community, best known for my library,
+        vue3-carousel. Passionate about team collaboration, continuous learning,
+        and emerging technologies like decentralized systems, NFTs, and AI, I
+        blend technical expertise with strategic leadership to foster innovation
+        and drive success in every project.
+      </p>
+      <p>
+        Along my journey, I share technological insights, learnings, and my
+        9k-level tips.
+      </p>
+    </div>
   </section>
 
   <section class="section">
