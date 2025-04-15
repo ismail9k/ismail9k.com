@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <VitePwaManifest />
-
+    <BlurredCircles />
     <the-navbar />
 
     <main class="main">
@@ -15,9 +15,10 @@
 <script>
 import TheNavbar from './partial/TheNavbar.vue';
 import TheFooter from './partial/TheFooter.vue';
+import BlurredCircles from '../components/BlurredCircles.vue';
 
 export default {
-  components: { TheNavbar, TheFooter },
+  components: { TheNavbar, TheFooter, BlurredCircles },
 };
 </script>
 
