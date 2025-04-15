@@ -14,22 +14,16 @@ const props = defineProps(['data']);
 @import '../assets/stylus/config/_index.styl';
 
 .social-card {
-  border-color: $gray;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 6px;
+  border-radius: 8px;
   padding: $padding[1] ($padding[4]);
   display: flex;
   place-items: center;
   gap: 10px;
   cursor: pointer;
-  border-color: currentColor;
   text-decoration: none;
-  background-color: transparent;
-
-  +darkMode() {
-    background-color: alpha($white, 20%);
-  }
+  background-color: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  box-shadow: 0 1px 3px var(--glass-shadow);
 }
 
 .social-card:not(:hover) {

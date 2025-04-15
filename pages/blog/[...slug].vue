@@ -31,7 +31,7 @@ const { data: page } = await useAsyncData(path, () =>
 <style>
 .blog-article {
   margin: 0 auto;
-
+  max-width: 100%;
 }
 
 .blog {
@@ -46,8 +46,6 @@ const { data: page } = await useAsyncData(path, () =>
   border-radius: 1rem;
   border: 1px solid var(--border-color);
   padding: 2rem;
-  max-width: 768px;
-
 
 
   & h2 {

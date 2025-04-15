@@ -56,11 +56,7 @@ const { data: posts } = await useAsyncData('blog', () =>
   <section class="section">
     <h2 class="title">Fine me online:</h2>
     <div class="social-row">
-      <SocialCard
-        v-for="social in filteredSocial"
-        :key="social.name"
-        :data="social"
-      />
+      <SocialCard v-for="social in filteredSocial" :key="social.name" :data="social" />
     </div>
   </section>
 
@@ -70,9 +66,7 @@ const { data: posts } = await useAsyncData('blog', () =>
   </section>
 </template>
 
-<style lang="stylus" >
-@import '../assets/stylus/config/_index.styl';
-
+<style lang="stylus">
 .social-row {
   display: flex;
   gap: 10px;

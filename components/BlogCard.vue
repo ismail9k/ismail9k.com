@@ -117,6 +117,8 @@ const props = defineProps(['path', 'date', 'title', 'description']);
   &:hover {
     background: var(--glass-bg);
     backdrop-filter: blur(var(--glass-blur));
+    box-shadow: 0 1px 3px var(--glass-shadow);
+
     .blog-card-title {
       color: $accent;
     }

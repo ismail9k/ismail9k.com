@@ -34,7 +34,7 @@ onUnmounted(() => {
         <span class="brand-dash">_</span>
       </NuxtLink>
 
-      <div class="spacer"></div>
+
       <div class="navbar-end">
         <ul class="navbar-menu">
           <li v-for="item in links" :key="item.title">
@@ -65,6 +65,8 @@ header {
 header.is-scrolled {
   background: var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
+  box-shadow: 0 1px 3px var(--glass-shadow);
+
 }
 
 .navbar {
@@ -73,14 +75,15 @@ header.is-scrolled {
   justify-content: space-between;
   padding: 1rem 2rem;
   margin: 0 auto;
+  flex-wrap: wrap;
 
   @media (max-width: 768px) {
     padding: 1rem;
   }
-}
 
-.spacer {
-  flex-grow: 1;
+  @media (max-width: 400px) {
+    justify-content: center;
+  }
 }
 
 .navbar-menu {

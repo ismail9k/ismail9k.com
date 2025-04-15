@@ -100,6 +100,7 @@ const projects = [
 
 .tool-card {
   backdrop-filter: blur(var(--glass-blur));
+  box-shadow: 0 1px 3px var(--glass-shadow);
 
   &.purple {
     background: var(--purple-gradient);
