@@ -23,7 +23,7 @@
   position: absolute;
   border-radius: 50%;
   filter: blur(80px);
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 .circle-1 {

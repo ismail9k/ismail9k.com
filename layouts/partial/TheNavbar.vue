@@ -1,4 +1,5 @@
 <script setup>
+import ThemeSwitcher from '~/components/ThemeSwitcher.vue'
 const colorMode = useColorMode();
 const links = [
   { title: 'Blog', link: '/blog' },
@@ -37,15 +38,13 @@ onUnmounted(() => {
       <div class="navbar-end">
         <ul class="navbar-menu">
           <li v-for="item in links" :key="item.title">
-            <NuxtLink class="navbar-item" :to="item.link">{{
-              item.title
-            }}</NuxtLink>
+            <NuxtLink class="navbar-item" :to="item.link">
+              {{ item.title }}
+            </NuxtLink>
           </li>
           <li>
             <div class="navbar-item">
-              <label class="theme-switcher" for="themeSwitcher"><span class="sr-only">Theme mode switcher</span><input
-                  ref="themeSwitcher" v-model="modeSwitcherValue" id="themeSwitcher" type="checkbox" aria-labelledby=""
-                  @change="updateTheme" /><span class="theme-🌝">🌝</span><span class="theme-🌚">🌚</span></label>
+              <ThemeSwitcher />
             </div>
           </li>
         </ul>
@@ -86,6 +85,7 @@ header.is-scrolled {
 
 .navbar-menu {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;

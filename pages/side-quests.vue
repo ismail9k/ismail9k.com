@@ -34,6 +34,13 @@ const projects = [
     icon: '🤖',
     color: 'blue'
   },
+  // {
+  //   name: 'Playground',
+  //   description: 'An interactive SVG puppet with various expressions and animations. A fun experiment with SVG animations.',
+  //   link: '/playground',
+  //   icon: '🎭',
+  //   color: 'purple'
+  // },
 ]
 </script>
 
@@ -65,9 +72,9 @@ const projects = [
 
 <style>
 :root {
-  --purple-gradient: linear-gradient(135deg, #9333ea, #7c3aed);
-  --blue-gradient: linear-gradient(135deg, #3b82f6, #2563eb);
-  --green-gradient: linear-gradient(135deg, #10b981, #059669);
+  --purple-gradient: linear-gradient(135deg, hsla(271, 81%, 56%, 0.8), hsla(262, 83%, 58%, 0.8));
+  --blue-gradient: linear-gradient(135deg, hsla(217, 91%, 60%, 0.8), hsla(221, 83%, 53%, 0.8));
+  --green-gradient: linear-gradient(135deg, hsla(160, 84%, 39%, 0.8), hsla(161, 94%, 30%, 0.8));
 }
 
 .subtitle {
@@ -92,6 +99,8 @@ const projects = [
 }
 
 .tool-card {
+  backdrop-filter: blur(var(--glass-blur));
+
   &.purple {
     background: var(--purple-gradient);
   }
