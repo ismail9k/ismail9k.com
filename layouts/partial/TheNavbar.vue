@@ -2,17 +2,31 @@
 const colorMode = useColorMode();
 const links = [
   { title: 'Blog', link: '/blog' },
+  { title: 'Side-Quests', link: '/side-quests' },
   // { title: 'QR Scanner', link: '/tools/qr-scanner' },
 ];
 const modeSwitcherValue = ref(colorMode.value === 'dark');
+const isScrolled = ref(false);
 
 const updateTheme = () => {
   colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
 };
+
+onMounted(() => {
+  window.addEventListener('scroll', () => {
+    isScrolled.value = window.scrollY > 0;
+  });
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', () => {
+    isScrolled.value = window.scrollY > 0;
+  });
+});
 </script>
 
 <template>
-  <header>
+  <header :class="{ 'is-scrolled': isScrolled }">
     <nav class="navbar">
       <NuxtLink class="navbar-brand" to="/">
         <h1 class="brand-letter">Ismail9k</h1>
@@ -29,18 +43,9 @@ const updateTheme = () => {
           </li>
           <li>
             <div class="navbar-item">
-              <label class="theme-switcher" for="themeSwitcher"
-                ><span class="sr-only">Theme mode switcher</span
-                ><input
-                  ref="themeSwitcher"
-                  v-model="modeSwitcherValue"
-                  id="themeSwitcher"
-                  type="checkbox"
-                  aria-labelledby=""
-                  @change="updateTheme"
-                /><span class="theme-🌝">🌝</span
-                ><span class="theme-🌚">🌚</span></label
-              >
+              <label class="theme-switcher" for="themeSwitcher"><span class="sr-only">Theme mode switcher</span><input
+                  ref="themeSwitcher" v-model="modeSwitcherValue" id="themeSwitcher" type="checkbox" aria-labelledby=""
+                  @change="updateTheme" /><span class="theme-🌝">🌝</span><span class="theme-🌚">🌚</span></label>
             </div>
           </li>
         </ul>
@@ -50,25 +55,33 @@ const updateTheme = () => {
 </template>
 
 
-<style lang="stylus">
-@import '../../assets/stylus/config/_index.styl';
+<style>
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+header.is-scrolled {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+}
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: $padding[4] ($padding[8]);
+  padding: 1rem 2rem;
+  margin: 0 auto;
 
-  +mobile() {
-    padding: 20px 10px;
+  @media (max-width: 768px) {
+    padding: 1rem;
   }
 }
 
 .spacer {
   flex-grow: 1;
-}
-
-.navbar-end {
 }
 
 .navbar-menu {
@@ -83,21 +96,14 @@ const updateTheme = () => {
   display: block;
   margin: 0;
   padding: 10px;
-  color: $theme-text-color;
-
-  +mobile() {
-    padding: 10px 5px;
-    font-size: 14px;
-  }
+  color: var(--theme-text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .navbar-brand {
   text-decoration: none;
-  padding: $padding[1];
-
-  +mobile() {
-    display: block;
-  }
+  padding: 0.5rem;
 }
 
 .navbar-toggle {
@@ -107,16 +113,16 @@ const updateTheme = () => {
 }
 
 .brand-letter {
-  color: $theme-text-color;
+  color: var(--theme-text-color);
   font-weight: bold;
-  font-size: $font-size[7];
+  font-size: 1.5rem;
   display: inline;
 }
 
 .brand-dash {
-  color: $accent;
+  color: var(--accent-color);
   font-weight: bold;
-  font-size: $font-size[7];
+  font-size: 1.5rem;
   animation: cursor 4s infinite;
 }
 
@@ -139,27 +145,25 @@ const updateTheme = () => {
   margin: 0 10px;
   font-size: 20px;
   cursor: pointer;
-
-  input {
-    display: none;
-
-    &:checked {
-      ~ .theme-\🌝 {
-        display: block;
-      }
-
-      ~ .theme-\🌚 {
-        display: none;
-      }
-    }
-  }
 }
 
-.theme-\🌝 {
+.theme-switcher input {
   display: none;
 }
 
-.theme-\🌚 {
+.theme-switcher input:checked~.theme-🌝 {
+  display: block;
+}
+
+.theme-switcher input:checked~.theme-🌚 {
+  display: none;
+}
+
+.theme-🌝 {
+  display: none;
+}
+
+.theme-🌚 {
   display: block;
 }
 </style>

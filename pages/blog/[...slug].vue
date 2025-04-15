@@ -9,28 +9,29 @@ const { data: page } = await useAsyncData(path, () =>
 
 <template>
   <template v-if="!page">
-    <div class="not-fount-wrapper">
+    <div class="not-found-wrapper">
       <p>Blog not found</p>
       <Btn href="/"> Back home </Btn>
     </div>
   </template>
 
   <template v-else>
-    <h1 class="blog-title">{{ page.title }}</h1>
-    <TOC :parent="blogParent" />
-    <div class="blog" ref="blogParent">
-      <div class="blog-content">
-        <ContentRenderer :value="page" />
+    <article class="blog-article">
+      <h1 class="blog-title">{{ page.title }}</h1>
+      <TOC :parent="blogParent" />
+      <div class="blog" ref="blogParent">
+        <div class="blog-content">
+          <ContentRenderer :value="page" />
+        </div>
       </div>
-    </div>
+    </article>
   </template>
 </template>
 
-<style lang="stylus">
-@import '../assets/stylus/config/_index.styl';
+<style>
+.blog-article {
+  margin: 0 auto;
 
-.blog-content {
-  width: 100%;
 }
 
 .blog {
@@ -38,93 +39,147 @@ const { data: page } = await useAsyncData(path, () =>
   text-size-adjust: 100%;
   word-break: break-word;
   width: 100%;
-  max-width: 748px;
-  font-size: $text[4];
-  line-height: 1.6em;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  background: var(--theme-bg-color);
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  max-width: 768px;
 
-  img {
+
+
+  & h2 {
+    font-size: 1.875rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  & h3 {
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+  }
+
+  & p {
+    margin-bottom: 1.5rem;
+    max-width: 70ch;
+  }
+
+  & a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.2em;
+  }
+
+  & img {
     max-width: 100%;
-    margin: auto;
+    margin: 2.5rem auto;
     display: block;
     border-radius: 8px;
-    overflow: hidden;
-    margin-top: $margin[10];
-    margin-bottom: $margin[10];
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  & pre {
+    overflow-x: auto;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    background: var(--code-bg);
+    border: 1px solid var(--border-color);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin: 2rem 0;
+
+    & code {
+      padding: 0;
+      background: none;
+    }
+  }
+
+  & code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.9em;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    background: var(--code-bg);
+  }
+
+  & blockquote {
+    background: var(--blockquote-bg);
+    border-left: 10px solid var(--accent-color);
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-radius: 4px;
+    font-style: italic;
+
+    & p {
+      margin: 0;
+
+      &+p {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  & hr {
+    margin: 4rem 0;
+    border: 0;
+    text-align: center;
+    height: 1em;
+
+    &::after {
+      content: '...';
+      font-size: 1.5rem;
+      letter-spacing: 1em;
+      padding-left: 1em;
+      color: var(--text-color-light);
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    & {
+      font-size: 1rem;
+      padding: 1.5rem;
+    }
+
+    & h2 {
+      font-size: 1.5rem;
+    }
+
+    & h3 {
+      font-size: 1.25rem;
+    }
   }
 }
 
 .blog-title {
-  margin-top: 0;
-  margin-bottom: $m[20];
-  font-size: $text[10];
-  line-height: 1.5;
-  max-width: 20ch;
-  border-left: 0.2em solid $accent;
-  padding-left: 0.5em;
+  margin: 0 0 3rem;
+  font-size: 2.75rem;
+  line-height: 1.2;
+  font-weight: 800;
+  max-width: 25ch;
+  border-left: 0.2em solid var(--accent-color);
+  padding-left: 0.75em;
 
-  +tablet() {
-    margin-bottom: $m[15];
-    font-size: $text[8];
+  @media (max-width: 768px) {
+    & {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
   }
 }
 
-.not-fount-wrapper {
+.not-found-wrapper {
   display: flex;
   flex-direction: column;
-  place-items: center;
+  align-items: center;
   width: 100%;
-}
-
-pre {
-  overflow-x: auto;
-  padding: $padding[4] ($padding[6]);
-  border-radius: 8px;
-  background: $white;
-  border: 1px solid $gray;
-  font-size: $text[3];
-
-  +darkMode() {
-    background: $black;
-    border-color: $dark-gray;
-  }
-}
-
-blockquote {
-  background: $gray;
-  border-left: 10px solid $accent;
-  margin: $margin[3] ($margin[0]);
-  padding: $padding[4] ($padding[4]);
-  quotes: '\201C' '\201D' '\2018' '\2019';
-  color: inherit;
-
-  &:before {
-    color: $accent;
-    content: open-quote;
-    font-size: $font-size[10];
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-  }
-
-  p {
-    display: inline;
-  }
-
-  +darkMode() {
-    color: $dark;
-  }
-}
-
-hr {
-  margin: ($margin[10] * 2) 0;
-  border: 0;
-  text-align: center;
-  line-height: 1;
-
-  &:after {
-    content: '...';
-    font-size: $font-size[6];
-    letter-spacing: 10px;
-  }
+  padding: 4rem 2rem;
 }
 </style>

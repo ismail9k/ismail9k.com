@@ -4,18 +4,13 @@ const props = defineProps(['data']);
 
 
 <template>
-  <a
-    class="social-card"
-    :style="`color: ${props.data.color};`"
-    :href="props.data.link"
-    target="_blank"
-  >
+  <a class="social-card" :style="`color: ${props.data.color};`" :href="props.data.link" target="_blank">
     <app-icon :name="props.data.icon" />
     <span>{{ props.data.name }}</span>
   </a>
 </template>
 
-<style lang="stylus" >
+<style lang="stylus">
 @import '../assets/stylus/config/_index.styl';
 
 .social-card {
@@ -38,6 +33,6 @@ const props = defineProps(['data']);
 }
 
 .social-card:not(:hover) {
-  color: $theme-text-color !important;
+  color: var(--theme-text-color) !important;
 }
 </style>

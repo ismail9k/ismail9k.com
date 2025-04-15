@@ -17,7 +17,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
   </div>
 </template>
 
-<style lang="stylus" >
+<style lang="stylus">
 @import '../assets/stylus/config/_index.styl';
 
 .blog-card-wrapper {
@@ -32,7 +32,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
 }
 
 .blog-card-title {
-  color: $theme-text-color;
+  color: var(--theme-text-color);
   margin-top: 0;
   transition: $transition;
 }
@@ -106,26 +106,22 @@ const props = defineProps(['path', 'date', 'title', 'description']);
 }
 
 .blog-card {
+  display: block;
   position: relative;
   padding: $padding[6] ($padding[7]);
   text-decoration: none;
   border-radius: 15px;
   cursor: pointer;
-  color: $theme-text-color;
+  color: var(--theme-text-color);
 
   &:hover {
-    background-color: alpha($dark, 10%);
-
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
     .blog-card-title {
       color: $accent;
     }
   }
 
-  +darkMode() {
-    &:hover {
-      background-color: alpha($white, 20%);
-    }
-  }
 
   +tablet() {
     padding: $padding[3] ($padding[4]);

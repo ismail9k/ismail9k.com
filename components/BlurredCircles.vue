@@ -23,7 +23,7 @@
   position: absolute;
   border-radius: 50%;
   filter: blur(80px);
-  opacity: 0.15;
+  opacity: 0.1;
 }
 
 .circle-1 {
@@ -66,11 +66,13 @@
   0% {
     transform: translate(0, 0) rotate(0deg);
   }
+
   50% {
     transform: translate(30px, 30px) rotate(180deg);
   }
+
   100% {
     transform: translate(0, 0) rotate(360deg);
   }
 }
-</style> 
+</style>

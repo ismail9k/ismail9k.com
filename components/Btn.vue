@@ -1,12 +1,10 @@
-
-
 <template>
   <a v-bind="$attrs" class="btn">
     <slot />
   </a>
 </template>
 
-<style lang="stylus" >
+<style lang="stylus">
 @import '../assets/stylus/config/_index.styl';
 
 .btn {
@@ -25,6 +23,6 @@
 }
 
 .btn:not(:hover) {
-  color: $theme-text-color !important;
+  color: var(--theme-text-color) !important;
 }
 </style>

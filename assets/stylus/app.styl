@@ -4,13 +4,17 @@
 @import 'theme';
 @import 'spacing';
 
+:root {
+  --glass-blur: 12px;
+}
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 a {
-  color: $theme-text-color;
+  color: var(--theme-text-color);
   font-weight: bold;
   transition: $transition;
   color: inherit;

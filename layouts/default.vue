@@ -5,7 +5,9 @@
     <the-navbar />
 
     <main class="main">
-      <slot></slot>
+      <div class="container">
+        <slot></slot>
+      </div>
     </main>
 
     <the-footer />
@@ -25,24 +27,21 @@ export default {
 <style lang="stylus">
 @import '../assets/stylus/config/_index.styl';
 
-.layout {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 
-.main {
+.container {
+  min-height: calc(100vh - 250px);
+  padding: 1rem 2rem;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: $padding[5];
   justify-content: center;
 
-  +tablet() {
+
+  @media (max-width: 768px) {
     max-width: 100%;
-    padding: $padding[2];
+    padding: 1rem;
   }
 }
 

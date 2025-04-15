@@ -1,7 +1,9 @@
 <template>
   <main>
     <VitePwaManifest />
-    <slot></slot>
+    <div class="container">
+      <slot></slot>
+    </div>
   </main>
 </template>
 

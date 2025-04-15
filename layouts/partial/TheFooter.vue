@@ -3,17 +3,11 @@ import socials from '/assets/data/socials.json';
 </script>
 
 
-<template >
+<template>
   <footer class="footer">
     <ul class="footer-list">
       <li v-for="social in socials" :key="social.name">
-        <a
-          class="footer-item"
-          :href="social.link"
-          target="_blank"
-          rel="noopener"
-          :style="`color: ${social.color}`"
-        >
+        <a class="footer-item" :href="social.link" target="_blank" rel="noopener" :style="`color: ${social.color}`">
           <AppIcon :name="social.icon"></AppIcon>
         </a>
       </li>
@@ -46,7 +40,7 @@ import socials from '/assets/data/socials.json';
   cursor: pointer;
 
   &:not(:hover) {
-    color: $theme-text-color !important;
+    color: var(--theme-text-color) !important;
   }
 }
 </style>
