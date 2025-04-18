@@ -3,14 +3,21 @@ import { defineNuxtConfig } from 'nuxt/config';
 export default defineNuxtConfig({
   target: 'static',
 
-   site: { 
-    url: 'http://localhost:3000/',
+  site: {
+    url: 'https://ismail9k.com/',
     name: 'Ismail9k',
   },
 
   // ssr: true,
-  modules: ['@nuxt/content', // '@vite-pwa/nuxt',
-  '@nuxtjs/color-mode', '@nuxt/image', 'nuxt-gtag', 'nuxt-og-image', '@nuxtjs/robots', '@nuxtjs/sitemap'],
+  modules: [
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
+    '@nuxt/content',
+    '@nuxtjs/color-mode',
+    '@nuxt/image',
+    'nuxt-gtag',
+    'nuxt-og-image',
+  ],
   css: ['normalize.css/normalize.css', '~/assets/stylus/app.styl'],
 
   postcss: {

@@ -11,3 +11,4 @@ dist
 .data
 # Local Netlify folder
 .netlify
+.vercel
