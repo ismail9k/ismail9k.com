@@ -1,3 +1,10 @@
+<script>
+export default {
+  name: 'LayoutClean',
+};
+</script>
+
+
 <template>
   <main>
     <VitePwaManifest />
@@ -6,9 +13,3 @@
     </div>
   </main>
 </template>
-
-<script>
-export default {
-  name: 'LayoutClean',
-};
-</script>

@@ -1,3 +1,11 @@
+<script setup>
+import TheNavbar from './partial/TheNavbar.vue';
+import TheFooter from './partial/TheFooter.vue';
+import BlurredCircles from '../components/BlurredCircles.vue';
+
+defineOgImageComponent('OGImage')
+</script>
+
 <template>
   <div class="layout">
     <VitePwaManifest />
@@ -14,15 +22,7 @@
   </div>
 </template>
 
-<script>
-import TheNavbar from './partial/TheNavbar.vue';
-import TheFooter from './partial/TheFooter.vue';
-import BlurredCircles from '../components/BlurredCircles.vue';
 
-export default {
-  components: { TheNavbar, TheFooter, BlurredCircles },
-};
-</script>
 
 <style lang="stylus">
 @import '../assets/stylus/config/_index.styl';

@@ -26,6 +26,7 @@
     "@nuxt/content": "^3.0.0-alpha.7",
     "@vite-pwa/nuxt": "^0.10.5",
     "autoprefixer": "^10.4.20",
+    "nuxt-og-image": "^5.1.2",
     "nuxt-purgecss": "^2.0.0",
     "stylus": "^0.64.0",
     "stylus-loader": "^8.1.1"

@@ -5,6 +5,12 @@ const path = route.path;
 const { data: page } = await useAsyncData(path, () =>
   queryCollection('blog').path(path).first()
 );
+
+console.log(page.value)
+defineOgImageComponent('OGImage', {
+  title: page.value?.title,
+  description: page.value?.description,
+})
 </script>
 
 <template>
