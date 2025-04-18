@@ -4,6 +4,12 @@ date: 2025-04-18
 slug: how-to-become-a-9k-developer
 ---
 
+In software development, reaching "9k" isn’t just about being good.
+
+It’s about being **world-class** — standing so far above the average that your decisions, your code, and your impact are unmistakable.
+
+Some call it being a **10x Developer** — I prefer calling it a **9k Developer**.
+
 If you know **Dota 2**, you know that hitting **9k MMR** means you’re among the best of the best — the top 0.001% of players in the most competitive, highest-paid esport in the world.
 
 And if you’re an anime fan, you’ll never forget the iconic moment from **Dragon Ball Z** when Vegeta roared:
@@ -13,13 +19,6 @@ And if you’re an anime fan, you’ll never forget the iconic moment from **Dra
 
 ![vegeta-its-over9000](/img/how-to-become-a-9k-developer/vegeta-its-over9000.gif)
 <center><small>Vegeta its over 9000</small></center>
-
-In software development, reaching "9k" isn’t just about being good.
-
-It’s about being **world-class** — standing so far above the average that your decisions, your code, and your impact are unmistakable.
-
-Some call it being a **10x Developer**.  
-I prefer calling it a **9k Developer**.
 
 After more than a decade in this industry, here’s what I’ve learned it truly takes to reach that level.
 
