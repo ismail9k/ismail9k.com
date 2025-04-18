@@ -2,7 +2,9 @@ import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig({
   target: 'static',
-
+  nitro: {
+    static: true,
+  },
   site: {
     url: 'https://ismail9k.com/',
     name: 'Ismail9k',
