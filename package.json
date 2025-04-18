@@ -14,6 +14,7 @@
   "dependencies": {
     "@nuxt/image": "^1.8.0",
     "@nuxtjs/color-mode": "^3.5.1",
+    "@nuxtjs/robots": "5.2.10",
     "@nuxtjs/style-resources": "^1.2.2",
     "dayjs": "^1.11.13",
     "html5-qrcode": "^2.3.8",
@@ -30,5 +31,6 @@
     "nuxt-purgecss": "^2.0.0",
     "stylus": "^0.64.0",
     "stylus-loader": "^8.1.1"
-  }
+  },
+  "packageManager": "pnpm@10.8.1+sha512.c50088ba998c67b8ca8c99df8a5e02fd2ae2e2b29aaf238feaa9e124248d3f48f9fb6db2424949ff901cffbb5e0f0cc1ad6aedb602cd29450751d11c35023677"
 }

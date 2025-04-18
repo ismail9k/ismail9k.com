@@ -14,6 +14,9 @@ importers:
       '@nuxtjs/color-mode':
         specifier: ^3.5.1
         version: 3.5.2(magicast@0.3.5)
+      '@nuxtjs/robots':
+        specifier: 5.2.10
+        version: 5.2.10(magicast@0.3.5)(vue@3.5.13(typescript@5.8.3))
       '@nuxtjs/style-resources':
         specifier: ^1.2.2
         version: 1.2.2
@@ -1070,6 +1073,9 @@ packages:
 
   '@nuxtjs/mdc@0.16.1':
     resolution: {integrity: sha512-di9Ox9QY5pO2eIkQPyKFe9O8L3RvIrGbmjI3rJQRj1xGYRFj2S9RvBPCFbvfaqQGOTjOfxHLg8KtQIGj1Iw/lg==}
+
+  '@nuxtjs/robots@5.2.10':
+    resolution: {integrity: sha512-WiO+VA8UwDgVLy7JCrGTrAmSNNw397OuNseKOG051ixswEDd0QhNw4cUtgNd2RkSIL7WlkfwkizdJFCd9y9iXw==}
 
   '@nuxtjs/style-resources@1.2.2':
     resolution: {integrity: sha512-p2putExz19lDDhCway+nVgPsH37Uw7Qbos8rWJ7RXI7Mp0/qVsKzLSIsAYWSUXwUdsJilPDQhSNazp+CEYJ37g==}
@@ -7344,6 +7350,21 @@ snapshots:
     transitivePeerDependencies:
       - magicast
       - supports-color
+
+  '@nuxtjs/robots@5.2.10(magicast@0.3.5)(vue@3.5.13(typescript@5.8.3))':
+    dependencies:
+      '@nuxt/kit': 3.16.2(magicast@0.3.5)
+      consola: 3.4.2
+      defu: 6.1.4
+      nuxt-site-config: 3.1.9(magicast@0.3.5)(vue@3.5.13(typescript@5.8.3))
+      pathe: 2.0.3
+      pkg-types: 2.1.0
+      sirv: 3.0.1
+      std-env: 3.9.0
+      ufo: 1.6.1
+    transitivePeerDependencies:
+      - magicast
+      - vue
 
   '@nuxtjs/style-resources@1.2.2':
     dependencies:

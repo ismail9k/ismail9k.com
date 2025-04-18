@@ -9,14 +9,8 @@ export default defineNuxtConfig({
   },
 
   // ssr: true,
-  modules: [
-    '@nuxt/content',
-    '@nuxtjs/color-mode',
-    // '@vite-pwa/nuxt',
-    '@nuxt/image',
-    'nuxt-gtag',
-    'nuxt-og-image',
-  ],
+  modules: ['@nuxt/content', '@nuxtjs/color-mode', // '@vite-pwa/nuxt',
+  '@nuxt/image', 'nuxt-gtag', 'nuxt-og-image', '@nuxtjs/robots'],
   css: ['normalize.css/normalize.css', '~/assets/stylus/app.styl'],
 
   postcss: {
