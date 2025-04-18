@@ -6,7 +6,6 @@ const { data: page } = await useAsyncData(path, () =>
   queryCollection('blog').path(path).first()
 );
 
-console.log(page.value)
 defineOgImageComponent('OGImage', {
   title: page.value?.title,
   description: page.value?.description,
@@ -37,7 +36,7 @@ defineOgImageComponent('OGImage', {
 <style>
 .blog-article {
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 100ch;
 }
 
 .blog {
@@ -71,7 +70,6 @@ defineOgImageComponent('OGImage', {
 
   & p {
     margin-bottom: 1.5rem;
-    max-width: 70ch;
   }
 
   & a {
@@ -83,7 +81,8 @@ defineOgImageComponent('OGImage', {
 
   & img {
     max-width: 100%;
-    margin: 2.5rem auto;
+    min-width: 250px;
+    margin: 1rem auto;
     display: block;
     border-radius: 8px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -115,10 +114,9 @@ defineOgImageComponent('OGImage', {
 
   & blockquote {
     background: var(--blockquote-bg);
-    border-left: 10px solid var(--accent-color);
+    border-left: 0.2rem solid var(--accent-color);
     margin: 2rem 0;
     padding: 1.5rem;
-    border-radius: 4px;
     font-style: italic;
 
     & p {
@@ -131,16 +129,16 @@ defineOgImageComponent('OGImage', {
   }
 
   & hr {
-    margin: 4rem 0;
+    margin: 3rem 0;
     border: 0;
     text-align: center;
     height: 1em;
-
-    &::after {
+    &::before {
       content: '...';
-      font-size: 1.5rem;
-      letter-spacing: 1em;
-      padding-left: 1em;
+      font-size: 2rem;
+      line-height: 0;
+      letter-spacing: 0.2em;
+      font-weight: 700;
       color: var(--text-color-light);
     }
   }
@@ -163,13 +161,13 @@ defineOgImageComponent('OGImage', {
 }
 
 .blog-title {
-  margin: 0 0 3rem;
-  font-size: 2.75rem;
+  margin:  3rem 0;
+  font-size: 3.5rem;
   line-height: 1.2;
   font-weight: 800;
   max-width: 25ch;
-  border-left: 0.2em solid var(--accent-color);
-  padding-left: 0.75em;
+  border-left: 0.2rem solid var(--accent-color);
+  padding: 0.5em 0.75em;
 
   @media (max-width: 768px) {
     & {
