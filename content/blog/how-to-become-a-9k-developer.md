@@ -8,7 +8,7 @@ In software development, reaching "9k" isn’t just about being good.
 
 It’s about being **world-class** — standing so far above the average that your decisions, your code, and your impact are unmistakable.
 
-Some call it being a **10x Developer** — I prefer calling it a **9k Developer**.
+Some call it being a [**10x Developer**](https://medium.com/ingeniouslysimple/the-origins-of-the-10x-developer-2e0177ecef60) — I prefer calling it a **9k Developer**.
 
 If you know **Dota 2**, you know that hitting **9k MMR** means you’re among the best of the best — the top 0.001% of players in the most competitive, highest-paid esport in the world.
 
