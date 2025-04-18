@@ -141,9 +141,7 @@ The 9k Developer plays the long game, building not just technical skills, but re
 They don’t just build careers.  
 They build lives worth living.
 
----
-
-## Final Words: 9k is a Mindset
+## 9. It is a Mindset
 
 Becoming a 9k Developer isn’t about raw talent or lucky breaks.  
 It’s about **focus, discipline, humility, pragmatism, and relentless evolution**.
@@ -156,6 +154,15 @@ It’s about showing up every day, training harder, thinking sharper, and living
 > **Eat like 9k.**  
 > **Live like 9k.**”
 
-Remember, coding isn’t just a craft.  
-It’s a competitive sport.  
-And the world belongs to those willing to level up — again and again.
+---
+
+## Final Words
+
+I’m not claiming to have it all figured out.
+I’m still learning, still growing, still making mistakes — and proud of it.
+
+Becoming a 9k Developer isn’t about numbers, titles, or accolades.
+It’s about constantly evolving into the best version of yourself.
+
+Everyone has their own 9k to reach.
+What matters most is that you keep moving toward it — one step, one challenge, one breakthrough at a time.
