@@ -50,8 +50,7 @@ They raise their team's knowledge, not just their own résumé.
 Every day, they ask themselves:  
 > “What improved because I was here?”
 
-Lines of code are cheap.  
-**Impact is rare.**
+Lines of code are cheap. **Impact is rare.**
 
 ## 3. Practice Relentlessly (and Intelligently)
 
@@ -144,7 +143,7 @@ They build lives worth living.
 
 ---
 
-# Final Words: 9k is a Mindset
+## Final Words: 9k is a Mindset
 
 Becoming a 9k Developer isn’t about raw talent or lucky breaks.  
 It’s about **focus, discipline, humility, pragmatism, and relentless evolution**.
