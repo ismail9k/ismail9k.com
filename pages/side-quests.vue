@@ -12,6 +12,15 @@ useHead({
   ],
 })
 
+const trackProjectClick = (projectName) => {
+  if (process.client) {
+    useGtag().event('project_click', {
+      event_category: 'side_quests',
+      event_label: projectName,
+    })
+  }
+}
+
 const projects = [
   {
     name: 'vue3-carousel',
@@ -52,7 +61,7 @@ const projects = [
 
   <div class="tools-grid">
     <a v-for="project in projects" :key="project.name" :href="project.link" target="_blank" rel="noopener noreferrer"
-      class="tool-card" :class="project.color">
+      class="tool-card" :class="project.color" @click="trackProjectClick(project.name)">
       <div class="tool-content">
         <div class="tool-icon">
           {{ project.icon }}
