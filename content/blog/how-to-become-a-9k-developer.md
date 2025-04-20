@@ -10,6 +10,8 @@ It’s about being **world-class** — standing so far above the average that yo
 
 Some call it being a [**10x Developer**](https://medium.com/ingeniouslysimple/the-origins-of-the-10x-developer-2e0177ecef60) — I prefer calling it a **9k Developer**.
 
+<!--more-->
+
 If you know **Dota 2**, you know that hitting **9k MMR** means you’re among the best of the best — the top 0.001% of players in the most competitive, highest-paid esport in the world.
 
 And if you’re an anime fan, you’ll never forget the iconic moment from **Dragon Ball Z** when Vegeta roared:

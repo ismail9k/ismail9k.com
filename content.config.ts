@@ -9,6 +9,10 @@ export const collections = {
       title: z.string(),
       slug: z.string(),
       date: z.date(),
+      excerpt: z.object({
+        type: z.string(),
+        children: z.any(),
+      }),
     }),
   }),
 };
