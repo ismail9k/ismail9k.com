@@ -1,42 +1,5 @@
-@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
 @import 'config/_index';
 @import 'typography';
-@import 'theme';
 @import 'spacing';
 
-:root {
-  --glass-blur: 12px;
-}
 
-* {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-a {
-  color: var(--theme-text-color);
-  font-weight: bold;
-  transition: $transition;
-  color: inherit;
-  text-underline-position: under;
-  text-decoration-thickness: 0.1em;
-
-  &:hover {
-    text-decoration-color: $accent;
-  }
-
-  &:focus-visible {
-    outline: 2px dashed;
-  }
-}
-
-.sr-only {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  margin: -1px;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  border: 0;
-}

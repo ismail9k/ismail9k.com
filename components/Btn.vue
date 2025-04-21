@@ -8,7 +8,7 @@
 @import '../assets/stylus/config/_index.styl';
 
 .btn {
-  border-color: $gray;
+  border-color: var(--gray-color);
   border-width: 1px;
   border-style: solid;
   border-radius: 4px;

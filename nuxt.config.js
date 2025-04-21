@@ -20,7 +20,11 @@ export default defineNuxtConfig({
     'nuxt-gtag',
     'nuxt-og-image',
   ],
-  css: ['normalize.css/normalize.css', '~/assets/stylus/app.styl'],
+  css: [
+    'normalize.css/normalize.css',
+    '~/assets/css/app.css',
+    '~/assets/stylus/app.styl',
+  ],
 
   postcss: {
     plugins: {

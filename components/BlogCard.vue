@@ -58,7 +58,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
     margin: $margin[0];
     z-index: 1;
     width: auto;
-    color: $accent;
+    color: var(--accent-color);
   }
 }
 
@@ -113,6 +113,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
   border-radius: 15px;
   cursor: pointer;
   color: var(--theme-text-color);
+  width: 100%;
 
   &:hover {
     background: var(--glass-bg);
@@ -120,7 +121,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
     box-shadow: 0 1px 3px var(--glass-shadow);
 
     .blog-card-title {
-      color: $accent;
+      color: var(--accent-color);
     }
   }
 

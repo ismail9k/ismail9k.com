@@ -131,12 +131,12 @@ function getAbsoluteTop(element) {
   display: block;
   width: 14px;
   height: 1.5px;
-  background: $gray;
+  background: var(--gray-color);
   margin: $m[5] 0;
   transform-origin: -2px 0;
 
   &.is-active {
-    background: $accent;
+    background: var(--accent-color);
     transform: scaleX(1.3);
     height: 1.75px;
     margin: $m[7] 0;
@@ -154,11 +154,11 @@ function getAbsoluteTop(element) {
   font-weight: normal;
 
   .is-active & {
-    color: $accent;
+    color: var(--accent-color);
     font-weight: bold;
 
     +darkMode() {
-      color: $accent;
+      color: var(--accent-color);
     }
   }
 
