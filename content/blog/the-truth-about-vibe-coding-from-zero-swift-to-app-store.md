@@ -3,6 +3,10 @@ title: "The Truth About Vibe Coding: From Zero Swift to App Store"
 date: 2025-04-22
 slug: the-truth-about-vibe-coding-from-zero-swift-to-app-store
 feature: cover.png
+description:
+  - Recently, I challenged myself to build a complete iOS app, using a programming language I had never written a line of code in, and launch it on the App Store — all in just three days.
+  - No preparation, no planning, no prior experience.  
+  - Just pure Vibe Coding 🔥.
 ---
 
 ## How It All Started
