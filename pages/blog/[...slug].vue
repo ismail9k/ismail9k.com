@@ -6,10 +6,19 @@ const { data: page } = await useAsyncData(path, () =>
   queryCollection('blog').path(path).first()
 );
 
-defineOgImageComponent('OGImage', {
-  title: page.value?.title,
-  description: page.value?.description,
-})
+// If page has an image property, use it as the og image URL
+// Otherwise use the custom BlogPost component
+if (page.value?.feature) {
+  defineOgImage({
+    url: `/img/${page.value.slug}/${page.value.feature}`
+  })
+} else {
+  defineOgImageComponent('OGImage', {
+    title: page.value?.title,
+    description: page.value?.description,
+    slug: page.value?.slug || '',
+  });
+}
 </script>
 
 <template>
@@ -86,9 +95,6 @@ defineOgImageComponent('OGImage', {
     margin: 2rem 0;
   }
 
-  & p:first-of-type {
-    margin-top: 0;
-  }
 
   & a {
     color: var(--accent-color);
@@ -175,6 +181,12 @@ defineOgImageComponent('OGImage', {
     & h3 {
       font-size: 1.25rem;
     }
+  }
+}
+
+.blog-content > div {
+  & > * {
+    margin-top: 0;
   }
 }
 
