@@ -31,7 +31,8 @@ defineOgImageComponent('OGImage')
 .container {
   min-height: calc(100vh - 250px);
   padding: 1rem 2rem;
-  max-width: 1000px;
+  width: 1000px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -40,6 +41,7 @@ defineOgImageComponent('OGImage')
 
 
   @media (max-width: 768px) {
+    width: 100%;
     max-width: 100%;
     padding: 1rem;
   }

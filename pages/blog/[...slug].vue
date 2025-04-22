@@ -35,8 +35,17 @@ defineOgImageComponent('OGImage', {
 
 <style>
 .blog-article {
+  --blog-padding: 2rem;
+  --bar-width: 0.3rem;
   margin: 0 auto;
-  max-width: 100ch;
+  width: calc(680px + 2 * var(--blog-padding));
+  max-width: 100%;
+
+  @media (max-width: 768px) {
+    & {
+      --blog-padding: 1rem;
+    }
+  }
 }
 
 .blog {
@@ -44,13 +53,16 @@ defineOgImageComponent('OGImage', {
   text-size-adjust: 100%;
   word-break: break-word;
   width: 100%;
-  font-size: 1.125rem;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: 1.7;
   color: var(--text-color);
   background: var(--theme-bg-color);
   border-radius: 1rem;
   border: 1px solid var(--border-color);
-  padding: 2rem;
+  padding: var(--blog-padding);
+  font-family: 'Source Serif Pro', Georgia, Cambria, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
 
 
   & h2 {
@@ -59,6 +71,7 @@ defineOgImageComponent('OGImage', {
     margin-bottom: 1.5rem;
     font-weight: 700;
     line-height: 1.3;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   }
 
   & h3 {
@@ -66,10 +79,15 @@ defineOgImageComponent('OGImage', {
     margin-top: 2.5rem;
     margin-bottom: 1.25rem;
     font-weight: 600;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   }
 
   & p {
-    margin-bottom: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  & p:first-of-type {
+    margin-top: 0;
   }
 
   & a {
@@ -113,11 +131,12 @@ defineOgImageComponent('OGImage', {
   }
 
   & blockquote {
-    background: var(--blockquote-bg);
-    border-left: 0.2rem solid var(--accent-color);
+    border-left: var(--bar-width) solid var(--accent-color);
     margin: 2rem 0;
-    padding: 1.5rem;
+    padding-left: var(--blog-padding);
+    margin-left: calc(-1 * var(--blog-padding));
     font-style: italic;
+    line-height: 2;
 
     & p {
       margin: 0;
@@ -147,7 +166,6 @@ defineOgImageComponent('OGImage', {
 
     & {
       font-size: 1rem;
-      padding: 1.5rem;
     }
 
     & h2 {
@@ -166,8 +184,9 @@ defineOgImageComponent('OGImage', {
   line-height: 1.2;
   font-weight: 800;
   max-width: 25ch;
-  border-left: 0.2rem solid var(--accent-color);
+  border-left: var(--bar-width) solid var(--accent-color);
   padding: 0.5em 0.75em;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 
   @media (max-width: 768px) {
     & {

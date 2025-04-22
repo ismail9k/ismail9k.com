@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap';
 
 :root {
   --glass-blur: 12px;
@@ -37,6 +38,9 @@ html.dark {
   --border-color: #374151;
   --glass-bg: rgba(0, 0, 0, 0.2);
   --glass-shadow: rgba(50, 50, 50, 0.1);
+}
+* {
+  box-sizing: border-box;
 }
 
 html,
@@ -80,4 +84,13 @@ a {
   width: 1px;
   height: 1px;
   border: 0;
+}
+
+.serif-font {
+  font-family: 'Source Serif Pro', Georgia, Cambria, 'Times New Roman', Times,
+    serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
