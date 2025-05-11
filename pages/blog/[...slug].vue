@@ -8,9 +8,9 @@ const { data: page } = await useAsyncData(path, () =>
 
 // If page has an image property, use it as the og image URL
 // Otherwise use the custom BlogPost component
-if (page.value?.feature) {
+if (page.value?.header) {
   defineOgImage({
-    url: `/img/${page.value.slug}/${page.value.feature}`
+    url: `/img/${page.value.slug}/${page.value.header}`
   })
 } else {
   defineOgImageComponent('OGImage', {

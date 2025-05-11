@@ -9,7 +9,7 @@ export const collections = {
       title: z.string(),
       slug: z.string(),
       date: z.date(),
-      feature: z.string().optional(),
+      header: z.string().optional(),
       excerpt: z.object({
         type: z.string(),
         children: z.any(),
