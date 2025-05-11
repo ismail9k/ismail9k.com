@@ -17,7 +17,6 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/color-mode',
     '@nuxt/image',
-    'nuxt-gtag',
     'nuxt-og-image',
   ],
   css: [
@@ -30,10 +29,6 @@ export default defineNuxtConfig({
     plugins: {
       autoprefixer: {},
     },
-  },
-
-  gtag: {
-    id: process.env.GOOGLE_ANALYTICS_ID,
   },
 
   // pwa: {
@@ -112,8 +107,17 @@ export default defineNuxtConfig({
         { property: 'profile:gender', content: 'male' },
         { property: 'og:type', content: 'profile' },
       ],
-
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-YR503NS9M7', // <-- Replace with your real GA ID
+          async: true,
+        },
+        {
+          children: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-YR503NS9M7');`, // <-- Replace with your real GA ID
+          type: 'text/javascript',
+        },
+      ],
     },
   },
 
