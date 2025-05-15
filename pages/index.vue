@@ -15,7 +15,7 @@ useHead({
 });
 
 const filteredSocial = socials.filter(({ name }) =>
-  ['github', 'youtube', 'twitter'].includes(name.toLowerCase())
+  ['github', 'x'].includes(name.toLowerCase())
 );
 
 const { data: posts } = await useAsyncData('blog', () =>
@@ -53,7 +53,7 @@ const { data: posts } = await useAsyncData('blog', () =>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" v-if="false">
     <h2 class="title">Fine me online:</h2>
     <div class="social-row">
       <SocialCard v-for="social in filteredSocial" :key="social.name" :data="social" />

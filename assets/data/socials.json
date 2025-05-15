@@ -34,5 +34,11 @@
     "icon": "youtube",
     "color": "#FF0000",
     "link": "https://youtube.com/@ismail9k"
+  },
+  {
+    "name": "TikTok",
+    "icon": "tiktok",
+    "color": "#000000",
+    "link": "https://www.tiktok.com/@ismail.9k"
   }
 ]
