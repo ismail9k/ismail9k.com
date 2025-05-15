@@ -75,6 +75,7 @@ if (page.value?.header) {
 
 
   & h2 {
+    scroll-margin-top: 90px;
     font-size: 1.875rem;
     margin-top: 3rem;
     margin-bottom: 1.5rem;
@@ -84,6 +85,7 @@ if (page.value?.header) {
   }
 
   & h3 {
+    scroll-margin-top: 90px;
     font-size: 1.5rem;
     margin-top: 2.5rem;
     margin-bottom: 1.25rem;
@@ -191,6 +193,7 @@ if (page.value?.header) {
 }
 
 .blog-title {
+  scroll-margin-top: 90px;
   margin:  3rem 0;
   font-size: 3.5rem;
   line-height: 1.2;
