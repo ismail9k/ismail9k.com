@@ -18,13 +18,13 @@ const props = defineProps(['path', 'date', 'title', 'description']);
 </template>
 
 <style lang="stylus">
-@import '../assets/stylus/config/_index.styl';
+@import '../assets/stylus/app.styl';
 
 .blog-card-wrapper {
   position: relative;
   display: flex;
   gap: 20px;
-  transition: $transition;
+  transition: var(--transition);
 
   +tablet() {
     gap: 10px;
@@ -34,7 +34,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
 .blog-card-title {
   color: var(--theme-text-color);
   margin-top: 0;
-  transition: $transition;
+  transition: var(--transition);
 }
 
 .blog-card-time {
@@ -43,8 +43,8 @@ const props = defineProps(['path', 'date', 'title', 'description']);
   flex-shrink: 0;
   text-align: right;
   font-size: 12px;
-  margin-top: $margin[6];
-  margin-right: $margin[7];
+  margin-top: var(--margin-6);
+  margin-right: var(--margin-7);
   font-weight: bold;
 
   +tablet() {
@@ -54,8 +54,8 @@ const props = defineProps(['path', 'date', 'title', 'description']);
     position: absolute;
     transform: rotate(90deg);
     transform-origin: left;
-    padding: 0 $padding[1];
-    margin: $margin[0];
+    padding: 0 var(--padding-1);
+    margin: 0;
     z-index: 1;
     width: auto;
     color: var(--accent-color);
@@ -68,7 +68,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
 
   &::before {
     position: absolute;
-    top: $margin[6];
+    top: var(--margin-6);
     left: 0;
     content: ' ';
     display: block;
@@ -83,7 +83,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
 
   &::after {
     position: absolute;
-    top: $margin[6];
+    top: var(--margin-6);
     transform: translateY(15px);
     left: 4px;
     content: ' ';
@@ -108,7 +108,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
 .blog-card {
   display: block;
   position: relative;
-  padding: $padding[6] ($padding[7]);
+  padding: var(--padding-6) var(--padding-7);
   text-decoration: none;
   border-radius: 15px;
   cursor: pointer;
@@ -127,7 +127,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
 
 
   +tablet() {
-    padding: $padding[3] ($padding[4]);
+    padding: var(--padding-3) (var(--padding-4));
   }
 }
 

@@ -24,7 +24,7 @@ defineOgImageComponent('OGImage')
 
 
 <style lang="stylus">
-@import '../assets/stylus/config/_index.styl';
+@import '../assets/stylus/app.styl';
 
 
 .container {
@@ -49,6 +49,6 @@ defineOgImageComponent('OGImage')
 .section {
   display: flex;
   flex-direction: column;
-  margin: $margin[7] 0;
+  margin: var(--margin-7) 0;
 }
 </style>

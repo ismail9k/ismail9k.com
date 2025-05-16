@@ -16,13 +16,13 @@ import socials from '/assets/data/socials.json';
 </template>
 
 <style lang="stylus">
-@import '../../assets/stylus/config/_index.styl';
+@import '../../assets/stylus/app.styl';
 
 .footer {
   display: flex;
   justify-content: center;
-  padding: $padding[10];
-  margin-bottom: $margin[5];
+  padding: var(--padding-10);
+  margin-bottom: var(--margin-5);
 }
 
 .footer-list {
@@ -34,9 +34,9 @@ import socials from '/assets/data/socials.json';
 
 .footer-item {
   display: block;
-  padding: $padding[1];
+  padding: var(--padding-1);
   color: var(--dark-color);
-  font-size: $font-size[5];
+  font-size: var(--text-size-5);
   cursor: pointer;
 
   &:not(:hover) {

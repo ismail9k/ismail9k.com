@@ -114,7 +114,7 @@ function getAbsoluteTop(element) {
 </template>
 
 <style lang="stylus">
-@import '../assets/stylus/config/_index.styl';
+@import '../assets/stylus/app.styl';
 
 .toc {
   position: fixed;
@@ -156,7 +156,7 @@ function getAbsoluteTop(element) {
 
 .toc-item-text {
   display: none;
-  font-size: $text[2];
+  font-size: var(--text-size-2);
   color: var(--gray-color);
   font-weight: normal;
 
@@ -177,7 +177,7 @@ function getAbsoluteTop(element) {
 
   .is-sub-item & {
     margin-inline-start: $m[4];
-    font-size: $text[1];
+    font-size: var(--text-size-1);
   }
 
   +darkMode() {

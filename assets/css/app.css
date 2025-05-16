@@ -17,6 +17,14 @@
   --white-color: hsl(0, 0%, 100%);
   --white-color-alpha-20: hsl(0 0% 100% / 0.2);
   --white-color-darken-30: hsl(0, 0%, 70%);
+
+  --text-size-1: 0.875rem;
+  --text-size-2: 1rem;
+  --text-size-3: 1.125rem;
+  --text-size-4: 1.25rem;
+  --text-size-5: 1.5rem;
+  --text-size-6: 1.875rem;
+  --text-size-7: 2.25rem;
 }
 
 html,
@@ -99,4 +107,34 @@ a {
   font-style: normal;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
+}
+
+.title {
+  margin-top: 0;
+  font-size: 1.5rem;
+
+  @media screen and (max-width: 991px) {
+    font-size: 1.25rem;
+  }
+}
+
+.main-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2.625rem;
+  font-weight: bold;
+
+  @media screen and (max-width: 991px) {
+    font-size: 1.5rem;
+  }
+}
+
+.main-description {
+  margin-top: 0;
+  font-size: 1.125rem;
+  text-align: justify;
+
+  @media screen and (max-width: 991px) {
+    font-size: 1.25rem;
+  }
 }

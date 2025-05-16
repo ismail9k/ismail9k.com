@@ -5,14 +5,14 @@
 </template>
 
 <style lang="stylus">
-@import '../assets/stylus/config/_index.styl';
+@import '../assets/stylus/app.styl';
 
 .btn {
   border-color: var(--gray-color);
   border-width: 1px;
   border-style: solid;
   border-radius: 4px;
-  padding: $padding[2] ($padding[4]);
+  padding: var(--padding-2) (var(--padding-4));
   display: flex;
   place-items: center;
   gap: 10px;
