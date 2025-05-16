@@ -102,6 +102,9 @@ header.is-scrolled {
   color: var(--theme-text-color);
   text-decoration: none;
   transition: color 0.2s ease;
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
 .navbar-brand {

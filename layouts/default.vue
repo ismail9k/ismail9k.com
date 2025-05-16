@@ -8,7 +8,6 @@ defineOgImageComponent('OGImage')
 
 <template>
   <div class="layout">
-    <VitePwaManifest />
     <BlurredCircles />
     <the-navbar />
 

@@ -1,7 +1,6 @@
 ---
 title: "Tailwind CSS: Why It's Not My Cup of Tea"
 date: 2023-07-30
-slug: tailwind-css-why-it-s-not-my-cup-of-tea
 ---
 
 Like everything, there are people who support and oppose certain things. For example, sushi may be someone's favorite food, while others can't stand its smell.
@@ -10,7 +9,7 @@ Tailwind is no exception; some developers love using it, while others do not. Al
 
 <!--more-->
 
-## TLDR;
+## TLDR
 
 Despite Tailwind CSS's popularity, it has issues like complex maintainability, reduced readability, overuse of utility classes, and limited customizability. It complicates version control, disrupts traditional coding separation, and could make projects overly dependent on it. As CSS continues to evolve and become more efficient, the value of utility-based CSS frameworks like Tailwind could diminish.
 
@@ -74,7 +73,7 @@ Tailwind does not make it easy to switch between multiple themes. If you want to
 
 ## Tailwind’s @Apply
 
-According to Tailwind documentation, if there are too many classes or reusable classes, it is recommended to use @apply. 
+According to Tailwind documentation, if there are too many classes or reusable classes, it is recommended to use @apply.
 
 Creating reusable classes is the best way to solve the mentioned above problems with Tailwind. However, could we achieve the same functionality with better readability by simply using plain CSS or preprocessors?
 

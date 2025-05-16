@@ -1,7 +1,6 @@
 ---
 title: "CSS percentage unit, the evil parts"
 date: 2018-04-27
-slug: css-percentage-unit-the-evil-parts
 ---
 
 CSS has dozens of [length](https://developer.mozilla.org/en-US/docs/Web/CSS/length) units, but the **percentage** unit is one of my favorites. However, it can be very evil and troublesome sometimes.
@@ -11,6 +10,7 @@ It should be one of the easiest CSS concepts to understand, the **percentage** C
 Until now it seems straightforward, the most tricky part is that every **percentage** value has to be relative to some absolute value of an element. It is often relative to an element’s parent node, but sometimes it will be relative to the element itself (as I will explain later). In addition, we have to know exactly which property value it will refer to (with, height or font-size).
 
 ## TL;DR
+
 When you use it with some CSS properties it’ll be relative to the **parent element’s width**. Some of these properties include: left, right, margin, padding, (even top and bottom margin/padding will be relative to the parent’s width).
 
 And sometimes it’ll be relative to the **parent element’s height**. Like when it’s used for top or bottom properties, as expected.
@@ -110,8 +110,7 @@ There are many ways to fix this, and I believe you’ve already thought of some,
 
 ## Step 2: Align slider indicators
 
-We will start by aligning ***.slider__nav*** to the center-bottom of the slider. We will give it an absolute position, relative to ***.slider*** with left _50%_ of the slider width, and see the output.
-
+We will start by aligning ***.slider__nav*** to the center-bottom of the slider. We will give it an absolute position, relative to ***.slider*** with left *50%* of the slider width, and see the output.
 
 ```css
 /* step 2.1 */
@@ -131,11 +130,11 @@ As we can see, we’ve aligned the left of ***.slider__nav*** to the center of *
 
 Unfortunately, there’s no center property in CSS so, we have to make a trick to force ***.slider__nav*** to shift back to the center.
 
-We need to tell ***.slider__nav*** to move to the right half of its width (_50%_ from width), we can use a margin with a negative value for this.
+We need to tell ***.slider__nav*** to move to the right half of its width (*50%* from width), we can use a margin with a negative value for this.
 
-If we added margin-left: _-50%_ to ***.slider__nav*** itself, we would find it will go back to its starting place, because the percentage value will be relative to .slider width not ***.slider__nav*** width.
+If we added margin-left: *-50%* to ***.slider__nav*** itself, we would find it will go back to its starting place, because the percentage value will be relative to .slider width not ***.slider__nav*** width.
 
-The trick here is to select the first ***.slider__nav*** child, add _margin-left: -50%_ to it then the percentage will be relative to ***.slider__nav*** itself.
+The trick here is to select the first ***.slider__nav*** child, add *margin-left: -50%* to it then the percentage will be relative to ***.slider__nav*** itself.
 
 ```css
 /* step 2.2 */
@@ -180,14 +179,14 @@ It seems like this technique worked perfectly in horizontal alignment but not as
 
 To know why, we will check every percentage value and determine which element and property it’s relative to.
 
-_top_ property is relative to ***.slider***’s height which is exactly what we want, while margin-top is relative to ***.slider__next***’s element and again it’s what we want, but it’s relative to its width, not its height.
+*top* property is relative to ***.slider***’s height which is exactly what we want, while margin-top is relative to ***.slider__next***’s element and again it’s what we want, but it’s relative to its width, not its height.
 
 This would work perfectly if the ***.slider__next*** height was same as the width, but how we can fix this?
 
 ![spiderman meme](/img/css-percentage-unit-the-evil-parts/spiderman.jpeg)
 <center>*source: https://memegenerator.net*</center>
 
-### I introduce to you the ultimate solution, say welcome to the superhero transform.
+### I introduce to you the ultimate solution, say welcome to the superhero transform
 
 The *transform* property is very powerful as it can be relative to the width or height of the element itself, so there’s no need for the trick where we select the first-child element. It can work perfectly for both vertical and horizontal alignment, without mention, it’s better in performance too.
 
@@ -268,6 +267,6 @@ Thank you for reading, Happy coding!
 
 ## References
 
-* https://www.w3.org/Style/Examples/007/center.en.html
-* https://www.impressivewebs.com/vertical-percentages-css
-* https://developer.mozilla.org/en-US/docs/Web/CSS/length
+* <https://www.w3.org/Style/Examples/007/center.en.html>
+* <https://www.impressivewebs.com/vertical-percentages-css>
+* <https://developer.mozilla.org/en-US/docs/Web/CSS/length>

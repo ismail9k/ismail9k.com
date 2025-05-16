@@ -1,7 +1,6 @@
 ---
 title: AI-Powered Tools to Get Your Next Software Job Offer
 date: 2020-10-13
-slug: ai-powered-tools-to-get-your-next-software-job-offer
 ---
 
 Finding your perfectly-fit job should not be rocket science, especially for the new job seekers.
@@ -52,7 +51,7 @@ The fastest way to improve your chances of being accepted on the job is to have 
 
 Grammarly without saying is your superhero; it can save you from embarrassing situations, such as sending your profile with a typo or a grammatical error. You can use it to audit your resume writing tone and grammar.
 
-Their monthly subscription costs A LOT, but for one who is not working as a copywriter, the free plan is more than enough. 
+Their monthly subscription costs A LOT, but for one who is not working as a copywriter, the free plan is more than enough.
 
 ### [Resume Worded](https://bit.ly/ResumeWorded)
 

@@ -1,7 +1,6 @@
 ---
 title: Use JavaScript Optional Chaining, Today!
 date: 2019-10-30
-slug: use-javascript-optional-chaining-today
 ---
 
 Optional Chaining is a new JavaScript API that will make developers' lives easier :D. Optional Chaining is currently at [Stage 3](https://github.com/tc39/proposal-optional-chaining), and soon enough will be part of the language itself, but we can use it, today.
@@ -47,7 +46,7 @@ Also if you want to set a default value you can use the proposed [`Nullish coale
 
 ```js
 const animationDuration = response.settings?.animationDuration ?? 300;
-``` 
+```
 
 The Optional Chaining can also optionally call a function if it exists:
 
@@ -56,7 +55,6 @@ myAwesomeFunction?.();
 ```
 
 The first time I saw this syntax, it was very odd for me. But like any new syntax, I think it will take time until my eyes used to see it. you can read [here](https://github.com/tc39/proposal-optional-chaining#faq) why they had to use this syntax, for optionally calling functions.
-
 
 ## Configuration
 
@@ -67,7 +65,6 @@ We can use **Optional Chaining** now throw the Babel compiler. I will describe h
   - [Babel](#babel)
   - [ESLint](#eslint)
   - [VS Code](#vs-code)
-
 
 ### Babel
 
@@ -90,9 +87,7 @@ Add the plugin to `.babelrc` config file
 }
 ```
 
-
 ### ESLint
-
 
 After you install the babel, you can use `?.` optional chaining operator and Babel will compile it to the current working js. However, if you are using ESLint, it will not recognize the new syntax. We have to [`babel-eslint`](https://github.com/babel/babel-eslint) plugin in order to remove the eslint error.
 
@@ -125,7 +120,7 @@ eslint src/js/**
 
 ### VS Code
 
-The last part of this setup is to config VS Code editor, although *ESLint* is now aware of the *optional chaining operator*, you will notice that the VS Code is still displaying an annoying warning message. 
+The last part of this setup is to config VS Code editor, although *ESLint* is now aware of the *optional chaining operator*, you will notice that the VS Code is still displaying an annoying warning message.
 
 <img src="/img/use-javascript-optional-chaining-today/vs-cdoe.png" width="450px" alt="vs code error" />
 
@@ -150,8 +145,7 @@ Then add those configurations to the `.vscode/settings.json` file
   // requires only if you use vetur plugin
   "vetur.validation.script": false
 }
-``` 
-
+```
 
 Congratulations 🥳🥳, You are now using future technologies 👽👽.
 

@@ -2,7 +2,7 @@
 const { data: posts } = await useAsyncData('blog', () =>
   queryCollection('blog')
     .order('date', 'DESC')
-    .limit(10)
+    .limit(15)
     .select('date', 'title', 'description', 'path')
     .all()
 );

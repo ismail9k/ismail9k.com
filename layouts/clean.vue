@@ -7,7 +7,6 @@ export default {
 
 <template>
   <main>
-    <VitePwaManifest />
     <div class="container">
       <slot></slot>
     </div>

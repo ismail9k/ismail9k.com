@@ -1,7 +1,6 @@
 ---
 title: How to Become a 9k Developer
 date: 2025-04-18
-slug: how-to-become-a-9k-developer
 header: header.png
 description:
   - In software development, reaching "9k" isn’t just about being good.

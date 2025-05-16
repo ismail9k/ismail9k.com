@@ -1,7 +1,6 @@
 ---
 title: Neomorphism designs, UI components library
 date: 2020-01-25
-slug: neomorphism-designs-ui-components-library
 ---
 
 Every while a new design trend arise and became the dominator of the shape of the period. Recently, the neomorphic design style becoming very [trending](https://dribbble.com/tags/neomorphism) and is gaining more and more popularity.
@@ -30,7 +29,6 @@ I reviewed the most famous frameworks and components libraries structure and con
 * The components are written in [Stylus](http://stylus-lang.com/) because it's the best 🤪🤪.
 
 After TWO days of hard work 🤓🤓, and lots of potions coffee. I want to introduce [Neomorphism, UI components library](https://ismail9k.com/neomorphism). (creative name, right? 🤷‍♂️🤷‍♂️)
-
 
 ## Final words
 

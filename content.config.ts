@@ -2,7 +2,7 @@ import { defineCollection, z } from '@nuxt/content';
 
 export const collections = {
   blog: defineCollection({
-    source: 'blog/*.md',
+    source: 'blog/**/*.md',
     type: 'page',
 
     schema: z.object({

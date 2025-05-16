@@ -1,5 +1,5 @@
 <script setup>
-const { parent } = defineProps(['parent']);
+const { parent, scrollMarginTop } = defineProps(['parent', 'scrollMarginTop']);
 
 const headers = ref([]);
 const activeHeader = ref('');
@@ -25,6 +25,7 @@ const onScroll = () => {
 
 const handleScroll = () => {
   const scrollY = window.scrollY;
+  const marginTop = Number(scrollMarginTop) || 0;
   const innerHeight = window.innerHeight;
   const scrollHeight = document.documentElement.scrollHeight;
   const isBottom = scrollHeight - (scrollY + innerHeight) < THRESHOLD;
@@ -41,7 +42,7 @@ const handleScroll = () => {
 
   let activeHeader = null;
   for (const header of headers.value) {
-    if (header.top > scrollY + THRESHOLD) {
+    if (header.top > scrollY + marginTop + THRESHOLD) {
       break;
     }
     activeHeader = header;
@@ -50,6 +51,7 @@ const handleScroll = () => {
 };
 
 function getHeaders() {
+  const marginTop = Number(scrollMarginTop) || 0;
   const headersEl = Array.from(
     (parent ?? document).querySelectorAll('.blog-content :is(h2[id], h3[id])')
   );
@@ -59,7 +61,7 @@ function getHeaders() {
       id: element.getAttribute('id'),
       tagName: element.tagName,
       text: element.innerText,
-      top: getAbsoluteTop(element),
+      top: getAbsoluteTop(element) - marginTop,
     }))
     .filter(({ top }) => !Number.isNaN(top))
     .sort((a, b) => a.top - b.top);
@@ -82,9 +84,10 @@ function setActiveHeader(header) {
 
 function getAbsoluteTop(element) {
   let top = 0;
-  while (element) {
-    top += element.offsetTop || 0;
-    element = element.offsetParent;
+  let el = element;
+  while (el) {
+    top += el.offsetTop || 0;
+    el = el.offsetParent;
   }
   return top;
 }
@@ -133,6 +136,10 @@ function getAbsoluteTop(element) {
   height: 1.5px;
   background: var(--gray-color);
   margin: $m[5] 0;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.1em;
+  text-decoration-color: var(--gray-color);
   transform-origin: -2px 0;
 
   &.is-active {
@@ -150,9 +157,14 @@ function getAbsoluteTop(element) {
 .toc-item-text {
   display: none;
   font-size: $text[2];
-  color: $dark-gray;
+  color: var(--gray-color);
   font-weight: normal;
 
+
+  &:hover {
+    color: var(--text-color);
+  }
+  
   .is-active & {
     color: var(--accent-color);
     font-weight: bold;
@@ -161,6 +173,7 @@ function getAbsoluteTop(element) {
       color: var(--accent-color);
     }
   }
+
 
   .is-sub-item & {
     margin-inline-start: $m[4];

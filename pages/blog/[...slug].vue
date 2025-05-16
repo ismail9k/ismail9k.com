@@ -31,8 +31,13 @@ if (page.value?.header) {
 
   <template v-else>
     <article class="blog-article">
-      <h1 class="blog-title">{{ page.title }}</h1>
-      <TOC :parent="blogParent" />
+      <div class="blog-header">
+        <h1 class="blog-title">{{ page.title }}</h1>
+        <p v-if="page.date" class="blog-date">
+          {{ new Date(page.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) }}
+        </p>
+      </div>
+      <TOC :parent="blogParent" scroll-margin-top="90" />
       <div class="blog" ref="blogParent">
         <div class="blog-content">
           <ContentRenderer :value="page" />
@@ -99,10 +104,19 @@ if (page.value?.header) {
 
 
   & a {
-    color: var(--accent-color);
+    color: var(--text-color);
     text-decoration: underline;
-    text-decoration-thickness: 0.1em;
-    text-underline-offset: 0.2em;
+    text-decoration-thickness: 0.05em;
+    text-underline-offset: 0.1em;
+    text-decoration-color: var(--accent-color);
+    transition: var(--transition);
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+
+  & :is(h1, h2, h3, h3) > a {
+    text-decoration: none;
   }
 
   & img {
@@ -192,15 +206,25 @@ if (page.value?.header) {
   }
 }
 
+.blog-header {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  border-left: var(--bar-width) solid var(--accent-color);
+  padding: calc(var(--blog-padding) / 2) var(--blog-padding);
+  margin: 0 0 3rem;
+}
+
 .blog-title {
   scroll-margin-top: 90px;
-  margin:  3rem 0;
   font-size: 3.5rem;
   line-height: 1.2;
   font-weight: 800;
   max-width: 25ch;
-  border-left: var(--bar-width) solid var(--accent-color);
-  padding: 0.5em 0.75em;
+  margin: 0;
+
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 
   @media (max-width: 768px) {
@@ -209,6 +233,13 @@ if (page.value?.header) {
       margin-bottom: 2rem;
     }
   }
+}
+
+.blog-date {
+  margin: 0;
+  color: var(--text-color-light);
+  font-size: 1.1rem;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .not-found-wrapper {

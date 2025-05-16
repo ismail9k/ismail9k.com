@@ -1,7 +1,6 @@
 ---
 title: "The CSS I Knew Has Evolved: Advanced Features, New Identity"
 date: 2024-12-02
-slug: the-css-i-know-has-evolved-advanced-features-new-identity
 ---
 
 The world of frontend development has changed drastically since I began my journey as a front-end developer a decade ago. CSS itself has not only evolved in capabilities but also embraced a fresh, modern identity with a new logo that symbolizes this evolution.
@@ -19,8 +18,6 @@ Here’s a look at some modern CSS features I wish had existed when I started my
 ## Centering a Dev
 
 There are plenty of memes mocking CSS for lacking an easy way to center a div element. Luckily, those dark days are gone we now have the single CSS property `place-content`
-
-
 
 ![centring div meme](/img/the-css-i-know-has-evolved-advanced-features-new-identity/center-div-meme.jpg)
 
@@ -49,7 +46,7 @@ Alternatively, Flexbox offers another simple solution:
 
 ### Vertically Centering a Block-Level Element
 
-With the introduction of [the align-content property for block layouts](https://web.dev/blog/align-content-block), you can now center a div vertically using `align-content`, which works properly without requiring a flexbox wrapper. 
+With the introduction of [the align-content property for block layouts](https://web.dev/blog/align-content-block), you can now center a div vertically using `align-content`, which works properly without requiring a flexbox wrapper.
 
 ```css
 .is-vertically-centered {
@@ -145,7 +142,7 @@ Now you can achieve similar results much more elegantly by combining the `clamp`
 
 CSS color management has evolved dramatically, offering a plethora of new systems and tools. Features like color-mix() and support for LCH and LAB color spaces deserve their own article. stay tuned for that!
 
-## Resources:
+## Resources
 
 - [Using CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 - [Nesting Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Nesting_selector)

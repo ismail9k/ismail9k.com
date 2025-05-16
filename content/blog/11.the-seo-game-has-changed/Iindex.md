@@ -1,7 +1,6 @@
 ---
 title: "The SEO Game Has Changed"
 date: 2025-05-15
-slug: the-seo-game-has-changed
 header: header.png
 description:
   - The rise of AI-powered tools like ChatGPT, Perplexity, and Google's new AI search is reshaping how we think about content discovery. Traditional SEO (Search Engine Optimization) is no longer enough. Today, it's just as important to consider how your content surfaces in AI-generated responses, not just in Google's search results.
