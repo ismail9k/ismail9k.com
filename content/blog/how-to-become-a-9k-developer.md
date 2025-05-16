@@ -2,7 +2,7 @@
 title: How to Become a 9k Developer
 date: 2025-04-18
 slug: how-to-become-a-9k-developer
-header: 'header.png'
+header: header.png
 description:
   - In software development, reaching "9k" isn’t just about being good.
   - It’s about being world-class — standing so far above the average that your decisions, your code, and your impact are unmistakable.
