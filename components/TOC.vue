@@ -4,7 +4,7 @@ const { parent, scrollMarginTop } = defineProps(['parent', 'scrollMarginTop']);
 const headers = ref([]);
 const activeHeader = ref('');
 
-const THRESHOLD = 20;
+const THRESHOLD = 0;
 let scrollAnimationFrame;
 
 onMounted(() => {
@@ -181,7 +181,7 @@ function getAbsoluteTop(element) {
   }
 
   +darkMode() {
-    color: $white;
+    color: var(--white-color);
   }
 }
 

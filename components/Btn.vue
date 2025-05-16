@@ -19,7 +19,7 @@
   cursor: pointer;
   border-color: currentColor;
   text-decoration: none;
-  background-color: alpha($white, 20%);
+  background-color: var(--white-color-alpha-20);
 }
 
 .btn:not(:hover) {

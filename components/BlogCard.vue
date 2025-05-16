@@ -77,7 +77,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
     border-radius: @width;
     border-width: 2px;
     border-style: solid;
-    border-color: alpha($dark, 10%);
+    border-color: var(--dark-color-alpha-20);
     transform: translateY(5px);
   }
 
@@ -90,17 +90,17 @@ const props = defineProps(['path', 'date', 'title', 'description']);
     display: block;
     width: 1px;
     height: calc(100% - 10px);
-    background-color: alpha($dark, 10%);
+    background-color: var(--dark-color-alpha-20);
     margin-inline-start: 0.5px;
   }
 
   +darkMode() {
     &::before {
-      border-color: alpha($white, 20%);
+      border-color: var(--white-color-alpha-20);
     }
 
     &::after {
-      background-color: alpha($white, 20%);
+      background-color: var(--white-color-alpha-20);
     }
   }
 }
@@ -133,12 +133,12 @@ const props = defineProps(['path', 'date', 'title', 'description']);
 
 .blog-card-description {
   margin: 0;
-  color: lighten($dark, 20%);
+  color: var(--dark-color-lighten-30);
   text-align: justify;
   font-weight: normal;
 
   +darkMode() {
-    color: darken($white, 30%);
+    color: var(--white-color-darken-30);
   }
 }
 </style>

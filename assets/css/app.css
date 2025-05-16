@@ -4,40 +4,46 @@
 :root {
   --glass-blur: 12px;
   --transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
-  --accent-color: hsl(148, 55%, 41%);
-  --black-color: hsl(214, 45%, 1%);
-  --dark-color: hsl(214, 45%, 7%);
-  --light-color: hsl(214, 45%, 95%);
-  --gray-color: #bbbfc4;
-  --dark-gray-color: #535354;
-  --white-color: #ffffff;
+  --accent-color: hsl(148 55% 41%);
+  --black-color: hsl(214 45% 1%);
+  --dark-color: hsl(214 45% 7%);
+  --dark-color-alpha-20: hsl(214 45% 7% / 0.2);
+  --dark-color-lighten-30: hsl(214 45% 30%);
+
+  --light-color: hsl(214 45% 95%);
+  --gray-color: hsl(0 0% 80%);
+  --dark-gray-color: hsl(0 0% 50%);
+
+  --white-color: hsl(0, 0%, 100%);
+  --white-color-alpha-20: hsl(0 0% 100% / 0.2);
+  --white-color-darken-30: hsl(0, 0%, 70%);
 }
 
 html,
 html.light {
-  --theme-bg-color: #ffffff;
-  --theme-text-color: #000000;
-  --text-color: #000000;
-  --navbar-bg-color: #ffffff;
-  --text-color-light: #666666;
-  --code-bg: #f5f5f5;
-  --blockquote-bg: #f8f9fa;
-  --border-color: #e5e7eb;
-  --glass-bg: rgba(255, 255, 255, 0.2);
-  --glass-shadow: rgba(0, 0, 0, 0.1);
+  --theme-bg-color: hsl(0 0% 100%);
+  --theme-text-color: hsl(0 0% 0%);
+  --text-color: hsl(0 0% 0%);
+  --navbar-bg-color: hsl(0 0% 100%);
+  --text-color-light: hsl(0 0% 60%);
+  --code-bg: hsl(0 0% 90%);
+  --blockquote-bg: hsl(0 0% 95%);
+  --border-color: hsl(0 0% 80%);
+  --glass-bg: hsl(0 0% 100% / 0.2);
+  --glass-shadow: hsl(0 0 0 / 0.1);
 }
 
 html.dark {
-  --theme-bg-color: #000000;
-  --theme-text-color: #ffffff;
-  --text-color: #ffffff;
-  --navbar-bg-color: #000000;
-  --text-color-light: #9ca3af;
-  --code-bg: #1f2937;
-  --blockquote-bg: #111827;
-  --border-color: #374151;
-  --glass-bg: rgba(0, 0, 0, 0.2);
-  --glass-shadow: rgba(50, 50, 50, 0.1);
+  --theme-bg-color: hsl(0 0% 0%);
+  --theme-text-color: hsl(0 0% 100%);
+  --text-color: hsl(0 0% 100%);
+  --navbar-bg-color: hsl(0 0% 0%);
+  --text-color-light: hsl(0 0% 60%);
+  --code-bg: hsl(0 0% 10%);
+  --blockquote-bg: hsl(0 0% 10%);
+  --border-color: hsl(0 0% 20%);
+  --glass-bg: hsl(0 0% 0% / 0.2);
+  --glass-shadow: hsl(0 0% 0% / 0.1);
 }
 * {
   box-sizing: border-box;

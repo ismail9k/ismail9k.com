@@ -35,7 +35,7 @@ import socials from '/assets/data/socials.json';
 .footer-item {
   display: block;
   padding: $padding[1];
-  color: $dark;
+  color: var(--dark-color);
   font-size: $font-size[5];
   cursor: pointer;
 
