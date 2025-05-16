@@ -25,6 +25,29 @@
   --text-size-5: 1.5rem;
   --text-size-6: 1.875rem;
   --text-size-7: 2.25rem;
+
+
+  --spacing-0: 0rem; /* 0px */
+  --spacing-1: 0.125rem; /* 2px */
+  --spacing-2: 0.25rem; /* 4px */
+  --spacing-3: 0.375rem; /* 6px */
+  --spacing-4: 0.5rem; /* 8px */
+  --spacing-5: 0.625rem; /* 10px */
+  --spacing-6: 0.75rem; /* 12px */
+  --spacing-7: 0.875rem; /* 14px */
+  --spacing-8: 1rem; /* 16px */
+  --spacing-9: 1.125rem; /* 18px */
+  --spacing-10: 1.25rem; /* 20px */
+  --spacing-11: 1.5rem; /* 24px */
+  --spacing-12: 1.75rem; /* 28px */
+  --spacing-13: 2rem; /* 32px */
+  --spacing-14: 2.25rem; /* 36px */
+  --spacing-15: 2.5rem; /* 40px */
+  --spacing-16: 2.75rem; /* 44px */
+  --spacing-17: 3rem; /* 48px */
+  --spacing-18: 3.25rem; /* 52px */
+  --spacing-19: 3.5rem; /* 56px */
+  --spacing-20: 3.75rem; /* 60px */
 }
 
 html,

@@ -19,11 +19,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-og-image',
   ],
-  css: [
-    'normalize.css/normalize.css',
-    '~/assets/css/app.css',
-    '~/assets/stylus/app.styl',
-  ],
+  css: ['normalize.css/normalize.css', '~/assets/css/app.css'],
 
   postcss: {
     plugins: {

@@ -66,7 +66,7 @@ const { data: posts } = await useAsyncData('blog', () =>
   </section>
 </template>
 
-<style lang="stylus">
+<style lang="css">
 .social-row {
   display: flex;
   gap: 10px;

@@ -17,17 +17,15 @@ const props = defineProps(['path', 'date', 'title', 'description']);
   </div>
 </template>
 
-<style lang="stylus">
-@import '../assets/stylus/app.styl';
-
+<style lang="css">
 .blog-card-wrapper {
   position: relative;
   display: flex;
-  gap: 20px;
+  gap: var(--spacing-10);
   transition: var(--transition);
 
-  +tablet() {
-    gap: 10px;
+  @media screen and (max-width: 991px) {
+    gap: var(--spacing-7);
   }
 }
 
@@ -43,18 +41,20 @@ const props = defineProps(['path', 'date', 'title', 'description']);
   flex-shrink: 0;
   text-align: right;
   font-size: 12px;
-  margin-top: var(--margin-6);
-  margin-right: var(--margin-7);
+  margin-top: var(--spacing-10);
+  margin-right: var(--spacing-7);
   font-weight: bold;
+  color: var(--dark-gray-color);
 
-  +tablet() {
-    top: 30px;
+  @media screen and (max-width: 991px) {
+    top: var(--spacing-15);
     left: 0;
-    background-color: $theme-bg-color;
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
     position: absolute;
     transform: rotate(90deg);
     transform-origin: left;
-    padding: 0 var(--padding-1);
+    padding: 0 var(--spacing-5);
     margin: 0;
     z-index: 1;
     width: auto;
@@ -68,13 +68,12 @@ const props = defineProps(['path', 'date', 'title', 'description']);
 
   &::before {
     position: absolute;
-    top: var(--margin-6);
+    top: var(--spacing-10);
     left: 0;
     content: ' ';
     display: block;
     width: 6px;
     height: 6px;
-    border-radius: @width;
     border-width: 2px;
     border-style: solid;
     border-color: var(--dark-color-alpha-20);
@@ -83,7 +82,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
 
   &::after {
     position: absolute;
-    top: var(--margin-6);
+    top: var(--spacing-10);
     transform: translateY(15px);
     left: 4px;
     content: ' ';
@@ -94,7 +93,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
     margin-inline-start: 0.5px;
   }
 
-  +darkMode() {
+  .dark & {
     &::before {
       border-color: var(--white-color-alpha-20);
     }
@@ -108,12 +107,17 @@ const props = defineProps(['path', 'date', 'title', 'description']);
 .blog-card {
   display: block;
   position: relative;
-  padding: var(--padding-6) var(--padding-7);
+  padding: var(--spacing-10);
   text-decoration: none;
   border-radius: 15px;
   cursor: pointer;
   color: var(--theme-text-color);
   width: 100%;
+
+  > p {
+    display: block;
+    margin: 0;
+  }
 
   &:hover {
     background: var(--glass-bg);
@@ -126,8 +130,8 @@ const props = defineProps(['path', 'date', 'title', 'description']);
   }
 
 
-  +tablet() {
-    padding: var(--padding-3) (var(--padding-4));
+  @media screen and (max-width: 991px) {
+    padding: var(--spacing-7);
   }
 }
 
@@ -137,7 +141,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
   text-align: justify;
   font-weight: normal;
 
-  +darkMode() {
+  .dark & {
     color: var(--white-color-darken-30);
   }
 }

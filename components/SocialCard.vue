@@ -10,12 +10,12 @@ const props = defineProps(['data']);
   </a>
 </template>
 
-<style lang="stylus">
-@import '../assets/stylus/app.styl';
+<style lang="css">
+
 
 .social-card {
   border-radius: 8px;
-  padding: var(--padding-1) (var(--padding-4));
+  padding: var(--spacing-1) (var(--spacing-4));
   display: flex;
   place-items: center;
   gap: 10px;

@@ -113,18 +113,18 @@ function getAbsoluteTop(element) {
   </aside>
 </template>
 
-<style lang="stylus">
-@import '../assets/stylus/app.styl';
+<style lang="css">
+
 
 .toc {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
   left: 0px;
-  padding: $p[6];
+  padding: var(--spacing-6);
   max-width: calc(((100vw - 748px) / 2));
 
-  +tablet() {
+  @media screen and (max-width: 991px) {
     display: none;
   }
 }
@@ -135,7 +135,7 @@ function getAbsoluteTop(element) {
   width: 14px;
   height: 1.5px;
   background: var(--gray-color);
-  margin: $m[5] 0;
+  margin: var(--spacing-5) 0;
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
   text-underline-offset: 0.1em;
@@ -146,7 +146,7 @@ function getAbsoluteTop(element) {
     background: var(--accent-color);
     transform: scaleX(1.3);
     height: 1.75px;
-    margin: $m[7] 0;
+    margin: var(--spacing-7) 0;
   }
 
   &.is-sub-item {
@@ -169,18 +169,18 @@ function getAbsoluteTop(element) {
     color: var(--accent-color);
     font-weight: bold;
 
-    +darkMode() {
+    .dark & {
       color: var(--accent-color);
     }
   }
 
 
   .is-sub-item & {
-    margin-inline-start: $m[4];
+    margin-inline-start: var(--spacing-4);
     font-size: var(--text-size-1);
   }
 
-  +darkMode() {
+  .dark & {
     color: var(--white-color);
   }
 }
@@ -189,7 +189,7 @@ function getAbsoluteTop(element) {
   .toc-item {
     width: auto;
     height: auto;
-    margin: $m[1] ($m[0]);
+    margin: var(--spacing-1) (var(--spacing-0));
     transform: scaleX(1);
     background: transparent;
   }

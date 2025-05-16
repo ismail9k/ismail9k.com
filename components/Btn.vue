@@ -4,15 +4,15 @@
   </a>
 </template>
 
-<style lang="stylus">
-@import '../assets/stylus/app.styl';
+<style lang="css">
+
 
 .btn {
   border-color: var(--gray-color);
   border-width: 1px;
   border-style: solid;
   border-radius: 4px;
-  padding: var(--padding-2) (var(--padding-4));
+  padding: var(--spacing-2) (var(--spacing-4));
   display: flex;
   place-items: center;
   gap: 10px;
