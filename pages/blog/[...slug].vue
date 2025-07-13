@@ -6,17 +6,20 @@ const { data: page } = await useAsyncData(path, () =>
   queryCollection('blog').path(path).first()
 );
 
+// Extract slug from the route path
+const slug = route.params.slug?.[0] || route.path.split('/').pop();
+
 // If page has an image property, use it as the og image URL
 // Otherwise use the custom BlogPost component
 if (page.value?.header) {
   defineOgImage({
-    url: `/img/${page.value.slug}/${page.value.header}`
+    url: `/img/${slug}/${page.value.header}`
   })
 } else {
   defineOgImageComponent('OGImage', {
     title: page.value?.title,
     description: page.value?.description,
-    slug: page.value?.slug || '',
+    slug: slug || '',
   });
 }
 </script>
