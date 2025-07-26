@@ -1,9 +1,12 @@
 <script setup>
 const colorMode = useColorMode()
 const modeSwitcherValue = ref(colorMode.value === 'dark')
+const { trackThemeSwitch } = useTracking()
 
 const updateTheme = () => {
-  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+  const newTheme = colorMode.value === 'dark' ? 'light' : 'dark'
+  colorMode.preference = newTheme
+  trackThemeSwitch(newTheme)
 }
 </script>
 

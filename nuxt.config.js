@@ -93,6 +93,7 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
 
+
   app: {
     head: {
       title: 'Ismail9k',
@@ -102,6 +103,10 @@ export default defineNuxtConfig({
         { property: 'profile:username', content: 'ismail9k' },
         { property: 'profile:gender', content: 'male' },
         { property: 'og:type', content: 'profile' },
+        { 
+          'http-equiv': 'Content-Security-Policy', 
+          content: "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; object-src 'none';" 
+        }
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
       script: [

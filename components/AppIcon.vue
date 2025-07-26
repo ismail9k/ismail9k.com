@@ -1,5 +1,6 @@
-<script setup functional>
+<script setup>
 import icons from '../assets/data/icons.json';
+
 const props = defineProps({
   name: String,
   size: String,
@@ -20,7 +21,6 @@ const styleClasses = [props.size, props.color].map((val) => val && `is-${val}`);
     class="icon"
     :class="styleClasses"
     v-bind="$attrs"
-    v-on="listeners"
     role="img"
   >
     <title>{{ props.title || props.name }}</title>

@@ -12,13 +12,10 @@ useHead({
   ],
 })
 
-const trackProjectClick = (projectName) => {
-  if (process.client) {
-    useGtag().event('project_click', {
-      event_category: 'side_quests',
-      event_label: projectName,
-    })
-  }
+const { trackProjectClick } = useTracking()
+
+const handleProjectClick = (project) => {
+  trackProjectClick(project.name, project.link)
 }
 
 const projects = [
@@ -61,7 +58,7 @@ const projects = [
 
   <div class="tools-grid">
     <a v-for="project in projects" :key="project.name" :href="project.link" target="_blank" rel="noopener noreferrer"
-      class="tool-card" :class="project.color" @click="trackProjectClick(project.name)">
+      class="tool-card" :class="project.color" @click="handleProjectClick(project)">
       <div class="tool-content">
         <div class="tool-icon">
           {{ project.icon }}

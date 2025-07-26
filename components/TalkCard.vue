@@ -1,5 +1,10 @@
 <script setup>
 const props = defineProps(['title', 'description', 'date', 'location', 'videoId', 'language']);
+const { trackTalkClick } = useTracking();
+
+const handleTalkClick = () => {
+  trackTalkClick(props.title, props.videoId, props.location);
+};
 </script>
 
 <template>
@@ -8,7 +13,7 @@ const props = defineProps(['title', 'description', 'date', 'location', 'videoId'
       {{ props.date }}
     </p>
     <div class="talk-card-timeline"></div>
-    <a :href="`https://www.youtube.com/watch?v=${props.videoId}`" target="_blank" rel="noopener noreferrer" class="talk-card">
+    <a :href="`https://www.youtube.com/watch?v=${props.videoId}`" target="_blank" rel="noopener noreferrer" class="talk-card" @click="handleTalkClick">
       <h3 class="talk-card-title">{{ props.title }}</h3>
       <p class="talk-card-description">{{ props.description }}</p>
       <div class="talk-card-meta">

@@ -1,6 +1,11 @@
 <script setup>
 import dayjs from 'dayjs';
 const props = defineProps(['path', 'date', 'title', 'description']);
+const { trackBlogClick } = useTracking();
+
+const handleBlogClick = () => {
+  trackBlogClick(props.title, props.path);
+};
 </script>
 
 
@@ -10,7 +15,7 @@ const props = defineProps(['path', 'date', 'title', 'description']);
       {{ dayjs(props.date).format('MMMM DD, YYYY') }}
     </p>
     <div class="blog-card-timeline"></div>
-    <NuxtLink :key="props.path" :to="props.path" class="blog-card">
+    <NuxtLink :key="props.path" :to="props.path" class="blog-card" @click="handleBlogClick">
       <h3 class="blog-card-title">{{ props.title }}</h3>
       <p class="blog-card-description">{{ props.description }}</p>
     </NuxtLink>

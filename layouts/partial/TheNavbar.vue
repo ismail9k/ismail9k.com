@@ -1,6 +1,8 @@
 <script setup>
 import ThemeSwitcher from '~/components/ThemeSwitcher.vue'
 const colorMode = useColorMode();
+const { trackNavigation } = useTracking();
+
 const links = [
   { title: 'Blog', link: '/blog' },
   { title: 'Talks', link: '/talks' },
@@ -9,6 +11,10 @@ const links = [
 ];
 const modeSwitcherValue = ref(colorMode.value === 'dark');
 const isScrolled = ref(false);
+
+const handleNavClick = (destination) => {
+  trackNavigation(destination, 'navbar');
+};
 
 const updateTheme = () => {
   colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
@@ -39,7 +45,7 @@ onUnmounted(() => {
       <div class="navbar-end">
         <ul class="navbar-menu">
           <li v-for="item in links" :key="item.title">
-            <NuxtLink class="navbar-item" :to="item.link">
+            <NuxtLink class="navbar-item" :to="item.link" @click="handleNavClick(item.title)">
               {{ item.title }}
             </NuxtLink>
           </li>
