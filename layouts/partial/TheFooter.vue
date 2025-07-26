@@ -28,6 +28,7 @@ import socials from '/assets/data/socials.json';
   margin: 0;
   padding: 0;
   list-style: none;
+  gap: var(--spacing-4);
 }
 
 .footer-item {

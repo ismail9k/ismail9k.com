@@ -3,6 +3,7 @@ import ThemeSwitcher from '~/components/ThemeSwitcher.vue'
 const colorMode = useColorMode();
 const links = [
   { title: 'Blog', link: '/blog' },
+  { title: 'Talks', link: '/talks' },
   { title: 'Side-Quests', link: '/side-quests' },
   // { title: 'QR Scanner', link: '/tools/qr-scanner' },
 ];
