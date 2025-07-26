@@ -28,16 +28,14 @@ const talks = [
 </script>
 
 <template>
-  <Layout>
-    <section class="section">
-      <h2 class="main-title">Talks</h2>
-      <div class="main-description">
-        A collection of talks and presentations I've given on various technical topics.
-      </div>
-    </section>
-    <section class="section">
-      <TalkCard v-for="talk in talks" :key="talk.videoId" v-bind="talk" />
-    </section>
-  </Layout>
+  <section class="section">
+    <h2 class="main-title">Talks</h2>
+    <div class="main-description">
+      A collection of talks and presentations I've given on various technical topics.
+    </div>
+  </section>
+  <section class="section">
+    <TalkCard v-for="talk in talks" :key="talk.videoId" v-bind="talk" />
+  </section>
 </template>
 

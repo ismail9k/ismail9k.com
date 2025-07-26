@@ -1,16 +1,22 @@
 import { defineNuxtConfig } from 'nuxt/config';
 
 export default defineNuxtConfig({
-  target: 'static',
+  // Enable SSR for build, but generate static site
+  ssr: true,
   nitro: {
-    static: true,
+    prerender: {
+      routes: ['/sitemap.xml'],
+      crawlLinks: true
+    }
   },
   site: {
     url: 'https://ismail9k.com/',
     name: 'Ismail9k',
   },
 
-  // ssr: true,
+  future: {
+    compatibilityVersion: 4,
+  },
   modules: [
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
@@ -19,7 +25,10 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-og-image',
   ],
-  css: ['normalize.css/normalize.css', '~/assets/css/app.css'],
+  css: [
+    'normalize.css/normalize.css',
+    '~/assets/css/app.css'
+  ],
 
   postcss: {
     plugins: {
@@ -74,6 +83,7 @@ export default defineNuxtConfig({
 
   experimental: {
     viewTransition: true,
+    payloadExtraction: false,
   },
 
   content: {
@@ -122,5 +132,5 @@ export default defineNuxtConfig({
     },
   },
 
-  compatibilityDate: '2024-10-02',
+  compatibilityDate: '2024-12-01',
 });
