@@ -32,7 +32,6 @@ const talks = [
     videoId: 'PIZDHaYSLN4',
     language: 'Arabic'
   },
-
 ]
 
 const formatDate = (dateString) => {
