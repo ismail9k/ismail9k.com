@@ -1,6 +1,14 @@
 <script setup>
 const talks = [
   {
+    title: 'Career Journey and the Future of Software Development',
+    description: 'A comprehensive discussion about my journey from graphic design to software engineering, working with open-source projects like Vue.js components, and insights into how AI is transforming the development landscape. Topics include working at different company scales (startups vs enterprises), the importance of soft skills, prompt engineering, and practical advice for junior developers in the AI era.',
+    date: '22/08/2025',
+    location: 'Live Podcast',
+    videoId: '5IxpqPK1LlU',
+    language: 'Arabic'
+  },
+  {
     title: 'How I Skip 90% of Technical Interviews with Open Source',
     description: 'How I\'ve been hired multiple times without going through traditional technical interviews - all thanks to open source contributions and building in public! From building Vue.js components to landing dream jobs through GitHub visibility alone.',
     date: '21/07/2025',
@@ -24,14 +32,7 @@ const talks = [
     videoId: 'PIZDHaYSLN4',
     language: 'Arabic'
   },
-  {
-    title: 'Career Journey and the Future of Software Development',
-    description: 'A comprehensive discussion about my journey from graphic design to software engineering, working with open-source projects like Vue.js components, and insights into how AI is transforming the development landscape. Topics include working at different company scales (startups vs enterprises), the importance of soft skills, prompt engineering, and practical advice for junior developers in the AI era.',
-    date: '22/08/2025',
-    location: 'Live Podcast',
-    videoId: '5IxpqPK1LlU',
-    language: 'Arabic'
-  }
+
 ]
 
 const formatDate = (dateString) => {
