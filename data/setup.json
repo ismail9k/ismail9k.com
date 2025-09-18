@@ -173,7 +173,7 @@
         },
         {
           "name": "Bartender",
-          "url": "https://www.macbartender.com",
+          "url": "https://www.macbartender.com/",
           "category": "productivity",
           "label": "Setapp",
           "image": "/img/setup/bartender.png",
@@ -181,7 +181,7 @@
         },
         {
           "name": "LookAway",
-          "url": "https://setapp.com/apps/lookaway",
+          "url": "https://lookaway.com/",
           "category": "health",
           "label": "Setapp",
           "image": "/img/setup/lookaway.png",
@@ -189,11 +189,19 @@
         },
         {
           "name": "QuitAll",
-          "url": "https://setapp.com/apps/quit-all-mac",
+          "url": "https://amicoapps.com/app/quitall/",
           "category": "productivity",
           "label": "Setapp",
           "image": "/img/setup/quite-all.png",
           "description": "Sometimes all I need is to close all apps and start fresh."
+        },
+        {
+          "name": "CleanShot X",
+          "url": "https://cleanshot.com/",
+          "category": "productivity",
+          "label": "Setapp",
+          "image": "/img/setup/cleanmymac-x.png",
+          "description": "A screenshot tool that I use to take screenshots and videos of my screen."
         }
       ],
       "additionalContent": [
