@@ -21,7 +21,7 @@ const filteredSocial = socials.filter(({ name }) =>
 const { data: posts } = await useAsyncData('blog', () =>
   queryCollection('blog')
     .order('date', 'DESC')
-    .limit(5)
+    .limit(3)
     .select('date', 'title', 'description', 'path')
     .all()
 );
