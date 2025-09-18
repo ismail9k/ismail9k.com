@@ -105,6 +105,16 @@ export const useTracking = () => {
     })
   }
 
+  const trackUsesClick = (itemName, url, category) => {
+    trackEvent('uses_click', {
+      event_category: 'uses_page',
+      event_label: itemName,
+      outbound_url: url,
+      item_category: category,
+      click_text: itemName
+    })
+  }
+
   return {
     trackEvent,
     trackPageView,
@@ -117,6 +127,7 @@ export const useTracking = () => {
     trackBlogView,
     trackScrollDepth,
     trackEmailClick,
-    trackFileDownload
+    trackFileDownload,
+    trackUsesClick
   }
 }

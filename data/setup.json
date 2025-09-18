@@ -1,0 +1,246 @@
+{
+  "sections": [
+    {
+      "id": "desktop-setup",
+      "title": "Desktop Setup",
+      "items": [
+        {
+          "name": "14 Inch iMacBook M1 Pro",
+          "url": "https://www.apple.com/macbook-pro-14-and-16-inch/",
+          "category": "laptop",
+          "span": "2",
+          "image": "/img/setup/apple-m1-pro.png",
+          "description": "My workhorse. It works so flawlessly that I haven't been able to justify upgrading to the new space black M4 Pro, despite how much better it would match my setup aesthetic. The performance is still incredible, the battery easily lasts all day, and it handles everything I throw at it without breaking a sweat. Sometimes the best upgrade is no upgrade at all."
+        },
+        {
+          "name": "LG 27UL850",
+          "url": "https://www.amazon.com/s?k=LG+27UL850",
+          "image": "/img/setup/lg-27ul850.png",
+          "category": "monitor",
+          "description": "I use only one monitor. The USB-C connection is a game changer - I plug in my MacBook with a single cable for power, display, and data all at once."
+        },
+        {
+          "name": "IKEA UPPSPEL Gaming Desk",
+          "url": "https://www.ikea.com/us/en/p/uppspel-gaming-desk-black-30507627/",
+          "image": "/img/setup/uppspel-gaming-desk.png",
+          "category": "furniture",
+          "description": "This gaming desk might seem overkill for development, but the height adjustment has been incredible for my back. I can switch between sitting and standing throughout the day, and the cable management keeps everything tidy."
+        },
+        {
+          "name": "OMEN Citadel Gaming Chair",
+          "url": "https://www.amazon.com/s?k=OMEN+Citadel+Gaming+Chair",
+          "image": "/img/setup/omen-gaming-chair.png",
+          "category": "furniture",
+          "description": "After years of cheap office chairs that destroyed my posture, investing in proper ergonomics was a no-brainer. The lumbar support and adjustable armrests have made those long 10+ hour coding sessions much more comfortable."
+        },
+        {
+          "name": "Twelve South Curve",
+          "url": "https://www.twelvesouth.com/products/curve-for-macbook",
+          "image": "/img/setup/twelve-south-curve.png",
+          "category": "accessories",
+          "description": "I've been using this laptop stand for more than 7 years now. I have not found a better alternative yet. The aluminum construction matches the MacBook perfectly and has held up incredibly well."
+        },
+        {
+          "name": "Shure MV7+ Microphone",
+          "url": "https://www.amazon.com/s?k=Shure+MV7",
+          "image": "/img/setup/shure-mv7-plus.png",
+          "category": "audio",
+          "description": "Every time I use it, I have comments on how good my voice is. It's USB-C, so I use it with my MacBook, and iPhone, and the customizable LED ring is a nice touch."
+        },
+        {
+          "name": "Elgato Wave Mic Arm LP",
+          "url": "https://www.amazon.com/s?k=Wave+Mic+Arm+LP",
+          "image": "/img/setup/elgato-wave-mic-arm-lp.png",
+          "category": "audio",
+          "description": "This mic arm keeps my microphone out of the way when I'm not recording but makes it easily accessible when I need it. The cable management is excellent and helps keep my desk tidy."
+        },
+        {
+          "name": "UNIQ Hagen Desk Mates",
+          "url": "https://www.amazon.com/s?k=UNIQ+Hagen+Large+Desk+Mat",
+          "image": "/img/setup/uniq-hagen-desk-mates.png",
+          "category": "accessories",
+          "description": "It's a bit expensive, but it's a nice addition to my desk. With dual colors and magnetic pens, I use it to keep my cables organized and my desk tidy."
+        }
+      ]
+    },
+    {
+      "id": "editor-terminal",
+      "title": "Editor + Terminal",
+      "items": [
+        {
+          "name": "Cursor IDE",
+          "url": "https://cursor.sh",
+          "category": "editor",
+          "image": "/img/setup/cursor.png",
+          "description": "My main editor (currently). I use it mainly for auto-completion and background tasks."
+        },
+        {
+          "name": "Vira Theme",
+          "url": "https://vira.build/",
+          "image": "/img/setup/vira-theme.png",
+          "category": "editor",
+          "description": "I love minimal clean themes. I was using it since it was called material theme. When I saw the pro version of it, it was a no-brainer."
+        },
+        {
+          "name": "iTerm2",
+          "url": "https://iterm2.com",
+          "category": "terminal",
+          "image": "/img/setup/iterm.png",
+          "description": "My main terminal app powered by Zsh and Oh My Zsh."
+        },
+        {
+          "name": "Claude",
+          "url": "https://claude.ai",
+          "category": "ai",
+          "image": "/img/setup/claude.png",
+          "description": "My main AI buddy for brainstorming, writing, and problem-solving. I use it daily for everything."
+        },
+        {
+          "name": "Claude Code",
+          "url": "https://claude.ai/code",
+          "category": "ai",
+          "image": "/img/setup/claude-code.png",
+          "description": "My primary AI coding assistant that integrates seamlessly with my development workflow. It's by far the best AI coding assistant I've tried (till now)."
+        }
+      ]
+    },
+    {
+      "id": "input-devices",
+      "title": "Input Devices",
+      "items": [
+        {
+          "name": "Keychron K6 Pro",
+          "url": "https://www.amazon.com/s?k=Keychron+K6+Pro",
+          "image": "/img/setup/keychron-k6-pro.png",
+          "category": "keyboard",
+          "description": "My main keyboard with brown switches. It has a phenomenal typing experience and the battery life is amazing."
+        },
+        {
+          "name": "NuPhy Air75 V2",
+          "url": "https://nuphy.com/products/air75-v2",
+          "image": "/img/setup/nuphy-air75-v2.png",
+          "category": "keyboard",
+          "description": "My portable keyboard for when I want something more compact. Having two keyboards might seem excessive, but switching between them keeps things interesting."
+        },
+        {
+          "name": "Logitech MX Master 3 for Mac",
+          "url": "https://www.amazon.com/s?k=Logitech+MX+Master+3+Mac",
+          "image": "/img/setup/logitech-mx-master-3-mac.png",
+          "category": "mouse",
+          "description": "I love this mouse, and most people do too, so I don't look for another one."
+        },
+        {
+          "name": "Deltahub Carpio 2.0",
+          "url": "https://www.amazon.com/s?k=Deltahub+Carpio+2.0",
+          "image": "/img/setup/deltahub-carpio-2.0.png",
+          "category": "ergonomics",
+          "description": "If you have carpal tunnel, this is a must-have. It's a bit expensive, but it's worth it."
+        }
+      ]
+    },
+    {
+      "id": "desktop-apps",
+      "title": "Desktop Apps",
+      "items": [
+        {
+          "name": "Setapp",
+          "url": "https://setapp.sjv.io/c/2510213/343321/5114",
+          "category": "productivity",
+          "span": "2",
+          "image": "/img/setup/setapp.png",
+          "description": "A subscription service that gives me access to tons of useful Mac apps without buying them individually. I've listed some of my favorites below."
+        },
+        {
+          "name": "Notion",
+          "url": "https://www.notion.so",
+          "category": "productivity",
+          "image": "/img/setup/notion.png",
+          "description": "My second brain for project planning, documentation, and keeping track of ideas and tasks."
+        },
+        {
+          "name": "Obsidian",
+          "url": "https://obsidian.md",
+          "category": "productivity",
+          "image": "/img/setup/obsidian.png",
+          "description": "It's my main place for writing content scripts, and blogs, the ability to write in markdown is the best thing about it."
+        },
+        {
+          "name": "Raycast",
+          "url": "https://raycast.com",
+          "category": "productivity",
+          "image": "/img/setup/raycast.png",
+          "description": "Who uses Spotlight nowadays? I used to use Alfred, but Raycast is my new favorite."
+        },
+        {
+          "name": "Bartender",
+          "url": "https://www.macbartender.com",
+          "category": "productivity",
+          "label": "Setapp",
+          "image": "/img/setup/bartender.png",
+          "description": "If you have a laptop with a notch, you MUST install this app."
+        },
+        {
+          "name": "LookAway",
+          "url": "https://setapp.com/apps/lookaway",
+          "category": "health",
+          "label": "Setapp",
+          "image": "/img/setup/lookaway.png",
+          "description": "A very cute and simple app to remind me to blink more often, and fix my posture."
+        },
+        {
+          "name": "QuitAll",
+          "url": "https://setapp.com/apps/quit-all-mac",
+          "category": "productivity",
+          "label": "Setapp",
+          "image": "/img/setup/quite-all.png",
+          "description": "Sometimes all I need is to close all apps and start fresh."
+        }
+      ],
+      "additionalContent": [
+        {
+          "type": "paragraph",
+          "content": "<strong>Apple Notes</strong> is perfect for quick capture. When I have an idea while walking or need to jot something down quickly, it's always there and syncs across all my devices instantly."
+        },
+        {
+          "type": "paragraph",
+          "content": "For browsing, I use <strong>Safari</strong> for personal stuff (the battery life is unmatched) and <strong>Chrome</strong> for development work (DevTools are still the best for debugging)."
+        }
+      ]
+    },
+    {
+      "id": "organization-accessories",
+      "title": "Organization & Accessories",
+      "items": [
+        {
+          "name": "iPhone 15 Pro",
+          "url": "https://www.apple.com/iphone-15-pro/",
+          "image": "/img/setup/iphone-15-pro.png",
+          "category": "mobile",
+          "description": "I use this poor device for everything, webcam, content creation videos, and as a phone."
+        },
+        {
+          "name": "Manfrotto Element MII",
+          "url": "https://www.amazon.com/s?k=Manfrotto+Element+MII+Tripod",
+          "image": "/img/setup/manfrotto-element-mii-tripod.png",
+          "category": "accessories",
+          "description": "My tripod for photography or content creation needs. It's lightweight and has a great build quality."
+        },
+        {
+          "name": "Ulanzi ST-28",
+          "url": "https://www.amazon.com/s?k=Ulanzi+ST-28",
+          "image": "/img/setup/ulanzi-st-28.png",
+          "category": "accessories",
+          "description": "A MagSafe compatible phone holder. I use it to mount my phone to my tripod, to use for video calls, and to use for content creation videos."
+        },
+
+        {
+          "name": "XD Design Bobby Hero",
+          "url": "https://www.amazon.com/s?k=XD+Design+Bobby+Hero+Backpack",
+          "image": "/img/setup/xd-design-bobby-hero-backpack.png",
+          "category": "travel",
+          "description": "My travel backpack to carry my laptop, keyboard, and other stuff."
+        }
+      ]
+    }
+  ]
+}
