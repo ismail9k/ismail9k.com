@@ -20,17 +20,17 @@
           "description": "I use only one monitor. The USB-C connection is a game changer - I plug in my MacBook with a single cable for power, display, and data all at once."
         },
         {
-          "name": "IKEA UPPSPEL Gaming Desk",
+          "name": "IKEA UPPSPEL",
           "url": "https://www.ikea.com/us/en/p/uppspel-gaming-desk-black-30507627/",
           "image": "/img/setup/uppspel-gaming-desk.png",
-          "category": "furniture",
+          "category": "gaming desk",
           "description": "This gaming desk might seem overkill for development, but the height adjustment has been incredible for my back. I can switch between sitting and standing throughout the day, and the cable management keeps everything tidy."
         },
         {
-          "name": "OMEN Citadel Gaming Chair",
+          "name": "OMEN Citadel",
           "url": "https://www.amazon.com/s?k=OMEN+Citadel+Gaming+Chair",
           "image": "/img/setup/omen-gaming-chair.png",
-          "category": "furniture",
+          "category": "gaming chair",
           "description": "After years of cheap office chairs that destroyed my posture, investing in proper ergonomics was a no-brainer. The lumbar support and adjustable armrests have made those long 10+ hour coding sessions much more comfortable."
         },
         {
@@ -41,24 +41,24 @@
           "description": "I've been using this laptop stand for more than 7 years now. I have not found a better alternative yet. The aluminum construction matches the MacBook perfectly and has held up incredibly well."
         },
         {
-          "name": "Shure MV7+ Microphone",
+          "name": "Shure MV7+ ",
           "url": "https://www.amazon.com/s?k=Shure+MV7",
           "image": "/img/setup/shure-mv7-plus.png",
-          "category": "audio",
+          "category": "microphone",
           "description": "Every time I use it, I have comments on how good my voice is. It's USB-C, so I use it with my MacBook, and iPhone, and the customizable LED ring is a nice touch."
         },
         {
-          "name": "Elgato Wave Mic Arm LP",
+          "name": "Elgato Wave",
           "url": "https://www.amazon.com/s?k=Wave+Mic+Arm+LP",
           "image": "/img/setup/elgato-wave-mic-arm-lp.png",
-          "category": "audio",
+          "category": "mic arm",
           "description": "This mic arm keeps my microphone out of the way when I'm not recording but makes it easily accessible when I need it. The cable management is excellent and helps keep my desk tidy."
         },
         {
-          "name": "UNIQ Hagen Desk Mates",
+          "name": "UNIQ Hagen",
           "url": "https://www.amazon.com/s?k=UNIQ+Hagen+Large+Desk+Mat",
           "image": "/img/setup/uniq-hagen-desk-mates.png",
-          "category": "accessories",
+          "category": "desk mat",
           "description": "It's a bit expensive, but it's a nice addition to my desk. With dual colors and magnetic pens, I use it to keep my cables organized and my desk tidy."
         }
       ]
@@ -145,7 +145,7 @@
         {
           "name": "Setapp",
           "url": "https://setapp.sjv.io/c/2510213/343321/5114",
-          "category": "productivity",
+          "category": "app",
           "span": "2",
           "image": "/img/setup/setapp.png",
           "description": "A subscription service that gives me access to tons of useful Mac apps without buying them individually. I've listed some of my favorites below."
@@ -153,28 +153,28 @@
         {
           "name": "Notion",
           "url": "https://www.notion.so",
-          "category": "productivity",
+          "category": "app",
           "image": "/img/setup/notion.png",
           "description": "My second brain for project planning, documentation, and keeping track of ideas and tasks."
         },
         {
           "name": "Obsidian",
           "url": "https://obsidian.md",
-          "category": "productivity",
+          "category": "app",
           "image": "/img/setup/obsidian.png",
           "description": "It's my main place for writing content scripts, and blogs, the ability to write in markdown is the best thing about it."
         },
         {
           "name": "Raycast",
           "url": "https://raycast.com",
-          "category": "productivity",
+          "category": "app",
           "image": "/img/setup/raycast.png",
           "description": "Who uses Spotlight nowadays? I used to use Alfred, but Raycast is my new favorite."
         },
         {
           "name": "Bartender",
           "url": "https://www.macbartender.com/",
-          "category": "productivity",
+          "category": "app",
           "label": "Setapp",
           "image": "/img/setup/bartender.png",
           "description": "If you have a laptop with a notch, you MUST install this app."
@@ -190,7 +190,7 @@
         {
           "name": "QuitAll",
           "url": "https://amicoapps.com/app/quitall/",
-          "category": "productivity",
+          "category": "app",
           "label": "Setapp",
           "image": "/img/setup/quite-all.png",
           "description": "Sometimes all I need is to close all apps and start fresh."
@@ -198,7 +198,7 @@
         {
           "name": "CleanShot X",
           "url": "https://cleanshot.com/",
-          "category": "productivity",
+          "category": "app",
           "label": "Setapp",
           "image": "/img/setup/cleanshot-x.png",
           "description": "A screenshot tool that I use to take screenshots and videos of my screen."
@@ -230,14 +230,14 @@
           "name": "Manfrotto Element MII",
           "url": "https://www.amazon.com/s?k=Manfrotto+Element+MII+Tripod",
           "image": "/img/setup/manfrotto-element-mii-tripod.png",
-          "category": "accessories",
+          "category": "tripod",
           "description": "My tripod for photography or content creation needs. It's lightweight and has a great build quality."
         },
         {
           "name": "Ulanzi ST-28",
           "url": "https://www.amazon.com/s?k=Ulanzi+ST-28",
           "image": "/img/setup/ulanzi-st-28.png",
-          "category": "accessories",
+          "category": "magsafe phone holder",
           "description": "A MagSafe compatible phone holder. I use it to mount my phone to my tripod, to use for video calls, and to use for content creation videos."
         },
 
@@ -245,7 +245,7 @@
           "name": "XD Design Bobby Hero",
           "url": "https://www.amazon.com/s?k=XD+Design+Bobby+Hero+Backpack",
           "image": "/img/setup/xd-design-bobby-hero-backpack.png",
-          "category": "travel",
+          "category": "travel backpack",
           "description": "My travel backpack to carry my laptop, keyboard, and other stuff."
         }
       ]

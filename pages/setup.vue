@@ -74,6 +74,13 @@ useHead({
         </div>
       </div>
     </div>
+
+    <!-- Render additional content if it exists -->
+    <div v-if="section.additionalContent" class="additional-content">
+      <div v-for="(content, index) in section.additionalContent" :key="index" class="content">
+        <p v-if="content.type === 'paragraph'" v-html="content.content"></p>
+      </div>
+    </div>
   </section>
 
   <section class="section">
@@ -236,6 +243,27 @@ a.uses-link {
   text-align: center;
   opacity: 0.7;
   margin-top: 3rem;
+}
+
+.additional-content {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.additional-content .content {
+  max-width: none;
+}
+
+.additional-content .content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  color: var(--text-primary);
+}
+
+.additional-content .content strong {
+  font-weight: 600;
+  color: var(--color-primary);
 }
 
 .section+.section {
