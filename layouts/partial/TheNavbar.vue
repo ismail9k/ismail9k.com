@@ -6,7 +6,8 @@ const { trackNavigation } = useTracking();
 const links = [
   { title: 'Blog', link: '/blog' },
   { title: 'Talks', link: '/talks' },
-  { title: 'Side-Quests', link: '/side-quests' },
+  { title: 'Setup', link: '/setup' },
+  // { title: 'Side-Quests', link: '/side-quests' },
   // { title: 'QR Scanner', link: '/tools/qr-scanner' },
 ];
 const modeSwitcherValue = ref(colorMode.value === 'dark');
@@ -109,6 +110,7 @@ header.is-scrolled {
   color: var(--theme-text-color);
   text-decoration: none;
   transition: color 0.2s ease;
+
   &:hover {
     color: var(--accent-color);
   }
