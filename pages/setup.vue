@@ -116,14 +116,13 @@ useHead({
 
 .item-card {
   position: relative;
-  backdrop-filter: blur(10px);
-  position: relative;
-  background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 1.5rem;
   transition: all 0.2s ease;
   overflow: hidden;
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
 }
 
 .item-card::before {
@@ -152,14 +151,13 @@ useHead({
 .item-image {
   width: 60px;
   height: 60px;
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-5);
   position: relative;
   z-index: 1;
-  backdrop-filter: blur(100px);
-  background: var(--glass-bg);
   border-radius: 8px;
-  padding: 1px;
-
+  padding: 2px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
 }
 
 .item-image img {
@@ -212,7 +210,7 @@ useHead({
 
 .item-label {
   background: var(--color-primary);
-  color: white;
+  color: var(--text-color);
   font-size: 0.7rem;
   font-weight: 500;
   padding: 0.2rem 0.5rem;
