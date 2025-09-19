@@ -6,7 +6,7 @@
       "items": [
         {
           "name": "14 Inch iMacBook M1 Pro",
-          "url": "https://www.apple.com/macbook-pro-14-and-16-inch/",
+          "url": "https://www.amazon.com/s?k=Apple+MacBook+Pro+14-inch+M1+Pro",
           "category": "laptop",
           "span": "2",
           "image": "/img/setup/apple-m1-pro.png",
@@ -21,7 +21,7 @@
         },
         {
           "name": "IKEA UPPSPEL",
-          "url": "https://www.ikea.com/us/en/p/uppspel-gaming-desk-black-30507627/",
+          "url": "https://www.ikea.com/us/en/p/uppspel-gaming-desk-black-s59430197/",
           "image": "/img/setup/uppspel-gaming-desk.png",
           "category": "gaming desk",
           "description": "This gaming desk might seem overkill for development, but the height adjustment has been incredible for my back. I can switch between sitting and standing throughout the day, and the cable management keeps everything tidy."
@@ -49,7 +49,7 @@
         },
         {
           "name": "Elgato Wave",
-          "url": "https://www.amazon.com/s?k=Wave+Mic+Arm+LP",
+          "url": "https://www.amazon.com/s?k=elgato+Wave+Mic+Arm+LP",
           "image": "/img/setup/elgato-wave-mic-arm-lp.png",
           "category": "mic arm",
           "description": "This mic arm keeps my microphone out of the way when I'm not recording but makes it easily accessible when I need it. The cable management is excellent and helps keep my desk tidy."
@@ -60,6 +60,12 @@
           "image": "/img/setup/uniq-hagen-desk-mates.png",
           "category": "desk mat",
           "description": "It's a bit expensive, but it's a nice addition to my desk. With dual colors and magnetic pens, I use it to keep my cables organized and my desk tidy."
+        }
+      ],
+      "additionalContent": [
+        {
+          "type": "paragraph",
+          "content": "You can check out my complete desktop workspace <a href='/img/setup/my-setup.jpg' target='_blank'>here</a> featuring all the gear that makes my development workflow possible. This setup has evolved over years of fine-tuning to maximize both productivity and aesthetics."
         }
       ]
     },
@@ -110,14 +116,14 @@
       "items": [
         {
           "name": "Keychron K6 Pro",
-          "url": "https://www.amazon.com/s?k=Keychron+K6+Pro",
+          "url": "https://www.keychron.com/products/keychron-k6-pro-qmk-via-wireless-custom-mechanical-keyboard?ref=ismail9k",
           "image": "/img/setup/keychron-k6-pro.png",
           "category": "keyboard",
           "description": "My main keyboard with brown switches. It has a phenomenal typing experience and the battery life is amazing."
         },
         {
           "name": "NuPhy Air75 V2",
-          "url": "https://nuphy.com/products/air75-v2",
+          "url": "https://nuphy.com/products/air75-v2?sca_ref=9653978.dGgf5ViMxf&sca_source=ismail9k",
           "image": "/img/setup/nuphy-air75-v2.png",
           "category": "keyboard",
           "description": "My portable keyboard for when I want something more compact. Having two keyboards might seem excessive, but switching between them keeps things interesting."
