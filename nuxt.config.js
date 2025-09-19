@@ -123,7 +123,17 @@ export default defineNuxtConfig({
           async: true,
         },
         {
-          children: 'window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag(\'js\', new Date()); gtag(\'config\', \'G-CP91JY5YBF\', { cookie_domain: \'ismail9k.com\' });',
+          children: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          // Only initialize GA if not from vue3-carousel
+          if (!document.referrer?.includes('vue3-carousel.ismail9k.com')) {
+            gtag('config', 'G-CP91JY5YBF', {
+              cookie_domain: 'ismail9k.com',
+              custom_map: { referrer: 'custom_referrer' }
+            });
+          }`,
           type: 'text/javascript',
         },
       ],

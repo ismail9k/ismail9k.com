@@ -5,17 +5,6 @@ export const useTracking = () => {
     }
   };
 
-  const trackPageView = (path, title) => {
-    if (import.meta.client && window.gtag) {
-      window.gtag('config', 'G-CP91JY5YBF', {
-        page_title: title,
-        page_location: window.location.href,
-        page_path: path,
-        cookie_domain: 'ismail9k.com',
-      });
-    }
-  };
-
   const trackBlogClick = (blogTitle, blogPath) => {
     trackEvent('blog_click', {
       event_category: 'engagement',
@@ -118,7 +107,6 @@ export const useTracking = () => {
 
   return {
     trackEvent,
-    trackPageView,
     trackBlogClick,
     trackTalkClick,
     trackSocialClick,
