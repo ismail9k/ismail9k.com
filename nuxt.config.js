@@ -118,11 +118,11 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
       script: [
         {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-YR503NS9M7',
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-CP91JY5YBF',
           async: true,
         },
         {
-          children: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-YR503NS9M7', { cookie_domain: 'ismail9k.com' });`,
+          children: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-CP91JY5YBF', { cookie_domain: 'ismail9k.com' });`,
           type: 'text/javascript',
         },
       ],
