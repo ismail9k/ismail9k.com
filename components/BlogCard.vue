@@ -14,7 +14,7 @@ const handleBlogClick = () => {
     <p class="blog-card-time">
       {{ dayjs(props.date).format('MMMM DD, YYYY') }}
     </p>
-    <div class="blog-card-timeline"></div>
+    <div class="blog-card-timeline"/>
     <NuxtLink :key="props.path" :to="props.path" class="blog-card" @click="handleBlogClick">
       <h3 class="blog-card-title">{{ props.title }}</h3>
       <p class="blog-card-description">{{ props.description }}</p>

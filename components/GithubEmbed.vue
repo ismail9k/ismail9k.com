@@ -1,7 +1,7 @@
 <template>
   <div class="github-embed">
     <div class="github-header">
-      <img src="/github-logo.svg" alt="GitHub Logo" class="github-logo" />
+      <img src="/github-logo.svg" alt="GitHub Logo" class="github-logo" >
       <a
         :href="`https://github.com/${repo}`"
         target="_blank"

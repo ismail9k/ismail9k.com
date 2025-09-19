@@ -57,7 +57,8 @@ const projects = [
   </p>
 
   <div class="tools-grid">
-    <a v-for="project in projects" :key="project.name" :href="project.link" target="_blank" rel="noopener noreferrer"
+    <a
+v-for="project in projects" :key="project.name" :href="project.link" target="_blank" rel="noopener noreferrer"
       class="tool-card" :class="project.color" @click="handleProjectClick(project)">
       <div class="tool-content">
         <div class="tool-icon">

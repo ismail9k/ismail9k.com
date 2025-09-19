@@ -59,7 +59,8 @@ const formattedTalks = talks.map(talk => ({
     </div>
   </section>
   <section class="section">
-    <TalkCard v-for="talk in formattedTalks" :key="talk.videoId" :title="talk.title" :description="talk.description"
+    <TalkCard
+v-for="talk in formattedTalks" :key="talk.videoId" :title="talk.title" :description="talk.description"
       :date="talk.formattedDate" :location="talk.location" :video-id="talk.videoId" :language="talk.language" />
   </section>
 </template>

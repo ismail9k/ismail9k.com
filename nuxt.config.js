@@ -24,6 +24,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/image',
     'nuxt-og-image',
+    '@nuxt/eslint',
   ],
   css: ['normalize.css/normalize.css', '~/assets/css/app.css'],
 
@@ -112,7 +113,7 @@ export default defineNuxtConfig({
         {
           'http-equiv': 'Content-Security-Policy',
           content:
-            "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; object-src 'none';",
+            'script-src \'self\' \'unsafe-inline\' \'unsafe-eval\' https://www.googletagmanager.com https://www.google-analytics.com; object-src \'none\';',
         },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -122,7 +123,7 @@ export default defineNuxtConfig({
           async: true,
         },
         {
-          children: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-CP91JY5YBF', { cookie_domain: 'ismail9k.com' });`,
+          children: 'window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag(\'js\', new Date()); gtag(\'config\', \'G-CP91JY5YBF\', { cookie_domain: \'ismail9k.com\' });',
           type: 'text/javascript',
         },
       ],

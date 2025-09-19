@@ -39,7 +39,7 @@ export default defineNuxtPlugin(() => {
 
 
   // Add scroll listener
-  if (process.client) {
+  if (import.meta.client) {
     window.addEventListener('scroll', trackScroll, { passive: true })
   }
 })

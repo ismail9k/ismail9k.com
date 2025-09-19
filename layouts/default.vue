@@ -13,7 +13,7 @@ defineOgImageComponent('OGImage')
 
     <main class="main">
       <div class="container">
-        <slot></slot>
+        <slot/>
       </div>
     </main>
 

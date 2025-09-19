@@ -3,7 +3,7 @@ import socials from '/assets/data/socials.json';
 
 const title = 'Ismail9k';
 const description =
-  "A personal blog, blend of my life's work, experiences, challenges, and thoughts, captured as they come. Join me on this introspective journey.";
+  'A personal blog, blend of my life\'s work, experiences, challenges, and thoughts, captured as they come. Join me on this introspective journey.';
 useHead({
   title,
   meta: [
@@ -53,7 +53,7 @@ const { data: posts } = await useAsyncData('blog', () =>
     </div>
   </section>
 
-  <section class="section" v-if="false">
+  <section v-if="false" class="section">
     <h2 class="title">Fine me online:</h2>
     <div class="social-row">
       <SocialCard v-for="social in filteredSocial" :key="social.name" :data="social" />

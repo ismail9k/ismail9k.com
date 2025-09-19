@@ -1,9 +1,9 @@
 <template>
   <div class="blurred-circles">
-    <div class="circle circle-1"></div>
-    <div class="circle circle-2"></div>
-    <div class="circle circle-3"></div>
-    <div class="circle circle-4"></div>
+    <div class="circle circle-1"/>
+    <div class="circle circle-2"/>
+    <div class="circle circle-3"/>
+    <div class="circle circle-4"/>
   </div>
 </template>
 

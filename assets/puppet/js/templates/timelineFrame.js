@@ -1,2 +1,2 @@
-let timeLineFrame = '<a class="timeline__frame" href="#"></a>';
+const timeLineFrame = '<a class="timeline__frame" href="#"></a>';
 export default timeLineFrame;

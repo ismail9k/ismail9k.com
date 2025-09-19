@@ -8,7 +8,7 @@ import socials from '/assets/data/socials.json';
     <ul class="footer-list">
       <li v-for="social in socials" :key="social.name">
         <a class="footer-item" :href="social.link" target="_blank" rel="noopener" :style="`color: ${social.color}`">
-          <AppIcon :name="social.icon"></AppIcon>
+          <AppIcon :name="social.icon"/>
         </a>
       </li>
     </ul>

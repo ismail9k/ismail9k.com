@@ -1,8 +1,7 @@
 import Controller from './controller';
 import Draggable from './draggable';
-import Timeline from './timeline';
 
-/* eslint-disable */
+ 
 
 let timeouteId;
 let lastRotateValue = 0;

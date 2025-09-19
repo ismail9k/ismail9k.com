@@ -1,12 +1,12 @@
 export const useTracking = () => {
   const trackEvent = (eventName, parameters = {}) => {
-    if (process.client && window.gtag) {
+    if (import.meta.client && window.gtag) {
       window.gtag('event', eventName, parameters);
     }
   };
 
   const trackPageView = (path, title) => {
-    if (process.client && window.gtag) {
+    if (import.meta.client && window.gtag) {
       window.gtag('config', 'G-CP91JY5YBF', {
         page_title: title,
         page_location: window.location.href,

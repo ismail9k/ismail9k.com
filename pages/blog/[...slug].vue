@@ -41,7 +41,7 @@ if (page.value?.header) {
         </p>
       </div>
       <TOC :parent="blogParent" scroll-margin-top="90" />
-      <div class="blog" ref="blogParent">
+      <div ref="blogParent" class="blog">
         <div class="blog-content">
           <ContentRenderer :value="page" />
         </div>

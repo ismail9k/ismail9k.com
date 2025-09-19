@@ -1,5 +1,5 @@
 <template>
-  <div id="reader"></div>
+  <div id="reader"/>
 </template>
 
 

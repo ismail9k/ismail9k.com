@@ -12,7 +12,7 @@ const handleTalkClick = () => {
     <p class="talk-card-time">
       {{ props.date }}
     </p>
-    <div class="talk-card-timeline"></div>
+    <div class="talk-card-timeline"/>
     <a :href="`https://www.youtube.com/watch?v=${props.videoId}`" target="_blank" rel="noopener noreferrer" class="talk-card" @click="handleTalkClick">
       <h3 class="talk-card-title">{{ props.title }}</h3>
       <p class="talk-card-description">{{ props.description }}</p>

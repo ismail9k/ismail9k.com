@@ -8,7 +8,7 @@ export default {
 <template>
   <main>
     <div class="container">
-      <slot></slot>
+      <slot/>
     </div>
   </main>
 </template>

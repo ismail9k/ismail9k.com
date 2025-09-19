@@ -1,4 +1,4 @@
-let timelineButtons = `
+const timelineButtons = `
   <div class="timeline__container">
     <div class="timeline__track">
     </div>
