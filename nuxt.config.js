@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-og-image',
     '@nuxt/eslint',
+    'nuxt-gtag',
   ],
   css: ['normalize.css/normalize.css', '~/assets/css/app.css'],
 
@@ -101,6 +102,14 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
 
+  gtag: {
+    id: 'G-CP91JY5YBF',
+    config: {
+      cookie_domain: 'ismail9k.com',
+      cookie_flags: 'SameSite=None;Secure',
+    },
+  },
+
   app: {
     head: {
       title: 'Ismail9k',
@@ -110,35 +119,8 @@ export default defineNuxtConfig({
         { property: 'profile:username', content: 'ismail9k' },
         { property: 'profile:gender', content: 'male' },
         { property: 'og:type', content: 'profile' },
-        {
-          'http-equiv': 'Content-Security-Policy',
-          content:
-            'script-src \'self\' \'unsafe-inline\' \'unsafe-eval\' https://www.googletagmanager.com https://www.google-analytics.com; object-src \'none\';',
-        },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-      script: [
-        {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-CP91JY5YBF',
-          async: true,
-        },
-        {
-          children: `window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          // Only initialize GA if not from vue3-carousel
-          if (!document.referrer?.includes('vue3-carousel.ismail9k.com')) {
-            gtag('config', 'G-CP91JY5YBF', {
-              cookie_domain: 'ismail9k.com',
-              custom_map: { referrer: 'custom_referrer' }
-            });
-          }`,
-          type: 'text/javascript',
-        },
-      ],
     },
   },
-
-  compatibilityDate: '2024-12-01',
 });

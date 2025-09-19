@@ -1,7 +1,9 @@
 export const useTracking = () => {
+  const { gtag } = useGtag();
+
   const trackEvent = (eventName, parameters = {}) => {
-    if (import.meta.client && window.gtag) {
-      window.gtag('event', eventName, parameters);
+    if (import.meta.client) {
+      gtag('event', eventName, parameters);
     }
   };
 
@@ -97,7 +99,7 @@ export const useTracking = () => {
 
   const trackUsesClick = (itemName, url, category) => {
     trackEvent('uses_click', {
-      event_category: 'uses_page',
+      event_category: 'setup_page',
       event_label: itemName,
       outbound_url: url,
       item_category: category,
