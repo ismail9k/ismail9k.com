@@ -6,8 +6,8 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       routes: ['/sitemap.xml'],
-      crawlLinks: true
-    }
+      crawlLinks: true,
+    },
   },
   site: {
     url: 'https://ismail9k.com/',
@@ -25,10 +25,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-og-image',
   ],
-  css: [
-    'normalize.css/normalize.css',
-    '~/assets/css/app.css'
-  ],
+  css: ['normalize.css/normalize.css', '~/assets/css/app.css'],
 
   postcss: {
     plugins: {
@@ -103,7 +100,6 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
 
-
   app: {
     head: {
       title: 'Ismail9k',
@@ -113,19 +109,20 @@ export default defineNuxtConfig({
         { property: 'profile:username', content: 'ismail9k' },
         { property: 'profile:gender', content: 'male' },
         { property: 'og:type', content: 'profile' },
-        { 
-          'http-equiv': 'Content-Security-Policy', 
-          content: "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; object-src 'none';" 
-        }
+        {
+          'http-equiv': 'Content-Security-Policy',
+          content:
+            "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com; object-src 'none';",
+        },
       ],
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
       script: [
         {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-YR503NS9M7', // <-- Replace with your real GA ID
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-YR503NS9M7',
           async: true,
         },
         {
-          children: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-YR503NS9M7');`, // <-- Replace with your real GA ID
+          children: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-YR503NS9M7', { cookie_domain: 'ismail9k.com' });`,
           type: 'text/javascript',
         },
       ],

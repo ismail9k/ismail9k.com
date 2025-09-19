@@ -10,7 +10,8 @@ export const useTracking = () => {
       window.gtag('config', 'G-YR503NS9M7', {
         page_title: title,
         page_location: window.location.href,
-        page_path: path
+        page_path: path,
+        cookie_domain: 'ismail9k.com'
       })
     }
   }
