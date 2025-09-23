@@ -1,9 +1,9 @@
 <script setup>
 import socials from '/assets/data/socials.json';
 
-const title = 'Ismail9k';
+const title = 'Ismail9k - Abdelrahman Ismail';
 const description =
-  'A personal blog, blend of my life\'s work, experiences, challenges, and thoughts, captured as they come. Join me on this introspective journey.';
+  'Software engineer and technical team lead specializing in TypeScript, Vue.js, React, and GoLang. Creator of vue3-carousel and contributor to open-source projects. Sharing insights on web development, AI, and 9k-level programming tips.';
 useHead({
   title,
   meta: [

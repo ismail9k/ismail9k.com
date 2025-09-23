@@ -1,6 +1,28 @@
 <script setup>
 import '~/assets/puppet/stylus/_index.styl';
 import initPuppeteer from '~/assets/puppet/js/puppeteer';
+
+const title = 'Playground - Ismail9k';
+const description = 'Interactive SVG puppet with customizable expressions and animations. A creative experiment with SVG animations and JavaScript controls.';
+
+useHead({
+  title,
+  meta: [
+    {
+      name: 'description',
+      content: description,
+    },
+    {
+      property: 'og:title',
+      content: title,
+    },
+    {
+      property: 'og:description',
+      content: description,
+    },
+  ],
+});
+
 definePageMeta({
   layout: 'clean',
 });

@@ -1,12 +1,20 @@
 <script setup>
-const title = 'My Side-Quests'
-const description = 'A collection of tools, apps, and open-source experiments I\'ve built along the way.'
+const title = 'Side-Quests - Ismail9k';
+const description = 'Open-source projects, mobile apps, and developer tools I\'ve built. Including vue3-carousel, AI Doodles, and curated AI toolbox.';
 
 useHead({
   title,
   meta: [
     {
       name: 'description',
+      content: description,
+    },
+    {
+      property: 'og:title',
+      content: title,
+    },
+    {
+      property: 'og:description',
       content: description,
     },
   ],

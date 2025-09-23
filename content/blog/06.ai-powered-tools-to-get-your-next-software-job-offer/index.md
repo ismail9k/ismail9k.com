@@ -1,6 +1,7 @@
 ---
 title: AI-Powered Tools to Get Your Next Software Job Offer
 date: 2020-10-13
+description: Discover AI-powered tools to streamline your job search process. From resume builders to interview prep platforms, find the right tools to land your next software engineering role.
 ---
 
 Finding your perfectly-fit job should not be rocket science, especially for the new job seekers.

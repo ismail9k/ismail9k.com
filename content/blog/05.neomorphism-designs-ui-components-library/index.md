@@ -1,6 +1,7 @@
 ---
 title: Neomorphism designs, UI components library
 date: 2020-01-25
+description: Explore the trending neomorphic design style and learn how to create a complete UI components library using dual shadows for that distinctive pushed-through effect.
 ---
 
 Every while a new design trend arise and became the dominator of the shape of the period. Recently, the neomorphic design style becoming very [trending](https://dribbble.com/tags/neomorphism) and is gaining more and more popularity.

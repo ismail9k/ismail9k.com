@@ -1,4 +1,25 @@
 <script setup>
+const title = 'Talks - Ismail9k';
+const description = 'Collection of technical talks and presentations on software development, blockchain, frontend frameworks, and career advice.';
+
+useHead({
+  title,
+  meta: [
+    {
+      name: 'description',
+      content: description,
+    },
+    {
+      property: 'og:title',
+      content: title,
+    },
+    {
+      property: 'og:description',
+      content: description,
+    },
+  ],
+});
+
 const talks = [
   {
     title: 'Career Journey and the Future of Software Development',

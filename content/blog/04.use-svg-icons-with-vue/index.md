@@ -1,6 +1,7 @@
 ---
 title: Use SVG Icons with Vue.js
 date: 2019-11-23
+description: Build a flexible SVG icon component for Vue.js with dynamic sizing, theming, and accessibility features. Includes performance optimization with functional components.
 ---
 Many developers prefer to use the font-icons over the SVG ones because it has a simpler syntax, and it integrates seamlessly with almost any front-end component library.
 
