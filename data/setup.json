@@ -10,56 +10,56 @@
           "category": "laptop",
           "span": "2",
           "image": "/img/setup/apple-m1-pro.png",
-          "description": "My workhorse. It works so flawlessly that I haven't been able to justify upgrading to the new space black M4 Pro, despite how much better it would match my setup aesthetic. The performance is still incredible, the battery easily lasts all day, and it handles everything I throw at it without breaking a sweat. Sometimes the best upgrade is no upgrade at all."
+          "description": "My workhorse that refuses to give me an excuse to upgrade. Honestly, I am looking forward to the upgrade to the space black M4 Pro to have all black setup, but this M1 Pro just won't quit. The battery outlasts my workday, and it handles whatever I throw at it without complaining. Sometimes the best upgrade is realizing you don't need one... yet."
         },
         {
           "name": "LG 27UL850",
           "url": "https://www.amazon.com/s?k=LG+27UL850",
           "image": "/img/setup/lg-27ul850.png",
           "category": "monitor",
-          "description": "I use only one monitor. The USB-C connection is a game changer - I plug in my MacBook with a single cable for power, display, and data all at once."
+          "description": "Team single monitor here. While everyone's flexing their triple-screen battlestations, I'm living my best minimalist life. One monitor, one USB-C cable for power, display, and data. Simple."
         },
         {
           "name": "IKEA UPPSPEL",
           "url": "https://www.ikea.com/us/en/p/uppspel-gaming-desk-black-s59430197/",
           "image": "/img/setup/uppspel-gaming-desk.png",
           "category": "gaming desk",
-          "description": "This gaming desk might seem overkill for development, but the height adjustment has been incredible for my back. I can switch between sitting and standing throughout the day, and the cable management keeps everything tidy."
+          "description": "It's a gaming desk, but I don't game on it (much). The height adjustment has saved my back from years of slouching, and I can pretend I'm being healthy by standing for 10 minutes every few hours. The cable management system is a 9k, everything stays hidden like my imposter syndrome."
         },
         {
           "name": "OMEN Citadel",
           "url": "https://www.amazon.com/s?k=OMEN+Citadel+Gaming+Chair",
           "image": "/img/setup/omen-gaming-chair.png",
           "category": "gaming chair",
-          "description": "After years of cheap office chairs that destroyed my posture, investing in proper ergonomics was a no-brainer. The lumbar support and adjustable armrests have made those long 10+ hour coding sessions much more comfortable."
+          "description": "Gaming desk needs a gaming chair, right? Spending 8+ hours daily sitting meant I had to invest in my back's future. It looks so good on camera that everyone asks about it in meetings. Did I buy it for back support or to look COOL!? At this point, I honestly don't know. Plot twist: I threw away the armrests, I prefer resting my hands on the desk itself."
         },
         {
           "name": "Twelve South Curve",
           "url": "https://www.twelvesouth.com/products/curve-for-macbook",
           "image": "/img/setup/twelve-south-curve.png",
           "category": "accessories",
-          "description": "I've been using this laptop stand for more than 7 years now. I have not found a better alternative yet. The aluminum construction matches the MacBook perfectly and has held up incredibly well."
+          "description": "7+ years and still going strong. Why upgrade when perfection exists? The aluminum matches my MacBook so perfectly it's like they were made for each other. It's survived multiple desk setups and two house moves without a scratch."
         },
         {
           "name": "Shure MV7+ ",
           "url": "https://www.amazon.com/s?k=Shure+MV7",
           "image": "/img/setup/shure-mv7-plus.png",
           "category": "microphone",
-          "description": "Every time I use it, I have comments on how good my voice is. It's USB-C, so I use it with my MacBook, and iPhone, and the customizable LED ring is a nice touch."
+          "description": "This mic has become part of my identity now. People constantly compliment my audio quality in meetings. With USB-C, I use it with my MacBook and iPhone seamlessly, and the customizable LED ring makes me feel like a professional even when I'm just ranting about JavaScript frameworks."
         },
         {
           "name": "Elgato Wave",
           "url": "https://www.amazon.com/s?k=elgato+Wave+Mic+Arm+LP",
           "image": "/img/setup/elgato-wave-mic-arm-lp.png",
           "category": "mic arm",
-          "description": "This mic arm keeps my microphone out of the way when I'm not recording but makes it easily accessible when I need it. The cable management is excellent and helps keep my desk tidy."
+          "description": "The unsung hero of my setup. It swoops my mic out of the way when I don't need it and brings it right back when it's showtime. The cable management is so good, another 9k gear in my setup."
         },
         {
           "name": "UNIQ Hagen",
           "url": "https://www.amazon.com/s?k=UNIQ+Hagen+Large+Desk+Mat",
           "image": "/img/setup/uniq-hagen-desk-mates.png",
           "category": "desk mat",
-          "description": "It's a bit expensive, but it's a nice addition to my desk. With dual colors and magnetic pens, I use it to keep my cables organized and my desk tidy."
+          "description": "Okay, it's pricey for a desk mat, but hear me out. The dual colors let me match my mood (dark mode or light mode vibes), and the magnetic cable holders keep my setup looking less like a rat's nest. Sometimes you gotta pay for aesthetics."
         }
       ],
       "additionalContent": [
@@ -78,28 +78,28 @@
           "url": "https://cursor.sh",
           "category": "editor",
           "image": "/img/setup/cursor.png",
-          "description": "My main editor (currently). I use it mainly for auto-completion and background tasks."
+          "description": "My main code editor (for now). I use it mainly for the AI-powered auto-completion and background agents, and to run Claude Code."
         },
         {
           "name": "Vira Theme",
           "url": "https://vira.build/",
           "image": "/img/setup/vira-theme.png",
           "category": "editor",
-          "description": "I love minimal clean themes. I was using it since it was called material theme. When I saw the pro version of it, it was a no-brainer."
+          "description": "Been loyal to this theme since its Material Theme days. When the pro version dropped, I didn't even hesitate - minimal, clean, and easy on the eyes during those late-night coding sessions. Sometimes you just know when you've found 'the one.'"
         },
         {
           "name": "iTerm2",
           "url": "https://iterm2.com",
           "category": "terminal",
           "image": "/img/setup/iterm.png",
-          "description": "My main terminal app powered by Zsh and Oh My Zsh."
+          "description": "Terminal app of choice, supercharged with Zsh and Oh My Zsh. Because life's too short for boring command prompts."
         },
         {
           "name": "ChatGPT",
           "url": "https://chatgpt.com",
           "category": "ai",
           "image": "/img/setup/chatgpt.png",
-          "description": "My main AI buddy for brainstorming, writing, and problem-solving. I use it daily for everything."
+          "description": "My main AI buddy for brainstorming, writing, and problem-solving. I use it daily for everything, that doesn't involve actual coding."
         },
         {
           "name": "Claude Code",

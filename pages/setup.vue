@@ -12,11 +12,6 @@ const handleLinkClick = (itemName, url, category) => {
 };
 
 
-const getShortDescription = (description, span = 1) => {
-  const length = span * 150;
-  return description.length > length ? description.substring(0, length) + '...' : description;
-};
-
 
 useHead({
   title,
@@ -52,27 +47,25 @@ useHead({
   <section v-for="section in setupData.sections" :key="section.id" class="section">
     <h2 class="title">{{ section.title }}</h2>
     <div class="items-grid">
-      <div
-v-for="item in section.items" :key="item.name" class="item-card"
+      <div v-for="item in section.items" :key="item.name" class="item-card"
         :style="`grid-column: span ${item.span || 1};`">
         <span v-if="item.label" class="item-label">{{ item.label }}</span>
 
         <div class="item-image">
-          <img v-if="item.image" :src="item.image" :alt="item.name" >
+          <img v-if="item.image" :src="item.image" :alt="item.name">
           <div v-else class="item-placeholder">
             <span class="item-initial">{{ item.name.charAt(0) }}</span>
           </div>
         </div>
         <div class="item-content">
           <h3 class="item-name">
-            <a
-:href="item.url" target="_blank" rel="noopener" class="item-link" :data-name="item.name"
+            <a :href="item.url" target="_blank" rel="noopener" class="item-link" :data-name="item.name"
               :data-url="item.url" :data-category="item.category"
               @click="handleLinkClick(item.name, item.url, item.category)">
               {{ item.name }}
             </a>
           </h3>
-          <p class="item-description">{{ getShortDescription(item.description, item.span) }}</p>
+          <p class="item-description">{{ item.description }}</p>
         </div>
       </div>
     </div>
@@ -80,7 +73,7 @@ v-for="item in section.items" :key="item.name" class="item-card"
     <!-- Render additional content if it exists -->
     <div v-if="section.additionalContent" class="additional-content">
       <div v-for="(content, index) in section.additionalContent" :key="index" class="content">
-        <p v-if="content.type === 'paragraph'" v-html="content.content"/>
+        <p v-if="content.type === 'paragraph'" v-html="content.content" />
       </div>
     </div>
   </section>
