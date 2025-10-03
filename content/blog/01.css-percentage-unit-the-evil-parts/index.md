@@ -2,6 +2,7 @@
 title: "CSS percentage unit, the evil parts"
 date: 2018-04-27
 description: Understanding the tricky behavior of CSS percentage units. Learn when percentages are relative to parent width vs height, and master the transform property for perfect element positioning.
+tags: ["CSS", "Technical"]
 ---
 
 CSS has dozens of [length](https://developer.mozilla.org/en-US/docs/Web/CSS/length) units, but the **percentage** unit is one of my favorites. However, it can be very evil and troublesome sometimes.

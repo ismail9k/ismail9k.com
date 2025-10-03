@@ -2,6 +2,7 @@
 title: Use JavaScript Optional Chaining, Today!
 date: 2019-10-30
 description: Learn how to use JavaScript's Optional Chaining operator (?.) to safely access deeply nested object properties. Complete setup guide for Babel, ESLint, and VS Code.
+tags: ["JavaScript", "Technical"]
 ---
 
 Optional Chaining is a new JavaScript API that will make developers' lives easier :D. Optional Chaining is currently at [Stage 3](https://github.com/tc39/proposal-optional-chaining), and soon enough will be part of the language itself, but we can use it, today.

@@ -2,6 +2,7 @@
 title: "The CSS I Knew Has Evolved: Advanced Features, New Identity"
 date: 2024-12-02
 description: Exploring modern CSS features that have transformed web development - from container queries and CSS Grid to the new CSS logo and advanced layout capabilities that make centering elements trivial.
+tags: ["CSS", "Technical", "Personal"]
 ---
 
 The world of frontend development has changed drastically since I began my journey as a front-end developer a decade ago. CSS itself has not only evolved in capabilities but also embraced a fresh, modern identity with a new logo that symbolizes this evolution.

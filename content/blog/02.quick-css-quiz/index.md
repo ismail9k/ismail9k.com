@@ -3,6 +3,7 @@ title: Quick CSS Quiz
 date: 2018-10-20
 slug: quick-css-quiz
 description: Test your CSS knowledge with these tricky questions covering margin collapsing, percentage units, line-height inheritance, CSS specificity, and z-index layers.
+tags: ["CSS", "Technical"]
 ---
 
 CSS might be a total mystery to you or a topic that’s near and dear to your heart. Whether you think of CSS as a "necessary evil" or think of it as the power to control the world of technology, CSS is a must-have for anyone working on web applications. A deep knowledge of CSS can be the difference between a beautiful, polished web application and one that just feels like "meh".

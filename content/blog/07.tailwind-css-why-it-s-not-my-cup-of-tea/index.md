@@ -2,6 +2,7 @@
 title: "Tailwind CSS: Why It's Not My Cup of Tea"
 date: 2023-07-30
 description: A critical perspective on Tailwind CSS, exploring concerns about maintainability, readability, and separation of concerns in modern web development projects.
+tags: ["CSS", "Opinion", "Technical"]
 ---
 
 Like everything, there are people who support and oppose certain things. For example, sushi may be someone's favorite food, while others can't stand its smell.

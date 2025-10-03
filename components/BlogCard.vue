@@ -1,6 +1,6 @@
 <script setup>
 import dayjs from 'dayjs';
-const props = defineProps(['path', 'date', 'title', 'description']);
+const props = defineProps(['path', 'date', 'title', 'description', 'tags']);
 const { trackBlogClick } = useTracking();
 
 const handleBlogClick = () => {
@@ -18,6 +18,11 @@ const handleBlogClick = () => {
     <NuxtLink :key="props.path" :to="props.path" class="blog-card" @click="handleBlogClick">
       <h3 class="blog-card-title">{{ props.title }}</h3>
       <p class="blog-card-description">{{ props.description }}</p>
+      <div v-if="props.tags && props.tags.length > 0" class="blog-card-tags">
+        <span v-for="tag in props.tags" :key="tag" class="blog-card-tag">
+          {{ tag }}
+        </span>
+      </div>
     </NuxtLink>
   </div>
 </template>
@@ -148,6 +153,51 @@ const handleBlogClick = () => {
 
   .dark & {
     color: var(--white-color-darken-30);
+  }
+}
+
+.blog-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-5);
+  margin-top: var(--spacing-8);
+}
+
+.blog-card-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-3) var(--spacing-6);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  background: var(--dark-color-alpha-05);
+  border: 1px solid var(--dark-color-alpha-10);
+  border-radius: 12px;
+  transition: var(--transition);
+
+  &::before {
+    content: '#';
+    margin-right: 2px;
+    opacity: 0.6;
+  }
+
+  .blog-card:hover & {
+    background: var(--dark-color-alpha-10);
+    border-color: var(--accent-color);
+    transform: translateY(-1px);
+  }
+
+  .dark & {
+    color: var(--accent-color);
+    background: var(--white-color-alpha-05);
+    border-color: var(--white-color-alpha-15);
+  }
+
+  .dark .blog-card:hover & {
+    background: var(--white-color-alpha-10);
+    border-color: var(--accent-color);
   }
 }
 </style>
