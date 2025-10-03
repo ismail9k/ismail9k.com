@@ -95,10 +95,10 @@
           "description": "My main terminal app powered by Zsh and Oh My Zsh."
         },
         {
-          "name": "Claude",
-          "url": "https://claude.ai",
+          "name": "ChatGPT",
+          "url": "https://chatgpt.com",
           "category": "ai",
-          "image": "/img/setup/claude.png",
+          "image": "/img/setup/chatgpt.png",
           "description": "My main AI buddy for brainstorming, writing, and problem-solving. I use it daily for everything."
         },
         {
