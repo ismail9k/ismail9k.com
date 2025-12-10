@@ -6,7 +6,7 @@
       "items": [
         {
           "name": "14 Inch iMacBook M1 Pro",
-          "url": "https://www.amazon.com/s?k=Apple+MacBook+Pro+14-inch+M1+Pro",
+          "url": "https://amzn.to/3XKnPPR",
           "category": "laptop",
           "span": "2",
           "image": "/img/setup/apple-m1-pro.png",
@@ -14,7 +14,7 @@
         },
         {
           "name": "LG 27UL850",
-          "url": "https://www.amazon.com/s?k=LG+27UL850",
+          "url": "https://amzn.to/4ppKJIg",
           "image": "/img/setup/lg-27ul850.png",
           "category": "monitor",
           "description": "Team single monitor here. While everyone's flexing their triple-screen battlestations, I'm living my best minimalist life. One monitor, one USB-C cable for power, display, and data. Simple."
@@ -35,28 +35,28 @@
         },
         {
           "name": "Twelve South Curve",
-          "url": "https://www.twelvesouth.com/products/curve-for-macbook",
+          "url": "https://amzn.to/44TwWkZ",
           "image": "/img/setup/twelve-south-curve.png",
           "category": "accessories",
           "description": "7+ years and still going strong. Why upgrade when perfection exists? The aluminum matches my MacBook so perfectly. It's survived multiple desk setups and two house moves without a scratch."
         },
         {
           "name": "Shure MV7+ ",
-          "url": "https://www.amazon.com/s?k=Shure+MV7",
+          "url": "https://amzn.to/4a90grl",
           "image": "/img/setup/shure-mv7-plus.png",
           "category": "microphone",
           "description": "This mic has become part of my identity now. People constantly compliment my audio quality in meetings. With USB-C, I use it with my MacBook and iPhone seamlessly, and the customizable LED ring makes me feel like a professional even when I'm just ranting about JavaScript frameworks."
         },
         {
           "name": "Elgato Wave",
-          "url": "https://www.amazon.com/s?k=elgato+Wave+Mic+Arm+LP",
+          "url": "https://amzn.to/4pvrJYS",
           "image": "/img/setup/elgato-wave-mic-arm-lp.png",
           "category": "mic arm",
           "description": "The unsung hero of my setup. It swoops my mic out of the way when I don't need it and brings it right back when it's showtime. The cable management is so good, another 9k gear in my setup."
         },
         {
           "name": "UNIQ Hagen",
-          "url": "https://www.amazon.com/s?k=UNIQ+Hagen+Large+Desk+Mat",
+          "url": "https://uniqbetterbydesign.com/products/hagen",
           "image": "/img/setup/uniq-hagen-desk-mates.png",
           "category": "desk mat",
           "description": "Yes, it’s pricey for a desk mat, but hear me out. The dual colors let me match my mood (dark mode or light mode vibes), and the magnetic cable holders keep the cables tidy, which helps with my OCD. Sometimes you just have to pay for style."
@@ -130,14 +130,14 @@
         },
         {
           "name": "Logitech MX Master 3 for Mac",
-          "url": "https://www.amazon.com/s?k=Logitech+MX+Master+3+Mac",
+          "url": "https://amzn.to/48R1ntv",
           "image": "/img/setup/logitech-mx-master-3-mac.png",
           "category": "mouse",
           "description": "I love this mouse, and most people do too, so I don't look for another one."
         },
         {
-          "name": "Deltahub Carpio 2.0",
-          "url": "https://www.amazon.com/s?k=Deltahub+Carpio+2.0",
+          "name": "DELTAHUB Carpio 2.0",
+          "url": "https://amzn.to/3MvTyBN",
           "image": "/img/setup/deltahub-carpio-2.0.png",
           "category": "ergonomics",
           "description": "If you have carpal tunnel, this is a must-have. It's a bit expensive, but it's worth it."
@@ -234,14 +234,14 @@
         },
         {
           "name": "Manfrotto Element MII",
-          "url": "https://www.amazon.com/s?k=Manfrotto+Element+MII+Tripod",
+          "url": "https://amzn.to/4iQDQxi",
           "image": "/img/setup/manfrotto-element-mii-tripod.png",
           "category": "tripod",
           "description": "My tripod for photography or content creation needs. It's lightweight and has a great build quality."
         },
         {
           "name": "Ulanzi ST-28",
-          "url": "https://www.amazon.com/s?k=Ulanzi+ST-28",
+          "url": "https://amzn.to/4517Twi",
           "image": "/img/setup/ulanzi-st-28.png",
           "category": "magsafe phone holder",
           "description": "A MagSafe compatible phone holder. I use it to mount my phone to my tripod, to use for video calls, and to use for content creation videos."
@@ -249,7 +249,7 @@
 
         {
           "name": "XD Design Bobby Hero",
-          "url": "https://www.amazon.com/s?k=XD+Design+Bobby+Hero+Backpack",
+          "url": "https://xd-design.com/products/bobby-hero-regular-anti-theft-backpack-black",
           "image": "/img/setup/xd-design-bobby-hero-backpack.png",
           "category": "travel backpack",
           "description": "My travel backpack to carry my laptop, keyboard, and other stuff."

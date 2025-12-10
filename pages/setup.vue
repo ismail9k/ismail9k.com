@@ -41,6 +41,11 @@ useHead({
         Rather than answering the same questions repeatedly, I figured I'd create this living document to share what I'm
         currently using and why I chose each piece.
       </p>
+      <p class="affiliate-note">
+        Some of these links are affiliate links, which means if you buy something through them,
+        I might earn a small commission at no extra cost to you. Will it make me filthy rich? Probably not. But it might
+        help me afford another desk mat I don't need. 😄
+      </p>
     </div>
   </section>
 
@@ -98,6 +103,24 @@ useHead({
 }
 
 .content strong {
+  font-weight: 600;
+}
+
+.affiliate-note {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.affiliate-note strong {
+  color: var(--color-primary);
   font-weight: 600;
 }
 
