@@ -6,7 +6,7 @@ const { trackNavigation } = useTracking();
 const links = [
   { title: 'Blog', link: '/blog' },
   { title: 'Talks', link: '/talks' },
-  { title: 'Setup', link: '/setup' },
+  { title: 'Uses', link: '/uses' },
   // { title: 'Side-Quests', link: '/side-quests' },
   // { title: 'QR Scanner', link: '/tools/qr-scanner' },
 ];
