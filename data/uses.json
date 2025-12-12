@@ -9,55 +9,55 @@
           "url": "https://amzn.to/3XKnPPR",
           "category": "laptop",
           "span": "2",
-          "image": "/img/setup/apple-m1-pro.png",
+          "image": "/img/uses/apple-m1-pro.png",
           "description": "My workhorse that refuses to give me an excuse to upgrade. Honestly, I am looking forward to the upgrade to the space black M4 Pro to have all black setup, but this M1 Pro just won't quit. The battery outlasts my workday, and it handles whatever I throw at it without complaining. Sometimes the best upgrade is realizing you don't need one... yet."
         },
         {
           "name": "LG 27UL850",
           "url": "https://amzn.to/4ppKJIg",
-          "image": "/img/setup/lg-27ul850.png",
+          "image": "/img/uses/lg-27ul850.png",
           "category": "monitor",
           "description": "Team single monitor here. While everyone's flexing their triple-screen battlestations, I'm living my best minimalist life. One monitor, one USB-C cable for power, display, and data. Simple."
         },
         {
           "name": "IKEA UPPSPEL",
           "url": "https://www.ikea.com/us/en/p/uppspel-gaming-desk-black-s59430197/",
-          "image": "/img/setup/uppspel-gaming-desk.png",
+          "image": "/img/uses/uppspel-gaming-desk.png",
           "category": "gaming desk",
           "description": "It's a gaming desk, but I don't game on it (much). The height adjustment has saved my back from years of slouching, and I can pretend I'm being healthy by standing for 10 minutes every few hours. The cable management system is a 9k, everything stays hidden like my imposter syndrome."
         },
         {
           "name": "OMEN Citadel",
           "url": "https://www.amazon.com/s?k=OMEN+Citadel+Gaming+Chair",
-          "image": "/img/setup/omen-gaming-chair.png",
+          "image": "/img/uses/omen-gaming-chair.png",
           "category": "gaming chair",
           "description": "Gaming desk needs a gaming chair, right? Spending 8+ hours daily sitting meant I had to invest in my back's future. It looks so good on camera that everyone asks about it in meetings. Did I buy it for back support or to look COOL!? At this point, I honestly don't know. Plot twist: I threw away the armrests, I prefer resting my hands on the desk itself."
         },
         {
           "name": "Twelve South Curve",
           "url": "https://amzn.to/44TwWkZ",
-          "image": "/img/setup/twelve-south-curve.png",
+          "image": "/img/uses/twelve-south-curve.png",
           "category": "accessories",
           "description": "7+ years and still going strong. Why upgrade when perfection exists? The aluminum matches my MacBook so perfectly. It's survived multiple desk setups and two house moves without a scratch."
         },
         {
           "name": "Shure MV7+ ",
           "url": "https://amzn.to/4a90grl",
-          "image": "/img/setup/shure-mv7-plus.png",
+          "image": "/img/uses/shure-mv7-plus.png",
           "category": "microphone",
           "description": "This mic has become part of my identity now. People constantly compliment my audio quality in meetings. With USB-C, I use it with my MacBook and iPhone seamlessly, and the customizable LED ring makes me feel like a professional even when I'm just ranting about JavaScript frameworks."
         },
         {
           "name": "Elgato Wave",
           "url": "https://amzn.to/4pvrJYS",
-          "image": "/img/setup/elgato-wave-mic-arm-lp.png",
+          "image": "/img/uses/elgato-wave-mic-arm-lp.png",
           "category": "mic arm",
           "description": "The unsung hero of my setup. It swoops my mic out of the way when I don't need it and brings it right back when it's showtime. The cable management is so good, another 9k gear in my setup."
         },
         {
           "name": "UNIQ Hagen",
           "url": "https://uniqbetterbydesign.com/products/hagen",
-          "image": "/img/setup/uniq-hagen-desk-mates.png",
+          "image": "/img/uses/uniq-hagen-desk-mates.png",
           "category": "desk mat",
           "description": "Yes, it’s pricey for a desk mat, but hear me out. The dual colors let me match my mood (dark mode or light mode vibes), and the magnetic cable holders keep the cables tidy, which helps with my OCD. Sometimes you just have to pay for style."
         }
@@ -65,7 +65,7 @@
       "additionalContent": [
         {
           "type": "paragraph",
-          "content": "You can check out my complete desktop workspace <a href='/img/setup/my-setup.jpg' target='_blank'>here</a> featuring all the gear that makes my development workflow possible. This setup has evolved over years of fine-tuning to maximize both productivity and aesthetics."
+          "content": "You can check out my complete desktop workspace <a href='/img/uses/my-workspace.jpg' target='_blank'>here</a> featuring all the gear that makes my development workflow possible. This workspace has evolved over years of fine-tuning to maximize both productivity and aesthetics."
         }
       ]
     },
@@ -77,13 +77,13 @@
           "name": "Cursor IDE",
           "url": "https://cursor.sh",
           "category": "editor",
-          "image": "/img/setup/cursor.png",
+          "image": "/img/uses/cursor.png",
           "description": "My main code editor (for now). I use it mainly for the AI-powered auto-completion and background agents, and to run Claude Code."
         },
         {
           "name": "Vira Theme",
           "url": "https://vira.build/",
-          "image": "/img/setup/vira-theme.png",
+          "image": "/img/uses/vira-theme.png",
           "category": "editor",
           "description": "Been loyal to this theme since its Material Theme days. When the pro version dropped, I didn't even hesitate - minimal, clean, and easy on the eyes during those late-night coding sessions. Sometimes you just know when you've found 'the one.'"
         },
@@ -91,21 +91,21 @@
           "name": "iTerm2",
           "url": "https://iterm2.com",
           "category": "terminal",
-          "image": "/img/setup/iterm.png",
+          "image": "/img/uses/iterm.png",
           "description": "Terminal app of choice, supercharged with Zsh and Oh My Zsh. Because life's too short for boring command prompts."
         },
         {
           "name": "ChatGPT",
           "url": "https://chatgpt.com",
           "category": "ai",
-          "image": "/img/setup/chatgpt.png",
+          "image": "/img/uses/chatgpt.png",
           "description": "My main AI buddy for brainstorming, writing, and problem-solving. I use it daily for everything, that doesn't involve actual coding."
         },
         {
           "name": "Claude Code",
           "url": "https://claude.ai/code",
           "category": "ai",
-          "image": "/img/setup/claude-code.png",
+          "image": "/img/uses/claude-code.png",
           "description": "My primary AI coding assistant that integrates seamlessly with my development workflow. It's by far the best AI coding assistant I've tried (till now)."
         }
       ]
@@ -117,28 +117,28 @@
         {
           "name": "Keychron K6 Pro",
           "url": "https://amzn.to/4rM047L",
-          "image": "/img/setup/keychron-k6-pro.png",
+          "image": "/img/uses/keychron-k6-pro.png",
           "category": "keyboard",
           "description": "My main keyboard with brown switches. It has a phenomenal typing experience and the battery life is amazing."
         },
         {
           "name": "NuPhy Air75 V2",
           "url": "https://amzn.to/4iRrJA4",
-          "image": "/img/setup/nuphy-air75-v2.png",
+          "image": "/img/uses/nuphy-air75-v2.png",
           "category": "keyboard",
           "description": "My portable keyboard for when I want something more compact. Having two keyboards might seem excessive, but switching between them keeps things interesting."
         },
         {
           "name": "Logitech MX Master 3 for Mac",
           "url": "https://amzn.to/48R1ntv",
-          "image": "/img/setup/logitech-mx-master-3-mac.png",
+          "image": "/img/uses/logitech-mx-master-3-mac.png",
           "category": "mouse",
           "description": "I love this mouse, and most people do too, so I don't look for another one."
         },
         {
           "name": "DELTAHUB Carpio 2.0",
           "url": "https://amzn.to/3MvTyBN",
-          "image": "/img/setup/deltahub-carpio-2.0.png",
+          "image": "/img/uses/deltahub-carpio-2.0.png",
           "category": "ergonomics",
           "description": "If you have carpal tunnel, this is a must-have. It's a bit expensive, but it's worth it."
         }
@@ -153,28 +153,28 @@
           "url": "https://setapp.sjv.io/c/2510213/343321/5114",
           "category": "app",
           "span": "2",
-          "image": "/img/setup/setapp.png",
+          "image": "/img/uses/setapp.png",
           "description": "A subscription service that gives me access to tons of useful Mac apps without buying them individually. I've listed some of my favorites below."
         },
         {
           "name": "Notion",
           "url": "https://www.notion.so",
           "category": "app",
-          "image": "/img/setup/notion.png",
+          "image": "/img/uses/notion.png",
           "description": "My second brain for project planning, documentation, and keeping track of ideas and tasks."
         },
         {
           "name": "Obsidian",
           "url": "https://obsidian.md",
           "category": "app",
-          "image": "/img/setup/obsidian.png",
+          "image": "/img/uses/obsidian.png",
           "description": "It's my main place for writing content scripts, and blogs, the ability to write in markdown is the best thing about it."
         },
         {
           "name": "Raycast",
           "url": "https://raycast.com/?via=ismail9k",
           "category": "app",
-          "image": "/img/setup/raycast.png",
+          "image": "/img/uses/raycast.png",
           "description": "Who uses Spotlight nowadays? I used to use Alfred, but Raycast is way more powerful and customizable."
         },
         {
@@ -182,7 +182,7 @@
           "url": "https://www.macbartender.com/",
           "category": "app",
           "label": "Setapp",
-          "image": "/img/setup/bartender.png",
+          "image": "/img/uses/bartender.png",
           "description": "If you have a laptop with a notch, you MUST install this app."
         },
         {
@@ -190,7 +190,7 @@
           "url": "https://lookaway.com?aff=vYvWo",
           "category": "health",
           "label": "Setapp",
-          "image": "/img/setup/lookaway.png",
+          "image": "/img/uses/lookaway.png",
           "description": "A very cute and simple app to remind me to blink more often, and fix my posture."
         },
         {
@@ -198,7 +198,7 @@
           "url": "https://amicoapps.com/app/quitall/",
           "category": "app",
           "label": "Setapp",
-          "image": "/img/setup/quite-all.png",
+          "image": "/img/uses/quite-all.png",
           "description": "Sometimes all I need is to close all apps and start fresh."
         },
         {
@@ -206,7 +206,7 @@
           "url": "https://cleanshot.com/",
           "category": "app",
           "label": "Setapp",
-          "image": "/img/setup/cleanshot-x.png",
+          "image": "/img/uses/cleanshot-x.png",
           "description": "A screenshot tool that I use to take screenshots and videos of my screen."
         }
       ],
@@ -228,21 +228,21 @@
         {
           "name": "iPhone 15 Pro",
           "url": "https://www.apple.com/iphone-15-pro/",
-          "image": "/img/setup/iphone-15-pro.png",
+          "image": "/img/uses/iphone-15-pro.png",
           "category": "mobile",
           "description": "I use this poor device for everything, webcam, content creation videos, and as a phone."
         },
         {
           "name": "Manfrotto Element MII",
           "url": "https://amzn.to/4iQDQxi",
-          "image": "/img/setup/manfrotto-element-mii-tripod.png",
+          "image": "/img/uses/manfrotto-element-mii-tripod.png",
           "category": "tripod",
           "description": "My tripod for photography or content creation needs. It's lightweight and has a great build quality."
         },
         {
           "name": "Ulanzi ST-28",
           "url": "https://amzn.to/4517Twi",
-          "image": "/img/setup/ulanzi-st-28.png",
+          "image": "/img/uses/ulanzi-st-28.png",
           "category": "magsafe phone holder",
           "description": "A MagSafe compatible phone holder. I use it to mount my phone to my tripod, to use for video calls, and to use for content creation videos."
         },
@@ -250,7 +250,7 @@
         {
           "name": "XD Design Bobby Hero",
           "url": "https://xd-design.com/products/bobby-hero-regular-anti-theft-backpack-black",
-          "image": "/img/setup/xd-design-bobby-hero-backpack.png",
+          "image": "/img/uses/xd-design-bobby-hero-backpack.png",
           "category": "travel backpack",
           "description": "My travel backpack to carry my laptop, keyboard, and other stuff."
         }
