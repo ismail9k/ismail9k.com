@@ -36,6 +36,7 @@ if (page.value?.header) {
     <article class="blog-article">
       <div class="blog-header">
         <h1 class="blog-title">{{ page.title }}</h1>
+        <p v-if="page.subtitle" class="blog-subtitle">{{ page.subtitle }}</p>
         <p v-if="page.date" class="blog-date">
           {{ new Date(page.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) }}
         </p>
@@ -234,6 +235,22 @@ if (page.value?.header) {
     & {
       font-size: 2rem;
       margin-bottom: 2rem;
+    }
+  }
+}
+
+.blog-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  margin: 1rem 0 0 0;
+  font-style: italic;
+  max-width: 40ch;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+  @media (max-width: 768px) {
+    & {
+      font-size: 1.1rem;
     }
   }
 }

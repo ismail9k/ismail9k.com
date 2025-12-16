@@ -34,7 +34,7 @@ const selectedTag = ref(route.query.tag || '');
 const { data: allPosts } = await useAsyncData('all-blog-posts', () =>
   queryCollection('blog')
     .order('date', 'DESC')
-    .select('date', 'title', 'description', 'path', 'tags')
+    .select('date', 'title', 'subtitle', 'description', 'path', 'tags')
     .all()
 );
 
