@@ -99,7 +99,7 @@ export const useTracking = () => {
 
   const trackUsesClick = (itemName, url, category) => {
     trackEvent('uses_click', {
-      event_category: 'setup_page',
+      event_category: 'uses_page',
       event_label: itemName,
       outbound_url: url,
       item_category: category,

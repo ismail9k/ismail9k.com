@@ -1,8 +1,8 @@
 <script setup>
-import setupData from '~/data/setup.json';
+import usesData from '~/data/uses.json';
 
-const title = 'Setup - Ismail9k';
-const description = 'My current development setup, tools, and gear that help me build software. From editors to hardware, here\'s what I\'m using and why.';
+const title = 'Uses - Ismail9k';
+const description = 'Tools, gear, and software I use daily. From my development setup to productivity apps, here\'s what powers my workflow.';
 
 const { trackUsesClick } = useTracking();
 
@@ -34,10 +34,10 @@ useHead({
 
 <template>
   <section class="section">
-    <h1 class="main-title">Setup</h1>
+    <h1 class="main-title">Uses</h1>
     <div class="main-description">
       <p>
-        I get quite a few messages asking about my setup, tools, and the specifics of my development environment.
+        I get quite a few messages asking about my tools, gear, and the specifics of my development environment.
         Rather than answering the same questions repeatedly, I figured I'd create this living document to share what I'm
         currently using and why I chose each piece.
       </p>
@@ -49,7 +49,7 @@ useHead({
     </div>
   </section>
 
-  <section v-for="section in setupData.sections" :key="section.id" class="section">
+  <section v-for="section in usesData.sections" :key="section.id" class="section">
     <h2 class="title">{{ section.title }}</h2>
     <div class="items-grid">
       <div v-for="item in section.items" :key="item.name" class="item-card"
