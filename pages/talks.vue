@@ -22,6 +22,14 @@ useHead({
 
 const talks = [
   {
+    title: 'Are AI-powered programming tools now sufficient to replace programmers?',
+    description: 'A realistic discussion between programmers and administrators about the topic of AI programming, its current state, and its impact on the software industry and technological solutions.',
+    date: '25/01/2026',
+    location: 'Abdul Osama Sessions',
+    videoId: 'NfRC9Lj4-rU',
+    language: 'Arabic'
+  },
+  {
     title: 'Career Journey and the Future of Software Development',
     description: 'A comprehensive discussion about my journey from graphic design to software engineering, working with open-source projects like Vue.js components, and insights into how AI is transforming the development landscape. Topics include working at different company scales (startups vs enterprises), the importance of soft skills, prompt engineering, and practical advice for junior developers in the AI era.',
     date: '22/08/2025',
@@ -43,14 +51,6 @@ const talks = [
     date: '24/02/2024',
     location: 'Ibtikar Conference',
     videoId: '47SFGvShMFE',
-    language: 'Arabic'
-  },
-  {
-    title: 'Frontend Development Deep Dive',
-    description: 'Deep dive into frontend development covering how browsers work, browser pipeline and performance, frontend frameworks (Vue.js, React, Angular, Svelte), micro-frontend architecture, and the future of JavaScript. A comprehensive discussion with industry experts.',
-    date: '18/06/2023',
-    location: 'Tech & Coffee Podcast',
-    videoId: 'PIZDHaYSLN4',
     language: 'Arabic'
   },
 ]
