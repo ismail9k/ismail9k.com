@@ -1,7 +1,7 @@
 <script setup>
 const route = useRoute();
 const blogParent = ref(null);
-const path = route.path;
+const path = route.path.replace(/\/$/, '');
 const { data: page } = await useAsyncData(path, () =>
   queryCollection('blog').path(path).first()
 );
