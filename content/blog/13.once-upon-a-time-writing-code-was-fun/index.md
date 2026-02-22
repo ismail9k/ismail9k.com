@@ -4,7 +4,7 @@ subtitle: "The Meaning of Building in the Age of AI"
 date: 2026-09-16
 header: header.png
 description:
-  - In the last few months, I’ve written more code than I used to write in a year.
+  - In the last few months, I’ve produced more code than I used to produce in an entire year.
   - The metrics look incredible. The productivity charts would love me.
   - But something feels different.
   - AI is accelerating development, but at what cost?
