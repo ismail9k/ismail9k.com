@@ -64,8 +64,37 @@
         {
           "name": "Godox ES45",
           "url": "https://amzn.to/4b2T3Jg",
+          "image": "/img/uses/godox-es45.png",
           "category": "lighting",
           "description": "A compact LED light panel for my content creation setup. It looks good on camera and not too harsh on the eyes."
+        },
+        {
+          "name": "Keychron K6 Pro",
+          "url": "https://amzn.to/4rM047L",
+          "image": "/img/uses/keychron-k6-pro.png",
+          "category": "keyboard",
+          "description": "My main keyboard with brown switches. It has a phenomenal typing experience and the battery life is amazing."
+        },
+        {
+          "name": "NuPhy Air75 V2",
+          "url": "https://amzn.to/4iRrJA4",
+          "image": "/img/uses/nuphy-air75-v2.png",
+          "category": "keyboard",
+          "description": "My portable keyboard for when I want something more compact. Having two keyboards might seem excessive, but switching between them keeps things interesting."
+        },
+        {
+          "name": "Logitech MX Master 3 for Mac",
+          "url": "https://amzn.to/48R1ntv",
+          "image": "/img/uses/logitech-mx-master-3-mac.png",
+          "category": "mouse",
+          "description": "I love this mouse, and most people do too, so I don't look for another one."
+        },
+        {
+          "name": "DELTAHUB Carpio 2.0",
+          "url": "https://amzn.to/3MvTyBN",
+          "image": "/img/uses/deltahub-carpio-2.0.png",
+          "category": "ergonomics",
+          "description": "If you have carpal tunnel, this is a must-have. It's a bit expensive, but it's worth it."
         }
       ],
       "additionalContent": [
@@ -113,40 +142,6 @@
           "category": "ai",
           "image": "/img/uses/claude-code.png",
           "description": "My primary AI coding assistant that integrates seamlessly with my development workflow. It's by far the best AI coding assistant I've tried (till now)."
-        }
-      ]
-    },
-    {
-      "id": "input-devices",
-      "title": "Input Devices",
-      "items": [
-        {
-          "name": "Keychron K6 Pro",
-          "url": "https://amzn.to/4rM047L",
-          "image": "/img/uses/keychron-k6-pro.png",
-          "category": "keyboard",
-          "description": "My main keyboard with brown switches. It has a phenomenal typing experience and the battery life is amazing."
-        },
-        {
-          "name": "NuPhy Air75 V2",
-          "url": "https://amzn.to/4iRrJA4",
-          "image": "/img/uses/nuphy-air75-v2.png",
-          "category": "keyboard",
-          "description": "My portable keyboard for when I want something more compact. Having two keyboards might seem excessive, but switching between them keeps things interesting."
-        },
-        {
-          "name": "Logitech MX Master 3 for Mac",
-          "url": "https://amzn.to/48R1ntv",
-          "image": "/img/uses/logitech-mx-master-3-mac.png",
-          "category": "mouse",
-          "description": "I love this mouse, and most people do too, so I don't look for another one."
-        },
-        {
-          "name": "DELTAHUB Carpio 2.0",
-          "url": "https://amzn.to/3MvTyBN",
-          "image": "/img/uses/deltahub-carpio-2.0.png",
-          "category": "ergonomics",
-          "description": "If you have carpal tunnel, this is a must-have. It's a bit expensive, but it's worth it."
         }
       ]
     },
