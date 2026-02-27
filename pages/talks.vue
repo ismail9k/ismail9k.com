@@ -53,6 +53,14 @@ const talks = [
     videoId: '47SFGvShMFE',
     language: 'Arabic'
   },
+  {
+    title: 'Frontend Development Deep Dive',
+    description: 'Deep dive into frontend development covering how browsers work, browser pipeline and performance, frontend frameworks (Vue.js, React, Angular, Svelte), micro-frontend architecture, and the future of JavaScript. A comprehensive discussion with industry experts.',
+    date: '18/06/2023',
+    location: 'Tech & Coffee Podcast',
+    videoId: 'PIZDHaYSLN4',
+    language: 'Arabic'
+  },
 ]
 
 const formatDate = (dateString) => {
