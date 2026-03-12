@@ -10,7 +10,7 @@
           "category": "laptop",
           "span": "2",
           "image": "/img/uses/apple-m1-pro.png",
-          "description": "My workhorse that refuses to give me an excuse to upgrade. Honestly, I am looking forward to the upgrade to the space black M4 Pro to have all black setup, but this M1 Pro just won't quit. The battery outlasts my workday, and it handles whatever I throw at it without complaining. Sometimes the best upgrade is realizing you don't need one... yet."
+          "description": "My main workhorse. I am looking forward to the upgrade to the space black M5 Pro to have an all-black setup, but this M1 Pro just won't quit. The battery outlasts my workday, and it handles whatever I throw at it without complaining. Sometimes the best upgrade is realizing you don't need one... yet."
         },
         {
           "name": "LG 27UL850",
@@ -31,7 +31,7 @@
           "url": "https://www.amazon.com/s?k=OMEN+Citadel+Gaming+Chair",
           "image": "/img/uses/omen-gaming-chair.png",
           "category": "gaming chair",
-          "description": "Gaming desk needs a gaming chair, right? Spending 8+ hours daily sitting meant I had to invest in my back's future. It looks so good on camera that everyone asks about it in meetings. Did I buy it for back support or to look COOL!? At this point, I honestly don't know. Plot twist: I threw away the armrests, I prefer resting my hands on the desk itself."
+          "description": "A gaming desk needs a gaming chair, right? Spending 8+ hours daily sitting meant I had to invest in my back's future. It looks so good on camera that everyone asks about it in meetings. Did I buy it for back support or to look COOL!? At this point, I honestly don't know. Plot twist: I threw away the armrests, as I prefer resting my hands on the desk itself."
         },
         {
           "name": "Twelve South Curve",
@@ -52,7 +52,7 @@
           "url": "https://amzn.to/4pvrJYS",
           "image": "/img/uses/elgato-wave-mic-arm-lp.png",
           "category": "mic arm",
-          "description": "The unsung hero of my setup. It swoops my mic out of the way when I don't need it and brings it right back when it's showtime. The cable management is so good, another 9k gear in my setup."
+          "description": "The unsung hero of my setup. It swoops my mic out of the way when I don't need it and brings it right back when it's showtime. The cable management is so good; it's another 9k gear in my setup."
         },
         {
           "name": "UNIQ Hagen",
@@ -87,7 +87,7 @@
           "url": "https://amzn.to/48R1ntv",
           "image": "/img/uses/logitech-mx-master-3-mac.png",
           "category": "mouse",
-          "description": "I love this mouse, and most people do too, so I don't look for another one."
+          "description": "I love this mouse, and most people do too. I will upgrade to the MX Master 4 soon."
         },
         {
           "name": "DELTAHUB Carpio 2.0",
@@ -109,11 +109,11 @@
       "title": "Editor + Terminal",
       "items": [
         {
-          "name": "Cursor IDE",
-          "url": "https://cursor.sh",
+          "name": "Antigravity IDE",
+          "url": "https://antigravity.google/",
           "category": "editor",
-          "image": "/img/uses/cursor.png",
-          "description": "My main code editor (for now). I use it mainly for the AI-powered auto-completion and background agents, and to run Claude Code."
+          "image": "/img/uses/antigravity.png",
+          "description": "My main code editor (for now). I use it mainly for the AI-powered auto-completion, to generate Gemini quotes, and to run Claude Code, of course."
         },
         {
           "name": "Vira Theme",
@@ -134,14 +134,14 @@
           "url": "https://chatgpt.com",
           "category": "ai",
           "image": "/img/uses/chatgpt.png",
-          "description": "My main AI buddy for brainstorming, writing, and problem-solving. I use it daily for everything, that doesn't involve actual coding."
+          "description": "My main AI buddy for brainstorming, writing, and problem-solving. I use it daily for everything that doesn't involve actual coding."
         },
         {
           "name": "Claude Code",
           "url": "https://claude.ai/code",
           "category": "ai",
           "image": "/img/uses/claude-code.png",
-          "description": "My primary AI coding assistant that integrates seamlessly with my development workflow. It's by far the best AI coding assistant I've tried (till now)."
+          "description": "My primary AI coding assistant that integrates seamlessly with my development workflow. It's by far the best AI coding assistant I've tried (so far)."
         }
       ]
     },
@@ -169,7 +169,7 @@
           "url": "https://obsidian.md",
           "category": "app",
           "image": "/img/uses/obsidian.png",
-          "description": "It's my main place for writing content scripts, and blogs, the ability to write in markdown is the best thing about it."
+          "description": "It's my main place for writing content scripts and blogs; the ability to write in markdown is the best thing about it."
         },
         {
           "name": "Raycast",
@@ -199,7 +199,7 @@
           "url": "https://amicoapps.com/app/quitall/",
           "category": "app",
           "label": "Setapp",
-          "image": "/img/uses/quite-all.png",
+          "image": "/img/uses/quit-all.png",
           "description": "Sometimes all I need is to close all apps and start fresh."
         },
         {
@@ -231,7 +231,7 @@
           "url": "https://www.apple.com/iphone-15-pro/",
           "image": "/img/uses/iphone-15-pro.png",
           "category": "mobile",
-          "description": "I use this poor device for everything, webcam, content creation videos, and as a phone."
+          "description": "I use this poor device for everything: webcam, content creation, and as a phone."
         },
         {
           "name": "Manfrotto Element MII",
