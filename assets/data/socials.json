@@ -40,5 +40,11 @@
     "icon": "tiktok",
     "color": "#000000",
     "link": "https://www.tiktok.com/@ismail.9k"
+  },
+  {
+    "name": "9kLabs",
+    "icon": "9klabs",
+    "color": "#7C3AED",
+    "link": "https://the9klabs.com/"
   }
 ]
